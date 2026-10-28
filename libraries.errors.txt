@@ -1,0 +1,48 @@
+581:[19/2009] Building C object qtbase\src\3rdparty\pcre2\CMakeFiles\BundledPcre2.dir\Debug\src\pcre2_error.c.obj
+604:[42/2009] Building C object qtbase\src\3rdparty\libpng\CMakeFiles\BundledLibpng.dir\Debug\pngerror.c.obj
+717:[151/2009] Building CXX object qtbase\src\tools\bootstrap\CMakeFiles\Bootstrap.dir\Debug\__\__\corelib\kernel\qsystemerror.cpp.obj
+759:[193/2009] Building C object qtbase\src\tools\bootstrap\CMakeFiles\Bootstrap.dir\Debug\__\__\3rdparty\pcre2\src\pcre2_error.c.obj
+1051:[485/2009] Building CXX object qtbase\src\corelib\CMakeFiles\Core.dir\Debug\kernel\qsystemerror.cpp.obj
+1293:[727/2009] Building CXX object qtbase\src\sql\CMakeFiles\Sql.dir\Debug\kernel\qsqlerror.cpp.obj
+1322:[756/2009] Building CXX object qtbase\src\dbus\CMakeFiles\DBus.dir\Debug\qdbuserror.cpp.obj
+1781:[1215/2009] Building CXX object qtbase\src\network\CMakeFiles\Network.dir\Debug\ssl\qsslerror.cpp.obj
+2236:[1670/2009] Building C object qtimageformats\src\plugins\imageformats\tiff\CMakeFiles\QTiffPlugin.dir\Debug\__\__\__\3rdparty\libtiff\libtiff\tif_error.c.obj
+2447:[1881/2009] Building CXX object qtbase\src\widgets\CMakeFiles\Widgets.dir\Debug\dialogs\qerrormessage.cpp.obj
+3126:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtCore/QCborError
+3128:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtCore/QCborParserError
+3210:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtCore/QJsonParseError
+3312:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtCore/QPropertyBindingError
+3648:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtCore/qjsonparseerror.h
+3847:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtCore/6.11.2/QtCore/private/qsystemerror_p.h
+4029:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtFreetype/freetype/fterrors.h
+4236:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtSql/QSqlError
+4254:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtSql/qsqlerror.h
+4307:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtDBus/QDBusError
+4333:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtDBus/qdbuserror.h
+4441:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtNetwork/QSslError
+4480:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtNetwork/qsslerror.h
+5432:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtWidgets/QErrorMessage
+5685:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/Qt-6.11.2/include/QtWidgets/qerrormessage.h
+7441:[16/2082] Building CXX object qtbase\src\tools\bootstrap\CMakeFiles\Bootstrap.dir\RelWithDebInfo\__\__\corelib\kernel\qsystemerror.cpp.obj
+7485:[60/2082] Building C object qtbase\src\tools\bootstrap\CMakeFiles\Bootstrap.dir\RelWithDebInfo\__\__\3rdparty\pcre2\src\pcre2_error.c.obj
+7525:[100/2082] Building C object qtbase\src\3rdparty\pcre2\CMakeFiles\BundledPcre2.dir\RelWithDebInfo\src\pcre2_error.c.obj
+7551:[126/2082] Building C object qtbase\src\3rdparty\libpng\CMakeFiles\BundledLibpng.dir\RelWithDebInfo\pngerror.c.obj
+7727:[302/2082] Building CXX object qtbase\src\corelib\CMakeFiles\Core.dir\RelWithDebInfo\kernel\qsystemerror.cpp.obj
+8372:[947/2082] Building CXX object qtbase\src\sql\CMakeFiles\Sql.dir\RelWithDebInfo\kernel\qsqlerror.cpp.obj
+8474:[1049/2082] Building CXX object qtbase\src\network\CMakeFiles\Network.dir\RelWithDebInfo\ssl\qsslerror.cpp.obj
+8591:[1166/2082] Building CXX object qtbase\src\widgets\CMakeFiles\Widgets.dir\RelWithDebInfo\dialogs\qerrormessage.cpp.obj
+8722:[1297/2082] Building CXX object qtbase\src\dbus\CMakeFiles\DBus.dir\RelWithDebInfo\qdbuserror.cpp.obj
+8879:[1454/2078] Building C object qtimageformats\src\plugins\imageformats\tiff\CMakeFiles\QTiffPlugin.dir\RelWithDebInfo\__\__\__\3rdparty\libtiff\libtiff\tif_error.c.obj
+9050:FAILED: [code=2] qtbase/src/testlib/CMakeFiles/Test.dir/RelWithDebInfo/cmake_pch.cxx.obj 
+9052:C:/Users/runneradmin/TBuild/Libraries/win64/qt_6.11.2/qtbase/src/corelib/kernel/qmetaobject.h(437): fatal error C1088: Cannot flush compiler intermediate file: 'C:/Users/runneradmin/TBuild/Libraries/win64/qt_6.11.2/qtbase/src/testlib/CMakeFiles/Test.dir/RelWithDebInfo//cmake_pch.cxx.pch': No space left on device
+9054:FAILED: [code=2] qtbase/src/platformsupport/fbconvenience/CMakeFiles/FbSupportPrivate.dir/RelWithDebInfo/cmake_pch.cxx.obj 
+9056:C:\Users\runneradmin\TBuild\Libraries\win64\qt_6.11.2\qtbase\src\platformsupport\fbconvenience\CMakeFiles\FbSupportPrivate.dir\cmake_pch.cxx: fatal error C1085: Cannot write precompiled header file: 'C:/Users/runneradmin/TBuild/Libraries/win64/qt_6.11.2/qtbase/src/platformsupport/fbconvenience/CMakeFiles/FbSupportPrivate.dir/RelWithDebInfo//cmake_pch.cxx.pch': There is not enough space on the disk.
+9060:FAILED: [code=2] qtbase/src/openglwidgets/CMakeFiles/OpenGLWidgets.dir/RelWithDebInfo/cmake_pch.cxx.obj 
+9062:C:/Users/runneradmin/TBuild/Libraries/win64/qt_6.11.2/qtbase/src/corelib/kernel/qmetasequence.h(144): fatal error C1088: Cannot flush compiler intermediate file: 'C:/Users/runneradmin/TBuild/Libraries/win64/qt_6.11.2/qtbase/src/openglwidgets/CMakeFiles/OpenGLWidgets.dir/RelWithDebInfo//cmake_pch.cxx.pch': No space left on device
+9064:FAILED: [code=2] qtbase/src/printsupport/CMakeFiles/PrintSupport.dir/RelWithDebInfo/cmake_pch.cxx.obj 
+9066:C:/Users/runneradmin/TBuild/Libraries/win64/qt_6.11.2/qtbase/src/corelib/plugin/quuid.h(190): fatal error C1088: Cannot flush compiler intermediate file: 'C:/Users/runneradmin/TBuild/Libraries/win64/qt_6.11.2/qtbase/src/printsupport/CMakeFiles/PrintSupport.dir/RelWithDebInfo//cmake_pch.cxx.pch': No space left on device
+9069:ninja: build stopped: subcommand failed.
+9081:if errorlevel 1 (
+9082:echo ERROR: Applying patch %%~nxi failed!
+9142:[29/33](Libraries/qt_6.11.2): FAILED
+9143:FAILED
