@@ -1,0 +1,204 @@
+name: Windows build
+
+# Собирает ZKgram.exe (Windows x64, Qt 6, Release).
+#
+# Первая сборка долгая: сначала собираются все библиотеки (Qt, FFmpeg, WebRTC
+# и т.д.). Готовые библиотеки сохраняются в кэш GitHub сразу после шага
+# "Libraries", даже если шаг упал по таймауту. Если первый запуск не уложился
+# в лимит времени, просто запусти workflow ещё раз (Actions -> Windows build ->
+# Run workflow): сборка продолжится с того места, где остановилась.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE'
+      - 'LEGAL'
+      - 'changelog.txt'
+  workflow_dispatch:
+
+concurrency:
+  group: windows-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  windows:
+    name: Windows x64
+    runs-on: windows-latest
+    timeout-minutes: 355
+
+    env:
+      PREPARE_PATH: "Telegram/build/prepare/prepare.py"
+      QT_OPTION: "qt6"
+
+    defaults:
+      run:
+        shell: cmd
+
+    steps:
+      - name: Prepare directories.
+        run: |
+          mkdir %userprofile%\TBuild\Libraries
+          mklink /d %GITHUB_WORKSPACE%\TBuild %userprofile%\TBuild
+          echo TBUILD=%GITHUB_WORKSPACE%\TBuild>>%GITHUB_ENV%
+          echo LibrariesPath=%GITHUB_WORKSPACE%\TBuild\Libraries\win64>>%GITHUB_ENV%
+
+      - name: Get repository name.
+        shell: bash
+        run: echo "REPO_NAME=${GITHUB_REPOSITORY##*/}" >> $GITHUB_ENV
+
+      - name: Clone.
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+          path: ${{ env.TBUILD }}\${{ env.REPO_NAME }}
+
+      - name: First set up.
+        shell: bash
+        run: |
+          DOCPATH=$TBUILD/$REPO_NAME/docs/building-win.md
+          SDK="$(grep "SDK version" $DOCPATH | sed -r 's/.*\*\*(.*)\*\* SDK version.*/\1/')"
+          echo "SDK=$SDK" >> $GITHUB_ENV
+
+          sed -i '/CMAKE_${lang}_FLAGS_DEBUG_INIT/s/${_Zi}//' "$PROGRAMFILES"/CMake/share/cmake*/Modules/Platform/Windows-MSVC.cmake
+
+          echo "$(sha256sum $TBUILD/$REPO_NAME/$PREPARE_PATH | awk '{ print $1 }')" >> CACHE_KEY.txt
+          echo "$SDK" >> CACHE_KEY.txt
+          echo "$QT_OPTION" >> CACHE_KEY.txt
+          echo "CACHE_KEY=$(sha256sum CACHE_KEY.txt | awk '{ print $1 }' | cut -c1-16)" >> $GITHUB_ENV
+
+          echo "Configurate git for cherry-picks."
+          git config --global user.email "you@example.com"
+          git config --global user.name "Sample"
+
+      - uses: Eden-CI/msvc-dev-cmd@master
+        name: Native Tools Command Prompt.
+        with:
+          arch: x64
+          sdk: ${{ env.SDK }}
+          toolset: '14.44'
+
+      - name: NuGet sources.
+        run: |
+          nuget sources Disable -Name "Microsoft Visual Studio Offline Packages"
+          nuget sources Add -Source https://api.nuget.org/v3/index.json & exit 0
+
+      - name: Restore ThirdParty cache.
+        uses: actions/cache/restore@v6
+        with:
+          path: ${{ env.TBUILD }}\ThirdParty
+          key: zk-win-thirdparty-${{ env.CACHE_KEY }}-none
+          restore-keys: zk-win-thirdparty-${{ env.CACHE_KEY }}-
+
+      - name: Restore Libraries cache.
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            ${{ env.LibrariesPath }}\*
+            !${{ env.LibrariesPath }}\cache_keys
+            !${{ env.LibrariesPath }}\[qQ]t[_-]*
+            ${{ env.LibrariesPath }}\cache_keys\*
+            !${{ env.LibrariesPath }}\cache_keys\[qQ]t[_-]*
+          key: zk-win-libs-${{ env.CACHE_KEY }}-none
+          restore-keys: zk-win-libs-${{ env.CACHE_KEY }}-
+
+      - name: Restore Qt cache.
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            ${{ env.LibrariesPath }}\[qQ]t[_-]*
+            ${{ env.LibrariesPath }}\cache_keys\[qQ]t[_-]*
+          key: zk-win-qt-${{ env.CACHE_KEY }}-none
+          restore-keys: zk-win-qt-${{ env.CACHE_KEY }}-
+
+      - name: Libraries.
+        id: libraries
+        timeout-minutes: 290
+        run: |
+          %TBUILD%\%REPO_NAME%\Telegram\build\prepare\win.bat silent %QT_OPTION%
+
+      - name: Free up some disk space.
+        if: always()
+        shell: bash
+        run: |
+          find $LibrariesPath '(' '(' ! '(' -name '*.lib' -o -name '*.a' -o -name '*.exe' -o -name '*.h' -o -name '*.hpp' -o -name '*.inc' -o -name '*.cmake' -o -name '*.pc' -o -path '*/include/*' -o -path '*/objects-*' -o -path '*/cache_keys/*' -o -path '*/patches/*' -o -path '*/nv-codec-headers/*' ')' -type f ')' -o -empty ')' -delete || true
+          echo "THIRDPARTY_STATE=$(find $TBUILD/ThirdParty/cache_keys -type f 2>/dev/null | sort | xargs -r cat | sha256sum | cut -c1-16)" >> $GITHUB_ENV
+          echo "QT_STATE=$(find $LibrariesPath/cache_keys -type f -iname 'qt*' 2>/dev/null | sort | xargs -r cat | sha256sum | cut -c1-16)" >> $GITHUB_ENV
+          echo "LIBS_ONLY_STATE=$(find $LibrariesPath/cache_keys -type f ! -iname 'qt*' 2>/dev/null | sort | xargs -r cat | sha256sum | cut -c1-16)" >> $GITHUB_ENV
+
+      - name: Save ThirdParty cache.
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v6
+        with:
+          path: ${{ env.TBUILD }}\ThirdParty
+          key: zk-win-thirdparty-${{ env.CACHE_KEY }}-${{ env.THIRDPARTY_STATE }}
+
+      - name: Save Libraries cache.
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            ${{ env.LibrariesPath }}\*
+            !${{ env.LibrariesPath }}\cache_keys
+            !${{ env.LibrariesPath }}\[qQ]t[_-]*
+            ${{ env.LibrariesPath }}\cache_keys\*
+            !${{ env.LibrariesPath }}\cache_keys\[qQ]t[_-]*
+          key: zk-win-libs-${{ env.CACHE_KEY }}-${{ env.LIBS_ONLY_STATE }}
+
+      - name: Save Qt cache.
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            ${{ env.LibrariesPath }}\[qQ]t[_-]*
+            ${{ env.LibrariesPath }}\cache_keys\[qQ]t[_-]*
+          key: zk-win-qt-${{ env.CACHE_KEY }}-${{ env.QT_STATE }}
+
+      - name: ZKgram build.
+        env:
+          TG_API_ID: ${{ secrets.TG_API_ID }}
+          TG_API_HASH: ${{ secrets.TG_API_HASH }}
+        run: |
+          cd %TBUILD%\%REPO_NAME%\Telegram
+
+          if "%TG_API_ID%"=="" (
+            echo ::warning::TG_API_ID / TG_API_HASH secrets are not set. Building with TEST api credentials, login will be limited.
+            set "ZK_API=-D TDESKTOP_API_TEST=ON"
+          ) else (
+            set "ZK_API=-D TDESKTOP_API_ID=%TG_API_ID% -D TDESKTOP_API_HASH=%TG_API_HASH%"
+          )
+
+          call configure.bat ^
+          x64 ^
+          %QT_OPTION% ^
+          %ZK_API% ^
+          -D CMAKE_CONFIGURATION_TYPES=Release ^
+          -D DESKTOP_APP_DISABLE_AUTOUPDATE=ON ^
+          -D DESKTOP_APP_DISABLE_CRASH_REPORTS=ON
+          if errorlevel 1 exit /b 1
+
+          cmake --build ..\out --config Release --parallel
+          if errorlevel 1 exit /b 1
+
+      - name: Pack artifact.
+        shell: bash
+        run: |
+          OUT="$TBUILD/$REPO_NAME/out/Release"
+          ls -la "$OUT"
+          mkdir -p artifact
+          cp "$OUT"/*.exe artifact/
+          if [ -d "$OUT/modules" ]; then cp -r "$OUT/modules" artifact/; fi
+          cp "$TBUILD/$REPO_NAME/LICENSE" artifact/LICENSE.txt
+          ls -la artifact
+
+      - uses: actions/upload-artifact@v7
+        name: Upload artifact.
+        with:
+          name: ZKgram-win64
+          path: artifact\
+          retention-days: 30
