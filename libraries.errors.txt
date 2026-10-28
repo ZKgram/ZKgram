@@ -1,0 +1,121 @@
+424:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+433:         C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /Od /D _DEBUG /D WIN32 /D _WINDOWS /D _USRDLL /D LZMALIB_EXPORTS /D COMPRESS_MF_MT /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Debug\\" /Fd".\Debug\LzmaLib.pdb" /external:W3 /Gd /TC /FC /errorReport:queue ..\..\Alloc.c ..\..\LzFind.c ..\..\LzFindMt.c ..\..\LzmaDec.c ..\..\LzmaEnc.c ..\..\LzmaLib.c ..\..\Threads.c LzmaLibExports.c
+465:    0 Error(s)
+477:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+486:         C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /O2 /D NDEBUG /D WIN32 /D _WINDOWS /D _USRDLL /D LZMALIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Release\\" /Fd".\Release\LzmaLib.pdb" /external:W3 /Gr /TC /FC /errorReport:queue ..\..\Alloc.c ..\..\LzFind.c ..\..\LzFindMt.c ..\..\LzmaDec.c ..\..\LzmaEnc.c ..\..\LzmaLib.c ..\..\Threads.c LzmaLibExports.c
+518:    0 Error(s)
+564:-- Check size of off64_t - failed
+572:-- Performing Test HAVE___ATTR__VIS_HIDDEN - Failed
+817:[35/334] Building C object CMakeFiles\jpeg-static.dir\Debug\jerror.c.obj
+912:[90/334] Building C object CMakeFiles\turbojpeg.dir\Debug\jerror.c.obj
+1013:[150/334] Building C object CMakeFiles\turbojpeg-static.dir\Debug\jerror.c.obj
+1143:[239/334] Building C object sharedlib\CMakeFiles\jpeg.dir\Debug\__\jerror.c.obj
+1331:[35/334] Building C object CMakeFiles\jpeg-static.dir\Release\jerror.c.obj
+1423:[87/334] Building C object CMakeFiles\turbojpeg.dir\Release\jerror.c.obj
+1525:[148/334] Building C object CMakeFiles\turbojpeg-static.dir\Release\jerror.c.obj
+1654:[236/334] Building C object sharedlib\CMakeFiles\jpeg.dir\Release\__\jerror.c.obj
+6507:	del /Q /F doc\html\man3\ERR_clear_error.html
+6508:Could Not Find C:\Users\runneradmin\TBuild\Libraries\win64\openssl3\doc\html\man3\ERR_clear_error.html
+6509:	del /Q /F doc\html\man3\ERR_error_string.html
+6510:Could Not Find C:\Users\runneradmin\TBuild\Libraries\win64\openssl3\doc\html\man3\ERR_error_string.html
+6511:	del /Q /F doc\html\man3\ERR_get_error.html
+6512:Could Not Find C:\Users\runneradmin\TBuild\Libraries\win64\openssl3\doc\html\man3\ERR_get_error.html
+6519:	del /Q /F doc\html\man3\ERR_print_errors.html
+6520:Could Not Find C:\Users\runneradmin\TBuild\Libraries\win64\openssl3\doc\html\man3\ERR_print_errors.html
+6521:	del /Q /F doc\html\man3\ERR_put_error.html
+6522:Could Not Find C:\Users\runneradmin\TBuild\Libraries\win64\openssl3\doc\html\man3\ERR_put_error.html
+7249:	del /Q /F doc\html\man3\SSL_get_error.html
+7250:Could Not Find C:\Users\runneradmin\TBuild\Libraries\win64\openssl3\doc\html\man3\SSL_get_error.html
+7403:	del /Q /F doc\html\man3\X509_STORE_CTX_get_error.html
+7404:Could Not Find C:\Users\runneradmin\TBuild\Libraries\win64\openssl3\doc\html\man3\X509_STORE_CTX_get_error.html
+10143:The system cannot find the file specified.
+14402:-- Performing Test VLA_SUPPORTED -- failed to compile
+14461: * OPUS_ASSERTIONS, additional software error checking.
+15500:[39/190] Compiling C++ object codec/decoder/libdecoder.a.p/core_src_error_concealment.cpp.obj
+15625:[146/190] Compiling C++ object test/decoder/test_decoder.exe.p/DecUT_ErrorConcealment.cpp.obj
+15881:[39/190] Compiling C++ object codec/decoder/libdecoder.a.p/core_src_error_concealment.cpp.obj
+16004:[144/190] Compiling C++ object test/decoder/test_decoder.exe.p/DecUT_ErrorConcealment.cpp.obj
+16211:-DAVIF_ENABLE_WERROR=OFF ^
+16257:-- Performing Test HAVE_ARM32 - Failed
+16259:-- Performing Test HAVE_ARM64 - Failed
+16261:-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+19738:-- Performing Test has_potentially_evaluated_expression - Failed
+19851:-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+19860:[1/106] Building CXX object libheif\CMakeFiles\heif.dir\Debug\error.cc.obj
+19974:-- Installing: C:/Users/runneradmin/TBuild/Libraries/win64/local/include/libheif/heif_error.h
+20000:[1/106] Building CXX object libheif\CMakeFiles\heif.dir\Release\error.cc.obj
+20114:-- Up-to-date: C:/Users/runneradmin/TBuild/Libraries/win64/local/include/libheif/heif_error.h
+20242:-- Performing Test CXX_FUZZERS_SUPPORTED - Failed
+20244:-- Performing Test CXX_MACRO_PREFIX_MAP - Failed
+20246:-- Performing Test CXX_NO_RTTI_SUPPORTED - Failed
+20248:-- Performing Test CXX_MAVX2_SUPPORTED - Failed
+20250:-- Performing Test CXX_MF16C_SUPPORTED - Failed
+20252:-- Performing Test CXX_MAVX512F_SUPPORTED - Failed
+20254:-- Performing Test CXX_MAVX512DQ_SUPPORTED - Failed
+20256:-- Performing Test CXX_MAVX512CD_SUPPORTED - Failed
+20258:-- Performing Test CXX_MAVX512BW_SUPPORTED - Failed
+20260:-- Performing Test CXX_MAVX512VL_SUPPORTED - Failed
+20262:-- Performing Test CXX_SVE_SUPPORTED - Failed
+20265:-- Performing Test JXL_HWY_DISABLED_TARGETS_FORCED - Failed
+20292:-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+20313:-- Performing Test HWY_EMSCRIPTEN - Failed
+20315:-- Performing Test HWY_RISCV - Failed
+20322:-- Performing Test BROTLI_EMSCRIPTEN - Failed
+20334:-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Failed
+20338:-- Performing Test CXX_WPSABI_SUPPORTED - Failed
+22266:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+22274:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+22286:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+22291:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+22312:         Assembling vp9_error_sse2.asm
+22314:         Assembling vp9_error_sse2.asm
+22370:         Assembling block_error_sse2.asm
+22372:         Assembling block_error_sse2.asm
+22531:         Assembling block_error_sse2.asm
+22532:         Assembling block_error_sse2.asm
+22539:         Assembling vp9_error_sse2.asm
+22541:         Assembling vp9_error_sse2.asm
+23282:         vp9_error_avx2.c
+23575:         vp9_error_avx2.c
+24026:         x64\Debug\vpxrc\vp9_encoder_x86_vp9_error_sse2_asm.obj
+24043:         x64\Debug\vpxrc\vp8_encoder_x86_block_error_sse2_asm.obj
+24114:         x64\Debug\vpxrc\vp9_encoder_x86_vp9_error_avx2.obj
+24344:         x64\Release\vpxrc\vp9_encoder_x86_vp9_error_sse2_asm.obj
+24361:         x64\Release\vpxrc\vp8_encoder_x86_block_error_sse2_asm.obj
+24432:         x64\Release\vpxrc\vp9_encoder_x86_vp9_error_avx2.obj
+24579:         vp9_error_avx2.c
+24640:         x64\Debug\vpx\vp8_encoder_x86_block_error_sse2_asm.obj
+24643:         x64\Debug\vpx\vp9_encoder_x86_vp9_error_sse2_asm.obj
+24844:         x64\Debug\vpx\vp9_encoder_x86_vp9_error_avx2.obj
+24875:    0 Error(s)
+24933:         vp9_error_avx2.c
+24986:         x64\Release\vpx\vp8_encoder_x86_block_error_sse2_asm.obj
+24989:         x64\Release\vpx\vp9_encoder_x86_vp9_error_sse2_asm.obj
+25190:         x64\Release\vpx\vp9_encoder_x86_vp9_error_avx2.obj
+25219:    0 Error(s)
+25277:This will be an error in meson 2.0.
+25352:This will be an error in meson 2.0.
+26265:CC	libavcodec/error_resilience.o
+26266:error_resilience.c
+27172:CC	libavutil/error.o
+27173:error.c
+27519:INSTALL	libavutil/error.h
+27637:-- Performing Test HAVE_LIBATOMIC - Failed
+27733:[34/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\error.cpp.obj
+27838:[30/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\error.cpp.obj
+27995:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+28007:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+28020:     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pdb_source_line_writer.h(36,10): error C1083: Cannot open include file: 'atlcomcli.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+28023:     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_util.cc(31,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+28025:     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\omap.cc(105,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+28028:     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pe_util.cc(34,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+28029:     2>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj" (default targets) -- FAILED.
+28030:     1>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (default targets) -- FAILED.
+28032:Build FAILED.
+28037:         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pdb_source_line_writer.h(36,10): error C1083: Cannot open include file: 'atlcomcli.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+28038:         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_util.cc(31,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+28039:         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\omap.cc(105,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+28040:         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pe_util.cc(34,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+28043:    4 Error(s)
+28070:[28/33](Libraries/breakpad): FAILED
+28071:FAILED

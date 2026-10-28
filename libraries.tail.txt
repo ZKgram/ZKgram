@@ -1,0 +1,3000 @@
+         x64\Release\vpx\vp8_common_reconintra4x4.obj
+         x64\Release\vpx\vp8_common_setupintrarecon.obj
+         x64\Release\vpx\vp8_common_swapyv12buffer.obj
+         x64\Release\vpx\vp8_common_treecoder.obj
+         x64\Release\vpx\vp8_common_x86_vp8_asm_stubs.obj
+         x64\Release\vpx\vp8_common_x86_loopfilter_x86.obj
+         x64\Release\vpx\vp8_common_mfqe.obj
+         x64\Release\vpx\vp8_common_postproc.obj
+         x64\Release\vpx\vp8_common_x86_idct_blk_mmx.obj
+         x64\Release\vpx\vp8_common_x86_idct_blk_sse2.obj
+         x64\Release\vpx\vp8_common_x86_bilinear_filter_sse2.obj
+         x64\Release\vpx\vp8_vp8_cx_iface.obj
+         x64\Release\vpx\vp8_encoder_bitstream.obj
+         x64\Release\vpx\vp8_encoder_boolhuff.obj
+         x64\Release\vpx\vp8_encoder_copy_c.obj
+         x64\Release\vpx\vp8_encoder_dct.obj
+         x64\Release\vpx\vp8_encoder_encodeframe.obj
+         x64\Release\vpx\vp8_encoder_encodeintra.obj
+         x64\Release\vpx\vp8_encoder_encodemb.obj
+         x64\Release\vpx\vp8_encoder_encodemv.obj
+         x64\Release\vpx\vp8_encoder_ethreading.obj
+         x64\Release\vpx\vp8_encoder_firstpass.obj
+         x64\Release\vpx\vp8_encoder_denoising.obj
+         x64\Release\vpx\vp8_encoder_lookahead.obj
+         x64\Release\vpx\vp8_encoder_mcomp.obj
+         x64\Release\vpx\vp8_encoder_modecosts.obj
+         x64\Release\vpx\vp8_encoder_onyx_if.obj
+         x64\Release\vpx\vp8_encoder_pickinter.obj
+         x64\Release\vpx\vp8_encoder_picklpf.obj
+         x64\Release\vpx\vp8_encoder_vp8_quantize.obj
+         x64\Release\vpx\vp8_encoder_ratectrl.obj
+         x64\Release\vpx\vp8_encoder_rdopt.obj
+         x64\Release\vpx\vp8_encoder_segmentation.obj
+         x64\Release\vpx\vp8_common_vp8_skin_detection.obj
+         x64\Release\vpx\vp8_encoder_tokenize.obj
+         x64\Release\vpx\vp8_encoder_treewriter.obj
+         x64\Release\vpx\vp8_encoder_temporal_filter.obj
+         x64\Release\vpx\vp8_encoder_x86_vp8_quantize_sse2.obj
+         x64\Release\vpx\vp8_encoder_x86_vp8_quantize_ssse3.obj
+         x64\Release\vpx\vp8_encoder_x86_quantize_sse4.obj
+         x64\Release\vpx\vp8_encoder_x86_denoising_sse2.obj
+         x64\Release\vpx\vp8_encoder_x86_vp8_enc_stubs_sse2.obj
+         x64\Release\vpx\vp8_vp8_dx_iface.obj
+         x64\Release\vpx\vp8_decoder_dboolhuff.obj
+         x64\Release\vpx\vp8_decoder_decodemv.obj
+         x64\Release\vpx\vp8_decoder_decodeframe.obj
+         x64\Release\vpx\vp8_decoder_detokenize.obj
+         x64\Release\vpx\vp8_decoder_onyxd_if.obj
+         x64\Release\vpx\vp8_decoder_threading.obj
+         x64\Release\vpx\vp9_vp9_iface_common.obj
+         x64\Release\vpx\vp9_common_vp9_alloccommon.obj
+         x64\Release\vpx\vp9_common_vp9_blockd.obj
+         x64\Release\vpx\vp9_common_vp9_entropy.obj
+         x64\Release\vpx\vp9_common_vp9_entropymode.obj
+         x64\Release\vpx\vp9_common_vp9_entropymv.obj
+         x64\Release\vpx\vp9_common_vp9_frame_buffers.obj
+         x64\Release\vpx\vp9_common_vp9_idct.obj
+         x64\Release\vpx\vp9_common_vp9_filter.obj
+         x64\Release\vpx\vp9_common_vp9_pred_common.obj
+         x64\Release\vpx\vp9_common_vp9_rtcd.obj
+         x64\Release\vpx\vp9_common_vp9_scale.obj
+         x64\Release\vpx\vp9_common_vp9_seg_common.obj
+         x64\Release\vpx\vp9_common_vp9_tile_common.obj
+         x64\Release\vpx\vp9_common_vp9_loopfilter.obj
+         x64\Release\vpx\vp9_common_vp9_thread_common.obj
+         x64\Release\vpx\vp9_common_vp9_mvref_common.obj
+         x64\Release\vpx\vp9_common_vp9_quant_common.obj
+         x64\Release\vpx\vp9_common_vp9_reconinter.obj
+         x64\Release\vpx\vp9_common_vp9_reconintra.obj
+         x64\Release\vpx\vp9_common_vp9_common_data.obj
+         x64\Release\vpx\vp9_common_vp9_scan.obj
+         x64\Release\vpx\vp9_common_x86_vp9_idct_intrin_sse2.obj
+         x64\Release\vpx\vp9_vp9_cx_iface.obj
+         x64\Release\vpx\vp9_encoder_vp9_bitstream.obj
+         x64\Release\vpx\vp9_encoder_vp9_context_tree.obj
+         x64\Release\vpx\vp9_encoder_vp9_cost.obj
+         x64\Release\vpx\vp9_encoder_vp9_dct.obj
+         x64\Release\vpx\vp9_encoder_vp9_encodeframe.obj
+         x64\Release\vpx\vp9_encoder_vp9_encodemb.obj
+         x64\Release\vpx\vp9_encoder_vp9_encodemv.obj
+         x64\Release\vpx\vp9_encoder_vp9_ethread.obj
+         x64\Release\vpx\vp9_encoder_vp9_extend.obj
+         x64\Release\vpx\vp9_encoder_vp9_firstpass.obj
+         x64\Release\vpx\vp9_encoder_vp9_frame_scale.obj
+         x64\Release\vpx\vp9_encoder_vp9_lookahead.obj
+         x64\Release\vpx\vp9_encoder_vp9_multi_thread.obj
+         x64\Release\vpx\vp9_encoder_vp9_mcomp.obj
+         x64\Release\vpx\vp9_encoder_vp9_encoder.obj
+         x64\Release\vpx\vp9_encoder_vp9_picklpf.obj
+         x64\Release\vpx\vp9_encoder_vp9_quantize.obj
+         x64\Release\vpx\vp9_encoder_vp9_ratectrl.obj
+         x64\Release\vpx\vp9_encoder_vp9_rd.obj
+         x64\Release\vpx\vp9_encoder_vp9_rdopt.obj
+         x64\Release\vpx\vp9_encoder_vp9_pickmode.obj
+         x64\Release\vpx\vp9_encoder_vp9_segmentation.obj
+         x64\Release\vpx\vp9_encoder_vp9_speed_features.obj
+         x64\Release\vpx\vp9_encoder_vp9_subexp.obj
+         x64\Release\vpx\vp9_encoder_vp9_svc_layercontext.obj
+         x64\Release\vpx\vp9_encoder_vp9_resize.obj
+         x64\Release\vpx\vp9_encoder_vp9_tokenize.obj
+         x64\Release\vpx\vp9_encoder_vp9_treewriter.obj
+         x64\Release\vpx\vp9_encoder_vp9_aq_variance.obj
+         x64\Release\vpx\vp9_encoder_vp9_aq_360.obj
+         x64\Release\vpx\vp9_encoder_vp9_aq_cyclicrefresh.obj
+         x64\Release\vpx\vp9_encoder_vp9_aq_complexity.obj
+         x64\Release\vpx\vp9_encoder_vp9_alt_ref_aq.obj
+         x64\Release\vpx\vp9_encoder_vp9_skin_detection.obj
+         x64\Release\vpx\vp9_encoder_vp9_noise_estimate.obj
+         x64\Release\vpx\vp9_encoder_vp9_ext_ratectrl.obj
+         x64\Release\vpx\vp9_encoder_vp9_temporal_filter.obj
+         x64\Release\vpx\vp9_encoder_vp9_tpl_model.obj
+         x64\Release\vpx\vp9_encoder_vp9_mbgraph.obj
+         x64\Release\vpx\vp9_encoder_x86_temporal_filter_sse4.obj
+         x64\Release\vpx\vp9_encoder_x86_vp9_quantize_sse2.obj
+         x64\Release\vpx\vp9_encoder_x86_vp9_quantize_ssse3.obj
+         x64\Release\vpx\vp9_encoder_x86_vp9_quantize_avx2.obj
+         x64\Release\vpx\vp9_encoder_x86_vp9_dct_intrin_sse2.obj
+         x64\Release\vpx\vp9_encoder_x86_vp9_frame_scale_ssse3.obj
+         x64\Release\vpx\vp9_encoder_x86_vp9_error_avx2.obj
+         x64\Release\vpx\vp9_vp9_dx_iface.obj
+         x64\Release\vpx\vp9_decoder_vp9_decodemv.obj
+         x64\Release\vpx\vp9_decoder_vp9_decodeframe.obj
+         x64\Release\vpx\vp9_decoder_vp9_detokenize.obj
+         x64\Release\vpx\vp9_decoder_vp9_decoder.obj
+         x64\Release\vpx\vp9_decoder_vp9_dsubexp.obj
+         x64\Release\vpx\vp9_decoder_vp9_job_queue.obj
+         x64\Release\vpx\vpx_config.obj
+         vpx.vcxproj -> C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\x64\Release\vpxmt.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\vpx\vpx.tlog\unsuccessfulbuild".
+         Touching "x64\Release\vpx\vpx.tlog\vpx.lastbuildstate".
+     2>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vpx.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vpx.sln" (Build target(s)).
+
+Build succeeded.
+
+       "C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vpx.sln" (Build target) (1) ->
+       "C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vpxrc.vcxproj" (default target) (3) ->
+       (ClCompile target) -> 
+         C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vp9\encoder\vp9_bitstream.c(1031,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vpxrc.vcxproj]
+
+
+       "C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vpx.sln" (Build target) (1) ->
+       "C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vpx.vcxproj" (default target) (2) ->
+         C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vp9\encoder\vp9_bitstream.c(1031,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\Users\runneradmin\TBuild\Libraries\win64\libvpx\vpx.vcxproj]
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:08.14
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vp8.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vp8cx.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vpx_ext_ratectrl.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vp8dx.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vpx_codec.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vpx_frame_buffer.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vpx_image.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vpx_integer.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vpx_decoder.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vpx_encoder.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/vpx/vpx_tpl.h
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/lib/x64/vpxmt.lib
+    [INSTALL] /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/lib/pkgconfig/vpx.pc
+make[1]: Nothing to be done for 'install'.
+NOT FOUND, BUILDING:
+---------------------------------COMMANDS-LIST----------------------------------
+if exist libvpx rmdir /Q /S libvpx
+if exist libvpx exit /b 1
+git clone https://github.com/webmproject/libvpx.git
+cd libvpx
+git checkout v1.14.1
+for /r %%i in (..\patches\libvpx\*) do git apply %%i
+SET PATH=%THIRDPARTY_DIR%\msys64\usr\bin;%PATH%
+SET CHERE_INVOKING=enabled_from_arguments
+SET MSYS2_PATH_TYPE=inherit
+SET "TOOLCHAIN=x86_64-win64-vs17"
+bash --login ../patches/build_libvpx_win.sh
+--------------------------------------------------------------------------------
+[23/33](Libraries/liblcms2): Cloning into 'liblcms2'...
+Note: switching to '453bafeb85b4ef96498866b7a8eadcc74dff9223'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+The Meson build system
+Version: 1.12.1
+Source dir: C:\Users\runneradmin\TBuild\Libraries\win64\liblcms2
+Build dir: C:\Users\runneradmin\TBuild\Libraries\win64\liblcms2\out\Debug
+Build type: native build
+Project name: Little-CMS
+Project version: 2.16
+DEPRECATION: None of the values ['gnu11'] are supported by the c compiler.
+However, the deprecated gnu11 std currently falls back to c11.
+This will be an error in meson 2.0.
+If the project supports both GNU and MSVC compilers, a value such as
+"c_std=gnu11,c11" specifies that GNU is preferred but it can safely fallback to plain c11.
+C compiler for the host machine: C:\Strawberry\c\bin\ccache.exe cl (msvc 19.44.35229 "Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35229 for x64")
+C linker for the host machine: link link 14.44.35229.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Header "time.h" has symbol "gmtime_r" : NO 
+Header "time.h" has symbol "gmtime_s" : YES 
+Checking if "gmtime_s can be used" links: YES 
+Found pkg-config: YES (C:\Users\runneradmin\TBuild\ThirdParty\msys64\ucrt64\bin\pkg-config.exe) 3.0.10
+Found CMake: C:\Program Files\CMake\bin\cmake.exe (4.4.4)
+WARNING: Unknown generator expression '$<CONFIG:Debug>'.
+WARNING: Unknown generator expression '$<:Debug>'.
+WARNING: Unknown generator expression '$<CONFIG:Debug,RelWithDebInfo>'.
+WARNING: Unknown generator expression '$<:ProgramDatabase>'.
+WARNING: Unknown generator expression '$<:StackFrameErrorCheck;UninitializedVariable>'.
+Run-time dependency libjpeg found: NO  (tried pkg-config and cmake)
+Run-time dependency libtiff-4 found: NO  (tried pkg-config and cmake)
+Checking if "supports SSE2 intrinsics" compiles: YES 
+Header "time.h" has symbol "timespec_get" : YES 
+Found pkg-config: YES (C:\Users\runneradmin\TBuild\ThirdParty\msys64\ucrt64\bin\pkg-config.exe) 3.0.10
+Build targets in project: 2
+
+Little-CMS 2.16
+
+  User defined options
+    b_vscrt        : mtd
+    buildtype      : debug
+    default_library: static
+
+Found ninja-1.13.2 at C:\ProgramData\Chocolatey\bin\ninja.exe
+ninja: Entering directory `C:/Users/runneradmin/TBuild/Libraries/win64/liblcms2/out/Debug'
+[1/31] Compiling C object src/liblcms2.a.p/cmserr.c.obj
+[2/31] Compiling C object src/liblcms2.a.p/cmscam02.c.obj
+[3/31] Compiling C object src/liblcms2.a.p/cmscnvrt.c.obj
+[4/31] Compiling C object src/liblcms2.a.p/cmsalpha.c.obj
+[5/31] Compiling C object src/liblcms2.a.p/cmscgats.c.obj
+[6/31] Compiling C object src/liblcms2.a.p/cmsgamma.c.obj
+[7/31] Compiling C object src/liblcms2.a.p/cmsgmt.c.obj
+[8/31] Compiling C object src/liblcms2.a.p/cmshalf.c.obj
+[9/31] Compiling C object src/liblcms2.a.p/cmsintrp.c.obj
+[10/31] Compiling C object src/liblcms2.a.p/cmsio0.c.obj
+[11/31] Compiling C object src/liblcms2.a.p/cmsio1.c.obj
+[12/31] Compiling C object src/liblcms2.a.p/cmslut.c.obj
+[13/31] Compiling C object src/liblcms2.a.p/cmsmd5.c.obj
+[14/31] Compiling C object src/liblcms2.a.p/cmsmtrx.c.obj
+[15/31] Compiling C object src/liblcms2.a.p/cmsopt.c.obj
+[16/31] Compiling C object src/liblcms2.a.p/cmsnamed.c.obj
+[17/31] Compiling C object src/liblcms2.a.p/cmspack.c.obj
+[18/31] Compiling C object src/liblcms2.a.p/cmspcs.c.obj
+[19/31] Compiling C object src/liblcms2.a.p/cmsplugin.c.obj
+[20/31] Compiling C object src/liblcms2.a.p/cmsps2.c.obj
+[21/31] Compiling C object src/liblcms2.a.p/cmssamp.c.obj
+[22/31] Compiling C object src/liblcms2.a.p/cmssm.c.obj
+[23/31] Compiling C object src/liblcms2.a.p/cmstypes.c.obj
+[24/31] Compiling C object src/liblcms2.a.p/cmsvirt.c.obj
+[25/31] Compiling C object src/liblcms2.a.p/cmswtpnt.c.obj
+[26/31] Compiling C object src/liblcms2.a.p/cmsxform.c.obj
+[27/31] Linking static target src/liblcms2.a
+[28/31] Compiling C object testbed/testcms.exe.p/testcms2.c.obj
+[29/31] Compiling C object testbed/testcms.exe.p/testplugin.c.obj
+[30/31] Compiling C object testbed/testcms.exe.p/zoo_icc.c.obj
+[31/31] Linking target testbed/testcms.exe
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: C:\ProgramData\Chocolatey\bin\ninja.exe -C C:/Users/runneradmin/TBuild/Libraries/win64/liblcms2/out/Debug
+The Meson build system
+Version: 1.12.1
+Source dir: C:\Users\runneradmin\TBuild\Libraries\win64\liblcms2
+Build dir: C:\Users\runneradmin\TBuild\Libraries\win64\liblcms2\out\Release
+Build type: native build
+Project name: Little-CMS
+Project version: 2.16
+DEPRECATION: None of the values ['gnu11'] are supported by the c compiler.
+However, the deprecated gnu11 std currently falls back to c11.
+This will be an error in meson 2.0.
+If the project supports both GNU and MSVC compilers, a value such as
+"c_std=gnu11,c11" specifies that GNU is preferred but it can safely fallback to plain c11.
+C compiler for the host machine: C:\Strawberry\c\bin\ccache.exe cl (msvc 19.44.35229 "Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35229 for x64")
+C linker for the host machine: link link 14.44.35229.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Header "time.h" has symbol "gmtime_r" : NO 
+Header "time.h" has symbol "gmtime_s" : YES 
+Checking if "gmtime_s can be used" links: YES 
+Found pkg-config: YES (C:\Users\runneradmin\TBuild\ThirdParty\msys64\ucrt64\bin\pkg-config.exe) 3.0.10
+Found CMake: C:\Program Files\CMake\bin\cmake.exe (4.4.4)
+WARNING: Unknown generator expression '$<CONFIG:Debug>'.
+WARNING: Unknown generator expression '$<:Debug>'.
+WARNING: Unknown generator expression '$<CONFIG:Debug,RelWithDebInfo>'.
+WARNING: Unknown generator expression '$<:ProgramDatabase>'.
+WARNING: Unknown generator expression '$<:StackFrameErrorCheck;UninitializedVariable>'.
+Run-time dependency libjpeg found: NO  (tried pkg-config and cmake)
+Run-time dependency libtiff-4 found: NO  (tried pkg-config and cmake)
+Checking if "supports SSE2 intrinsics" compiles: YES 
+Header "time.h" has symbol "timespec_get" : YES 
+Found pkg-config: YES (C:\Users\runneradmin\TBuild\ThirdParty\msys64\ucrt64\bin\pkg-config.exe) 3.0.10
+Build targets in project: 2
+
+Little-CMS 2.16
+
+  User defined options
+    b_vscrt        : mt
+    buildtype      : release
+    default_library: static
+
+Found ninja-1.13.2 at C:\ProgramData\Chocolatey\bin\ninja.exe
+ninja: Entering directory `C:/Users/runneradmin/TBuild/Libraries/win64/liblcms2/out/Release'
+[1/31] Compiling C object src/liblcms2.a.p/cmscnvrt.c.obj
+[2/31] Compiling C object src/liblcms2.a.p/cmscam02.c.obj
+[3/31] Compiling C object src/liblcms2.a.p/cmsalpha.c.obj
+[4/31] Compiling C object src/liblcms2.a.p/cmscgats.c.obj
+[5/31] Compiling C object src/liblcms2.a.p/cmserr.c.obj
+[6/31] Compiling C object src/liblcms2.a.p/cmsgamma.c.obj
+[7/31] Compiling C object src/liblcms2.a.p/cmshalf.c.obj
+[8/31] Compiling C object src/liblcms2.a.p/cmsgmt.c.obj
+[9/31] Compiling C object src/liblcms2.a.p/cmsio1.c.obj
+[10/31] Compiling C object src/liblcms2.a.p/cmsintrp.c.obj
+[11/31] Compiling C object src/liblcms2.a.p/cmsio0.c.obj
+[12/31] Compiling C object src/liblcms2.a.p/cmslut.c.obj
+[13/31] Compiling C object src/liblcms2.a.p/cmsmd5.c.obj
+[14/31] Compiling C object src/liblcms2.a.p/cmsmtrx.c.obj
+[15/31] Compiling C object src/liblcms2.a.p/cmsnamed.c.obj
+[16/31] Compiling C object src/liblcms2.a.p/cmsopt.c.obj
+[17/31] Compiling C object src/liblcms2.a.p/cmspack.c.obj
+[18/31] Compiling C object src/liblcms2.a.p/cmspcs.c.obj
+[19/31] Compiling C object src/liblcms2.a.p/cmsplugin.c.obj
+[20/31] Compiling C object src/liblcms2.a.p/cmssamp.c.obj
+[21/31] Compiling C object src/liblcms2.a.p/cmsps2.c.obj
+[22/31] Compiling C object src/liblcms2.a.p/cmssm.c.obj
+[23/31] Compiling C object src/liblcms2.a.p/cmsvirt.c.obj
+[24/31] Compiling C object src/liblcms2.a.p/cmstypes.c.obj
+[25/31] Compiling C object src/liblcms2.a.p/cmswtpnt.c.obj
+[26/31] Compiling C object src/liblcms2.a.p/cmsxform.c.obj
+[27/31] Linking static target src/liblcms2.a
+[28/31] Compiling C object testbed/testcms.exe.p/testplugin.c.obj
+[29/31] Compiling C object testbed/testcms.exe.p/zoo_icc.c.obj
+[30/31] Compiling C object testbed/testcms.exe.p/testcms2.c.obj
+[31/31] Linking target testbed/testcms.exe
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: C:\ProgramData\Chocolatey\bin\ninja.exe -C C:/Users/runneradmin/TBuild/Libraries/win64/liblcms2/out/Release
+NOT FOUND, BUILDING:
+---------------------------------COMMANDS-LIST----------------------------------
+if exist liblcms2 rmdir /Q /S liblcms2
+if exist liblcms2 exit /b 1
+git clone -b lcms2.16 https://github.com/mm2/Little-CMS.git liblcms2
+cd liblcms2
+%THIRDPARTY_DIR%\python\Scripts\activate.bat
+meson setup --default-library=static --buildtype=debug -Db_vscrt=mtd out/Debug
+meson compile -C out/Debug
+meson setup --default-library=static --buildtype=release -Db_vscrt=mt out/Release
+meson compile -C out/Release
+deactivate
+--------------------------------------------------------------------------------
+[24/33](Libraries/nv-codec-headers): Cloning into 'nv-codec-headers'...
+warning: refs/tags/n12.1.14.0 145d4ca80971a97fe3b3908691419fbb56a6b1c4 is not a commit!
+Note: switching to '1889e62e2d35ff7aa9baca2bceb14f053785e6f1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+NOT FOUND, BUILDING:
+---------------------------------COMMANDS-LIST----------------------------------
+if exist nv-codec-headers rmdir /Q /S nv-codec-headers
+if exist nv-codec-headers exit /b 1
+git clone -b n12.1.14.0 https://github.com/FFmpeg/nv-codec-headers.git
+--------------------------------------------------------------------------------
+[25/33](Libraries/regex): Cloning into 'regex'...
+Note: switching to '4cbcd3078e6ae10d05124379623a1bf03fcb9350'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+NOT FOUND, BUILDING:
+---------------------------------COMMANDS-LIST----------------------------------
+if exist regex rmdir /Q /S regex
+if exist regex exit /b 1
+git clone -b boost-1.83.0 https://github.com/boostorg/regex.git
+--------------------------------------------------------------------------------
+[26/33](Libraries/ffmpeg): Cloning into 'ffmpeg'...
+warning: refs/tags/n6.1.6 9266ee001cb04b9dd6ff0335022bd986e2bc8e8b is not a commit!
+Note: switching to 'f1e3a2bf7a2f2cde936d1ed97f09a26853d20125'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:  25% (2074/8195)
+Updating files:  26% (2131/8195)
+Updating files:  27% (2213/8195)
+Updating files:  28% (2295/8195)
+Updating files:  29% (2377/8195)
+Updating files:  30% (2459/8195)
+Updating files:  31% (2541/8195)
+Updating files:  32% (2623/8195)
+Updating files:  33% (2705/8195)
+Updating files:  34% (2787/8195)
+Updating files:  35% (2869/8195)
+Updating files:  36% (2951/8195)
+Updating files:  37% (3033/8195)
+Updating files:  38% (3115/8195)
+Updating files:  39% (3197/8195)
+Updating files:  40% (3278/8195)
+Updating files:  41% (3360/8195)
+Updating files:  42% (3442/8195)
+Updating files:  43% (3524/8195)
+Updating files:  44% (3606/8195)
+Updating files:  45% (3688/8195)
+Updating files:  46% (3770/8195)
+Updating files:  47% (3852/8195)
+Updating files:  48% (3934/8195)
+Updating files:  49% (4016/8195)
+Updating files:  50% (4098/8195)
+Updating files:  50% (4118/8195)
+Updating files:  51% (4180/8195)
+Updating files:  52% (4262/8195)
+Updating files:  53% (4344/8195)
+Updating files:  54% (4426/8195)
+Updating files:  55% (4508/8195)
+Updating files:  56% (4590/8195)
+Updating files:  57% (4672/8195)
+Updating files:  57% (4716/8195)
+Updating files:  58% (4754/8195)
+Updating files:  59% (4836/8195)
+Updating files:  60% (4917/8195)
+Updating files:  61% (4999/8195)
+Updating files:  62% (5081/8195)
+Updating files:  63% (5163/8195)
+Updating files:  64% (5245/8195)
+Updating files:  65% (5327/8195)
+Updating files:  66% (5409/8195)
+Updating files:  67% (5491/8195)
+Updating files:  68% (5573/8195)
+Updating files:  69% (5655/8195)
+Updating files:  70% (5737/8195)
+Updating files:  71% (5819/8195)
+Updating files:  72% (5901/8195)
+Updating files:  73% (5983/8195)
+Updating files:  74% (6065/8195)
+Updating files:  75% (6147/8195)
+Updating files:  76% (6229/8195)
+Updating files:  77% (6311/8195)
+Updating files:  78% (6393/8195)
+Updating files:  79% (6475/8195)
+Updating files:  80% (6556/8195)
+Updating files:  81% (6638/8195)
+Updating files:  82% (6720/8195)
+Updating files:  83% (6802/8195)
+Updating files:  84% (6884/8195)
+Updating files:  85% (6966/8195)
+Updating files:  86% (7048/8195)
+Updating files:  87% (7130/8195)
+Updating files:  88% (7212/8195)
+Updating files:  89% (7294/8195)
+Updating files:  90% (7376/8195)
+Updating files:  91% (7458/8195)
+Updating files:  92% (7540/8195)
+Updating files:  92% (7571/8195)
+Updating files:  93% (7622/8195)
+Updating files:  94% (7704/8195)
+Updating files:  95% (7786/8195)
+Updating files:  96% (7868/8195)
+Updating files:  97% (7950/8195)
+Updating files:  98% (8032/8195)
+Updating files:  99% (8114/8195)
+Updating files: 100% (8195/8195)
+Updating files: 100% (8195/8195), done.
+sed 's#@@PREFIX@@#C:/Users/runneradmin/TBuild/Libraries/win64/local#' ffnvcodec.pc.in > ffnvcodec.pc
+install -m 0755 -d '/c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/ffnvcodec'
+install -m 0644 include/ffnvcodec/*.h '/c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/include/ffnvcodec'
+install -m 0755 -d '/c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/lib/pkgconfig'
+install -m 0644 ffnvcodec.pc '/c/Users/runneradmin/TBuild/Libraries/win64/patches/../local/lib/pkgconfig'
+install prefix            /c/Users/runneradmin/TBuild/Libraries/win64/patches/../local
+source path               .
+C compiler                cl.exe
+C library                 msvcrt
+ARCH                      x86 (generic)
+big-endian                no
+runtime cpu detection     yes
+standalone assembly       yes
+x86 assembler             nasm
+MMX enabled               yes
+MMXEXT enabled            yes
+3DNow! enabled            yes
+3DNow! extended enabled   yes
+SSE enabled               yes
+SSSE3 enabled             yes
+AESNI enabled             yes
+AVX enabled               yes
+AVX2 enabled              yes
+AVX-512 enabled           yes
+AVX-512ICL enabled        yes
+XOP enabled               yes
+FMA3 enabled              yes
+FMA4 enabled              yes
+i686 features enabled     yes
+CMOV is fast              yes
+EBX available             no
+EBP available             no
+debug symbols             yes
+strip symbols             no
+optimize for size         no
+optimizations             yes
+static                    yes
+shared                    no
+postprocessing support    no
+network support           no
+threading support         w32threads
+safe bitstream reader     yes
+texi2html enabled         no
+perl enabled              yes
+pod2man enabled           no
+makeinfo enabled          no
+makeinfo supports HTML    no
+xmllint enabled           yes
+External libraries:
+libdav1d                libopus                 mediafoundation
+libopenh264             libvpx                  schannel
+
+External libraries providing hardware acceleration:
+cuda                    d3d11va                 nvdec
+cuda_llvm               dxva2                   nvenc
+cuvid                   ffnvcodec
+
+Libraries:
+avcodec                 avformat                swscale
+avdevice                avutil
+avfilter                swresample
+
+Programs:
+
+Enabled decoders:
+aac                     mp3adufloat             pcm_s24le_planar
+aac_fixed               mp3float                pcm_s32be
+aac_latm                mp3on4                  pcm_s32le
+aasc                    mp3on4float             pcm_s32le_planar
+ac3                     mpeg2video              pcm_s64be
+alac                    mpeg4                   pcm_s64le
+av1                     msmpeg4v2               pcm_s8
+av1_cuvid               msmpeg4v3               pcm_s8_planar
+eac3                    opus                    pcm_u16be
+flac                    pcm_alaw                pcm_u16le
+gif                     pcm_f32be               pcm_u24be
+h263                    pcm_f32le               pcm_u24le
+h264                    pcm_f64be               pcm_u32be
+hevc                    pcm_f64le               pcm_u32le
+libdav1d                pcm_lxf                 pcm_u8
+libvpx_vp8              pcm_mulaw               vorbis
+libvpx_vp9              pcm_s16be               vp8
+mp1                     pcm_s16be_planar        wavpack
+mp1float                pcm_s16le               wmalossless
+mp2                     pcm_s16le_planar        wmapro
+mp2float                pcm_s24be               wmav1
+mp3                     pcm_s24daud             wmav2
+mp3adu                  pcm_s24le               wmavoice
+
+Enabled encoders:
+aac                     libopus                 pcm_s16le
+libopenh264             libvpx_vp9
+
+Enabled hwaccels:
+av1_d3d11va             h264_dxva2              mpeg2_d3d11va
+av1_d3d11va2            h264_nvdec              mpeg2_d3d11va2
+av1_dxva2               hevc_d3d11va            mpeg2_dxva2
+av1_nvdec               hevc_d3d11va2           mpeg2_nvdec
+h264_d3d11va            hevc_dxva2              mpeg4_nvdec
+h264_d3d11va2           hevc_nvdec              vp8_nvdec
+
+Enabled parsers:
+aac                     gif                     mpeg4video
+aac_latm                h263                    mpegaudio
+ac3                     h264                    opus
+flac                    hevc                    vorbis
+
+Enabled demuxers:
+aac                     hevc                    mp3
+flac                    m4v                     ogg
+gif                     matroska                wav
+h264                    mov
+
+Enabled muxers:
+mov                     ogg                     wav
+mp4                     opus                    webm
+
+Enabled protocols:
+file
+
+Enabled filters:
+atempo
+
+Enabled bsfs:
+aac_adtstoasc           vp9_superframe
+
+Enabled indevs:
+
+Enabled outdevs:
+
+License: LGPL version 2.1 or later
+GEN	libavdevice/libavdevice.version
+GEN	libavfilter/libavfilter.version
+GEN	libavformat/libavformat.version
+GEN	libavcodec/libavcodec.version
+GEN	libswresample/libswresample.version
+GEN	libswscale/libswscale.version
+GEN	libavutil/libavutil.version
+CC	libavdevice/avdevice.o
+CC	libavdevice/alldevices.o
+avdevice.c
+CC	libavdevice/utils.o
+alldevices.c
+utils.c
+CC	libavdevice/file_open.o
+file_open.c
+GEN	libavdevice/libavdevice.pc
+CC	libavdevice/version.o
+version.c
+CC	libavfilter/af_atempo.o
+af_atempo.c
+CC	libavfilter/allfilters.o
+allfilters.c
+CC	libavfilter/audio.o
+audio.c
+CC	libavfilter/avfilter.o
+avfilter.c
+libavfilter/audio.c(48): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+CC	libavfilter/avfiltergraph.o
+avfiltergraph.c
+CC	libavfilter/buffersink.o
+buffersink.c
+CC	libavfilter/buffersrc.o
+CC	libavfilter/ccfifo.o
+buffersrc.c
+ccfifo.c
+libavfilter/ccfifo.c(120): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavfilter/ccfifo.c(128): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavfilter/ccfifo.c(166): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+CC	libavfilter/colorspace.o
+colorspace.c
+CC	libavfilter/drawutils.o
+drawutils.c
+CC	libavfilter/fifo.o
+fifo.c
+CC	libavfilter/file_open.o
+file_open.c
+CC	libavfilter/formats.o
+formats.c
+libavfilter/formats.c(792): warning C4133: 'function': incompatible types - from 'const AVPixelFormat *const ' to 'const int *'
+libavfilter/formats.c(796): warning C4133: 'function': incompatible types - from 'const AVSampleFormat *const ' to 'const int *'
+CC	libavfilter/framequeue.o
+CC	libavfilter/framepool.o
+framequeue.c
+framepool.c
+libavfilter/framequeue.c(142): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+libavfilter/framequeue.c(143): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+CC	libavfilter/graphdump.o
+graphdump.c
+CC	libavfilter/graphparser.o
+graphparser.c
+CC	libavfilter/pthread.o
+libavfilter/graphdump.c(82): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavfilter/graphdump.c(89): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavfilter/graphdump.c(111): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavfilter/graphdump.c(75): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavfilter/graphdump.c(76): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavfilter/graphdump.c(80): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavfilter/graphdump.c(87): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavfilter/graphdump.c(136): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+CC	libavfilter/version.o
+pthread.c
+version.c
+GEN	libavfilter/libavfilter.pc
+CC	libavfilter/video.o
+CC	libavformat/aacdec.o
+video.c
+aacdec.c
+libavfilter/video.c(105): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/allformats.o
+allformats.c
+CC	libavformat/apetag.o
+apetag.c
+CC	libavformat/av1.o
+av1.c
+libavformat/apetag.c(196): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/avc.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+avc.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec/get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavformat/avformat.o
+avformat.c
+CC	libavformat/avio.o
+CC	libavformat/avlanguage.o
+avio.c
+avlanguage.c
+CC	libavformat/aviobuf.o
+aviobuf.c
+libavformat/aviobuf.c(424): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+libavformat/aviobuf.c(1342): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/aviobuf.c(1376): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/demux.o
+CC	libavformat/demux_utils.o
+demux.c
+demux_utils.c
+libavformat/demux.c(2429): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavformat/demux_utils.c(131): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/dump.o
+dump.c
+CC	libavformat/dovi_isom.o
+dovi_isom.c
+libavformat/dump.c(164): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/dv.o
+dv.c
+CC	libavformat/evc.o
+evc.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec/get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavformat/evc.c(365): warning C4267: 'function': conversion from 'size_t' to 'uint32_t', possible loss of data
+libavformat/evc.c(373): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/evc.c(380): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/file.o
+CC	libavformat/flac_picture.o
+file.c
+flac_picture.c
+CC	libavformat/file_open.o
+file_open.c
+CC	libavformat/flacdec.o
+flacdec.c
+CC	libavformat/gifdec.o
+gifdec.c
+CC	libavformat/h264dec.o
+CC	libavformat/format.o
+h264dec.c
+format.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec/get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavformat/hevc.o
+hevc.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec/get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavformat/hevcdec.o
+CC	libavformat/id3v1.o
+hevcdec.c
+id3v1.c
+CC	libavformat/id3v2.o
+id3v2.c
+CC	libavformat/img2.o
+CC	libavformat/isom.o
+img2.c
+CC	libavformat/isom_tags.o
+isom.c
+isom_tags.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavformat/matroska.o
+CC	libavformat/m4vdec.o
+matroska.c
+m4vdec.c
+CC	libavformat/matroskadec.o
+matroskadec.c
+CC	libavformat/matroskaenc.o
+matroskaenc.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavformat/matroskadec.c(937): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavformat/matroskadec.c(1296): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavformat/matroskaenc.c(401): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/matroskaenc.c(2733): warning C4267: '+=': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavformat/matroskaenc.c(2735): warning C4267: '+=': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavformat/matroskaenc.c(2737): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/matroskaenc.c(2739): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/matroskaenc.c(2936): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/metadata.o
+metadata.c
+CC	libavformat/mov.o
+mov.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavformat/mov.c(2542): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/mov.c(4590): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavformat/mov.c(6274): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/mov.c(6372): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/mov.c(6406): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/mov.c(6440): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/mov.c(6709): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavformat/mov.c(6687): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavformat/mov.c(7540): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/mov.c(7546): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/mov_chan.o
+mov_chan.c
+CC	libavformat/mov_esds.o
+mov_esds.c
+libavformat/mov_chan.c(385): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+CC	libavformat/movenc.o
+movenc.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavformat/movenc.c(2138): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavformat/movenc.c(2141): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(2142): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(2338): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(2894): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(2895): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3054): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3055): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3673): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3695): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3712): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3718): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3976): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3979): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavformat/movenc.c(3983): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3984): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(3971): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(4014): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(4017): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(4096): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(4101): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(4261): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavformat/movenc.c(4263): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(4336): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(4379): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(4404): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(6479): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavformat/movenc.c(6742): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/movenccenc.o
+movenccenc.c
+CC	libavformat/movenchint.o
+libavformat/movenccenc.c(158): warning C4267: '=': conversion from 'size_t' to 'uint8_t', possible loss of data
+libavformat/movenccenc.c(302): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/movenc_ttml.o
+movenchint.c
+movenc_ttml.c
+CC	libavformat/mp3dec.o
+mp3dec.c
+CC	libavformat/mux.o
+CC	libavformat/mux_utils.o
+mux.c
+mux_utils.c
+CC	libavformat/oggdec.o
+oggdec.c
+CC	libavformat/oggparsecelt.o
+CC	libavformat/oggenc.o
+oggparsecelt.c
+oggenc.c
+CC	libavformat/oggparsedirac.o
+oggparsedirac.c
+CC	libavformat/oggparseflac.o
+oggparseflac.c
+CC	libavformat/oggparseogm.o
+oggparseogm.c
+CC	libavformat/oggparseopus.o
+oggparseopus.c
+CC	libavformat/oggparseskeleton.o
+oggparseskeleton.c
+CC	libavformat/oggparsespeex.o
+oggparsespeex.c
+CC	libavformat/oggparsetheora.o
+oggparsetheora.c
+CC	libavformat/oggparsevorbis.o
+CC	libavformat/oggparsevp8.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec/get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+oggparsevorbis.c
+oggparsevp8.c
+CC	libavformat/options.o
+libavformat/oggparsevorbis.c(44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+options.c
+CC	libavformat/protocols.o
+CC	libavformat/pcm.o
+protocols.c
+pcm.c
+CC	libavformat/os_support.o
+os_support.c
+CC	libavformat/qtpalette.o
+qtpalette.c
+CC	libavformat/rawdec.o
+rawdec.c
+CC	libavformat/rawutils.o
+rawutils.c
+CC	libavformat/replaygain.o
+replaygain.c
+CC	libavformat/riff.o
+riff.c
+CC	libavformat/riffdec.o
+riffdec.c
+CC	libavformat/riffenc.o
+riffenc.c
+libavformat/riffenc.c(310): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+CC	libavformat/rmsipr.o
+rmsipr.c
+CC	libavformat/rtp.o
+rtp.c
+CC	libavformat/sdp.o
+CC	libavformat/rtpenc_chain.o
+sdp.c
+rtpenc_chain.c
+CC	libavformat/seek.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+seek.c
+CC	libavformat/url.o
+url.c
+libavformat/url.c(81): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+CC	libavformat/version.o
+version.c
+CC	libavformat/utils.o
+CC	libavformat/vorbiscomment.o
+utils.c
+vorbiscomment.c
+CC	libavformat/vpcc.o
+vpcc.c
+libavformat/vorbiscomment.c(71): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavformat/vorbiscomment.c(72): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec/get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavformat/utils.c(329): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+GEN	libavformat/libavformat.pc
+CC	libavformat/wavdec.o
+wavdec.c
+CC	libavformat/wavenc.o
+wavenc.c
+CC	libavcodec/aac_ac3_parser.o
+libavformat/wavenc.c(101): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+aac_ac3_parser.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aac_adtstoasc_bsf.o
+aac_adtstoasc_bsf.c
+CC	libavcodec/aac_parser.o
+aac_parser.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aaccoder.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+aaccoder.c
+CC	libavcodec/aacdec.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+aacdec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aacenc.o
+aacenc.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aacdec_fixed.o
+libavcodec/aacenc.c(791): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+aacdec_fixed.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavcodec/aacdec_fixed.c(235): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+CC	libavcodec/aacenc_is.o
+aacenc_is.c
+CC	libavcodec/aacenc_ltp.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+aacenc_ltp.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aacenc_pred.o
+aacenc_pred.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aacenctab.o
+aacenctab.c
+CC	libavcodec/aacenc_tns.o
+aacenc_tns.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aacps_common.o
+aacps_common.c
+CC	libavcodec/aacps_fixed.o
+aacps_fixed.c
+CC	libavcodec/aacps_float.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+aacps_float.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aacpsdsp_fixed.o
+aacpsdsp_fixed.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(215): warning C4113: 'void (__cdecl *)(INTFLOAT *restrict ,const INTFLOAT (*)[2],int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT *,const INTFLOAT (*)[2],int)'
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(216): warning C4113: 'void (__cdecl *)(INTFLOAT (*restrict )[2],INTFLOAT (*)[2],INTFLOAT *,int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT (*)[2],INTFLOAT (*)[2],INTFLOAT *,int)'
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(217): warning C4113: 'void (__cdecl *)(INTFLOAT (*restrict )[2],INTFLOAT (*)[2],const INTFLOAT (*)[8][2],ptrdiff_t,int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT (*)[2],INTFLOAT (*)[2],const INTFLOAT (*)[8][2],ptrdiff_t,int)'
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(218): warning C4113: 'void (__cdecl *)(INTFLOAT (*restrict )[32][2],INTFLOAT (*)[38][64],int,int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT (*)[32][2],INTFLOAT (*)[38][64],int,int)'
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(219): warning C4113: 'void (__cdecl *)(INTFLOAT (*)[38][64],INTFLOAT (*restrict )[32][2],int,int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT (*)[38][64],INTFLOAT (*)[32][2],int,int)'
+CC	libavcodec/aacpsdsp_float.o
+aacpsdsp_float.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(215): warning C4113: 'void (__cdecl *)(INTFLOAT *restrict ,const INTFLOAT (*)[2],int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT *,const INTFLOAT (*)[2],int)'
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(216): warning C4113: 'void (__cdecl *)(INTFLOAT (*restrict )[2],INTFLOAT (*)[2],INTFLOAT *,int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT (*)[2],INTFLOAT (*)[2],INTFLOAT *,int)'
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(217): warning C4113: 'void (__cdecl *)(INTFLOAT (*restrict )[2],INTFLOAT (*)[2],const INTFLOAT (*)[8][2],ptrdiff_t,int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT (*)[2],INTFLOAT (*)[2],const INTFLOAT (*)[8][2],ptrdiff_t,int)'
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(218): warning C4113: 'void (__cdecl *)(INTFLOAT (*restrict )[32][2],INTFLOAT (*)[38][64],int,int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT (*)[32][2],INTFLOAT (*)[38][64],int,int)'
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\aacpsdsp_template.c(219): warning C4113: 'void (__cdecl *)(INTFLOAT (*)[38][64],INTFLOAT (*restrict )[32][2],int,int)' differs in parameter lists from 'void (__cdecl *)(INTFLOAT (*)[38][64],INTFLOAT (*)[32][2],int,int)'
+CC	libavcodec/aacpsy.o
+aacpsy.c
+CC	libavcodec/aacsbr.o
+aacsbr.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aacsbr_fixed.o
+aacsbr_fixed.c
+CC	libavcodec/aactab.o
+aactab.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/aasc.o
+CC	libavcodec/ac3.o
+aasc.c
+ac3.c
+CC	libavcodec/ac3_channel_layout_tab.o
+ac3_channel_layout_tab.c
+CC	libavcodec/ac3dec_data.o
+ac3dec_data.c
+CC	libavcodec/ac3_parser.o
+ac3_parser.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavcodec/ac3_parser.c(190): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/ac3_parser.c(207): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavcodec/ac3dsp.o
+CC	libavcodec/ac3tab.o
+ac3dsp.c
+ac3tab.c
+CC	libavcodec/ac3dec_float.o
+ac3dec_float.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/acelp_filters.o
+acelp_filters.c
+CC	libavcodec/acelp_vectors.o
+acelp_vectors.c
+CC	libavcodec/adts_header.o
+adts_header.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/adts_parser.o
+CC	libavcodec/alac_data.o
+adts_parser.c
+alac_data.c
+CC	libavcodec/alac.o
+alac.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/alacdsp.o
+alacdsp.c
+CC	libavcodec/atsc_a53.o
+atsc_a53.c
+CC	libavcodec/allcodecs.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+allcodecs.c
+CC	libavcodec/audio_frame_queue.o
+audio_frame_queue.c
+CC	libavcodec/av1_parse.o
+av1_parse.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/av1dec.o
+av1dec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/avdct.o
+libavcodec/av1dec.c(409): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/av1dec.c(929): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/av1dec.c(1233): warning C4267: 'function': conversion from 'size_t' to 'uint32_t', possible loss of data
+libavcodec/av1dec.c(1301): warning C4267: 'function': conversion from 'size_t' to 'uint32_t', possible loss of data
+libavcodec/av1dec.c(1327): warning C4267: 'function': conversion from 'size_t' to 'uint32_t', possible loss of data
+avdct.c
+CC	libavcodec/avfft.o
+CC	libavcodec/avcodec.o
+avfft.c
+avcodec.c
+libavcodec/avfft.c(238): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+CC	libavcodec/avpacket.o
+avpacket.c
+CC	libavcodec/bitstream.o
+bitstream.c
+CC	libavcodec/bitstream_filters.o
+bitstream_filters.c
+CC	libavcodec/blockdsp.o
+blockdsp.c
+CC	libavcodec/bsf.o
+CC	libavcodec/bswapdsp.o
+bsf.c
+bswapdsp.c
+CC	libavcodec/cabac.o
+cabac.c
+CC	libavcodec/cbrt_data.o
+cbrt_data.c
+CC	libavcodec/cbrt_data_fixed.o
+cbrt_data_fixed.c
+CC	libavcodec/cbs.o
+CC	libavcodec/cbs_bsf.o
+cbs.c
+CC	libavcodec/cbs_av1.o
+cbs_bsf.c
+cbs_av1.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_internal.h(115): warning C4114: same type qualifier used more than once
+libavcodec/cbs.c(368): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs.c(462): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs.c(486): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs.c(551): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs.c(553): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs.c(871): warning C4114: same type qualifier used more than once
+libavcodec/cbs.c(879): warning C4114: same type qualifier used more than once
+libavcodec/cbs.c(883): warning C4114: same type qualifier used more than once
+libavcodec/cbs.c(907): warning C4114: same type qualifier used more than once
+libavcodec/cbs.c(919): warning C4114: same type qualifier used more than once
+libavcodec/cbs.c(937): warning C4114: same type qualifier used more than once
+libavcodec/cbs.c(997): warning C4114: same type qualifier used more than once
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_internal.h(115): warning C4114: same type qualifier used more than once
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1717): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1720): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1721): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1721): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1974): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(2038): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1717): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1720): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1721): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1721): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(1974): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\cbs_av1_syntax_template.c(2038): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs_av1.c(734): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs_av1.c(821): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs_av1.c(968): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs_av1.c(1164): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs_av1.c(1169): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/cbs_av1.c(1256): warning C4114: same type qualifier used more than once
+CC	libavcodec/celp_filters.o
+celp_filters.c
+CC	libavcodec/codec_desc.o
+codec_desc.c
+CC	libavcodec/codec_par.o
+codec_par.c
+CC	libavcodec/cuviddec.o
+cuviddec.c
+CC	libavcodec/dct32_fixed.o
+CC	libavcodec/dct32_float.o
+dct32_fixed.c
+dct32_float.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+CC	libavcodec/d3d11va.o
+d3d11va.c
+CC	libavcodec/decode.o
+CC	libavcodec/dirac.o
+decode.c
+dirac.c
+CC	libavcodec/dovi_rpu.o
+dovi_rpu.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavcodec/dirac.c(339): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavcodec/dovi_rpu.c(200): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavcodec/dsd.o
+dsd.c
+CC	libavcodec/dv_profile.o
+dv_profile.c
+CC	libavcodec/dxva2.o
+dxva2.c
+CC	libavcodec/dxva2_av1.o
+dxva2_av1.c
+CC	libavcodec/dxva2_h264.o
+dxva2_h264.c
+CC	libavcodec/dxva2_hevc.o
+dxva2_hevc.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/eac3_data.o
+eac3_data.c
+CC	libavcodec/dynamic_hdr_vivid.o
+dynamic_hdr_vivid.c
+CC	libavcodec/dxva2_mpeg2.o
+dxva2_mpeg2.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/encode.o
+encode.c
+CC	libavcodec/error_resilience.o
+error_resilience.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/faandct.o
+faandct.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/faanidct.o
+faanidct.c
+CC	libavcodec/fdctdsp.o
+fdctdsp.c
+CC	libavcodec/file_open.o
+file_open.c
+CC	libavcodec/flac.o
+flac.c
+CC	libavcodec/flac_parser.o
+flac_parser.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavcodec/flac_parser.c(386): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/flac_parser.c(639): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/flac_parser.c(795): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/flac_parser.c(861): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+CC	libavcodec/flacdata.o
+flacdata.c
+CC	libavcodec/flacdsp.o
+flacdsp.c
+CC	libavcodec/flacdec.o
+flacdec.c
+CC	libavcodec/fmtconvert.o
+fmtconvert.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/get_buffer.o
+get_buffer.c
+CC	libavcodec/frame_thread_encoder.o
+frame_thread_encoder.c
+CC	libavcodec/gif_parser.o
+gif_parser.c
+CC	libavcodec/golomb.o
+CC	libavcodec/gifdec.o
+golomb.c
+gifdec.c
+CC	libavcodec/h263_parser.o
+CC	libavcodec/h263data.o
+h263_parser.c
+h263data.c
+CC	libavcodec/h263.o
+h263.c
+CC	libavcodec/h263dec.o
+CC	libavcodec/h263dsp.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+h263dec.c
+h263dsp.c
+CC	libavcodec/h2645_parse.o
+h2645_parse.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h2645_sei.o
+h2645_sei.c
+CC	libavcodec/h2645data.o
+CC	libavcodec/h2645_vui.o
+h2645data.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+h2645_vui.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h264_cabac.o
+h264_cabac.c
+CC	libavcodec/h264_cavlc.o
+h264_cavlc.c
+CC	libavcodec/h264_direct.o
+h264_direct.c
+CC	libavcodec/h264_loopfilter.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+h264_loopfilter.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h264_mb.o
+h264_mb.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavcodec/h264_mb.c(564): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/h264_mb.c(576): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/h264_mb.c(578): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+CC	libavcodec/h264_parse.o
+h264_parse.c
+CC	libavcodec/h264_parser.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+h264_parser.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h264_picture.o
+h264_picture.c
+CC	libavcodec/h264_ps.o
+h264_ps.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h264_refs.o
+h264_refs.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h264_sei.o
+h264_sei.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h264chroma.o
+h264chroma.c
+CC	libavcodec/h264_slice.o
+h264_slice.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h264data.o
+CC	libavcodec/h264dec.o
+h264data.c
+h264dec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h264dsp.o
+h264dsp.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavcodec/h264dec.c(1036): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavcodec/h264idct.o
+h264idct.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/h264pred.o
+h264pred.c
+CC	libavcodec/h264qpel.o
+h264qpel.c
+CC	libavcodec/h274.o
+h274.c
+CC	libavcodec/hevc_cabac.o
+hevc_cabac.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/hevc_data.o
+hevc_data.c
+CC	libavcodec/hevc_filter.o
+hevc_filter.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavcodec/hevc_filter.c(216): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/hevc_filter.c(218): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/hevc_filter.c(420): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/hevc_filter.c(422): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/hevc_filter.c(432): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+CC	libavcodec/hevc_mvs.o
+hevc_mvs.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/hevc_parse.o
+hevc_parse.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/hevc_parser.o
+hevc_parser.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/hevc_ps.o
+hevc_ps.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/hevc_refs.o
+CC	libavcodec/hevc_sei.o
+hevc_refs.c
+hevc_sei.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/hevcdec.o
+hevcdec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/hpeldsp.o
+libavcodec/hevcdec.c(1727): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/hevcdec.c(1805): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/hevcdec.c(1824): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/hevcdec.c(3347): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+hpeldsp.c
+CC	libavcodec/hevcdsp.o
+hevcdsp.c
+CC	libavcodec/hevcpred.o
+hevcpred.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/idctdsp.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+idctdsp.c
+CC	libavcodec/iirfilter.o
+iirfilter.c
+CC	libavcodec/imgconvert.o
+imgconvert.c
+CC	libavcodec/jfdctfst.o
+jfdctfst.c
+CC	libavcodec/jfdctint.o
+CC	libavcodec/ituh263dec.o
+jfdctint.c
+ituh263dec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/jni.o
+jni.c
+CC	libavcodec/jrevdct.o
+jrevdct.c
+CC	libavcodec/kbdwin.o
+kbdwin.c
+CC	libavcodec/latm_parser.o
+latm_parser.c
+CC	libavcodec/libdav1d.o
+libdav1d.c
+CC	libavcodec/libopenh264.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavcodec/libdav1d.c(548): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libopenh264.c
+CC	libavcodec/libopenh264enc.o
+libopenh264enc.c
+CC	libavcodec/libopus.o
+libopus.c
+CC	libavcodec/libopusenc.o
+CC	libavcodec/libvpxdec.o
+libopusenc.c
+libvpxdec.c
+CC	libavcodec/lossless_audiodsp.o
+CC	libavcodec/libvpxenc.o
+lossless_audiodsp.c
+libavcodec/libvpxdec.c(257): warning C4267: 'function': conversion from 'size_t' to 'uint32_t', possible loss of data
+libvpxenc.c
+libavcodec/libvpxenc.c(1135): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/libvpxenc.c(1512): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/libvpxenc.c(1888): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/libvpxenc.c(1879): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+CC	libavcodec/lpc.o
+CC	libavcodec/lsp.o
+lpc.c
+lsp.c
+CC	libavcodec/lzw.o
+lzw.c
+CC	libavcodec/mathtables.o
+mathtables.c
+CC	libavcodec/mediacodec.o
+mediacodec.c
+CC	libavcodec/me_cmp.o
+CC	libavcodec/mpeg12data.o
+me_cmp.c
+mpeg12data.c
+CC	libavcodec/mpeg12.o
+mpeg12.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/mpeg12framerate.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+mpeg12framerate.c
+CC	libavcodec/mpeg12dec.o
+mpeg12dec.c
+CC	libavcodec/mpeg4audio_sample_rates.o
+mpeg4audio_sample_rates.c
+CC	libavcodec/mpeg4audio.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+mpeg4audio.c
+libavcodec/mpeg12dec.c(2179): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/mpeg12dec.c(2206): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+libavcodec/mpeg12dec.c(2276): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/mpeg4video.o
+mpeg4video.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/mpeg4video_parser.o
+mpeg4video_parser.c
+CC	libavcodec/mpeg4videodec.o
+mpeg4videodec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/mpeg4videodsp.o
+libavcodec/mpeg4videodec.c(544): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(548): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(549): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(553): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(558): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(563): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(576): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(580): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(636): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(637): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(638): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/mpeg4videodec.c(639): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+mpeg4videodsp.c
+CC	libavcodec/mpeg_er.o
+CC	libavcodec/mpegaudio.o
+mpeg_er.c
+mpegaudio.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/mpegaudio_parser.o
+mpegaudio_parser.c
+CC	libavcodec/mpegaudiodata.o
+mpegaudiodata.c
+CC	libavcodec/mpegaudiodec_common.o
+CC	libavcodec/mpegaudiodec_fixed.o
+mpegaudiodec_common.c
+CC	libavcodec/mpegaudiodecheader.o
+mpegaudiodec_fixed.c
+mpegaudiodecheader.c
+CC	libavcodec/mpegaudiodec_float.o
+mpegaudiodec_float.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/mpegaudiodsp.o
+mpegaudiodsp.c
+CC	libavcodec/mpegaudiodsp_data.o
+mpegaudiodsp_data.c
+CC	libavcodec/mpegaudiotabs.o
+mpegaudiotabs.c
+CC	libavcodec/mpegaudiodsp_fixed.o
+mpegaudiodsp_fixed.c
+CC	libavcodec/mpegpicture.o
+CC	libavcodec/mpegaudiodsp_float.o
+mpegpicture.c
+mpegaudiodsp_float.c
+CC	libavcodec/mpegutils.o
+mpegutils.c
+CC	libavcodec/mpegvideo.o
+CC	libavcodec/mpegvideo_dec.o
+mpegvideo.c
+mpegvideo_dec.c
+CC	libavcodec/mpegvideodata.o
+CC	libavcodec/mpegvideo_motion.o
+mpegvideodata.c
+mpegvideo_motion.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/msmpeg4.o
+msmpeg4.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/msmpeg4_vc1_data.o
+msmpeg4_vc1_data.c
+CC	libavcodec/msmpeg4data.o
+msmpeg4data.c
+CC	libavcodec/msrledec.o
+msrledec.c
+CC	libavcodec/msmpeg4dec.o
+msmpeg4dec.c
+CC	libavcodec/nvdec.o
+nvdec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/nvdec_av1.o
+nvdec_av1.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+CC	libavcodec/nvdec_h264.o
+nvdec_h264.c
+CC	libavcodec/nvdec_hevc.o
+CC	libavcodec/nvdec_mpeg12.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+nvdec_hevc.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+nvdec_mpeg12.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+CC	libavcodec/nvdec_mpeg4.o
+nvdec_mpeg4.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/nvdec_vp8.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+nvdec_vp8.c
+CC	libavcodec/options.o
+options.c
+CC	libavcodec/opus_celt.o
+opus_celt.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/opus_parse.o
+opus_parse.c
+CC	libavcodec/opus_parser.o
+opus_parser.c
+CC	libavcodec/opus_pvq.o
+opus_pvq.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/opus_rc.o
+opus_rc.c
+CC	libavcodec/opus_silk.o
+opus_silk.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/opusdec.o
+opusdec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/opusdec_celt.o
+opusdec_celt.c
+CC	libavcodec/opusdsp.o
+opusdsp.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/opustab.o
+opustab.c
+CC	libavcodec/parser.o
+parser.c
+CC	libavcodec/parsers.o
+parsers.c
+CC	libavcodec/profiles.o
+profiles.c
+CC	libavcodec/pcm.o
+pcm.c
+CC	libavcodec/psymodel.o
+psymodel.c
+CC	libavcodec/pthread.o
+pthread.c
+CC	libavcodec/pthread_frame.o
+pthread_frame.c
+CC	libavcodec/qpeldsp.o
+qpeldsp.c
+CC	libavcodec/pthread_slice.o
+pthread_slice.c
+CC	libavcodec/qsv_api.o
+qsv_api.c
+CC	libavcodec/raw.o
+raw.c
+CC	libavcodec/refstruct.o
+CC	libavcodec/rl.o
+refstruct.c
+rl.c
+CC	libavcodec/sbrdsp.o
+CC	libavcodec/sbrdsp_fixed.o
+sbrdsp.c
+CC	libavcodec/simple_idct.o
+sbrdsp_fixed.c
+simple_idct.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/sinewin.o
+sinewin.c
+CC	libavcodec/startcode.o
+startcode.c
+CC	libavcodec/utils.o
+CC	libavcodec/to_upper4.o
+utils.c
+to_upper4.c
+libavcodec/utils.c(1047): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavcodec/version.o
+version.c
+CC	libavcodec/videodsp.o
+videodsp.c
+CC	libavcodec/vlc.o
+CC	libavcodec/vorbis.o
+vlc.c
+vorbis.c
+libavcodec/vlc.c(75): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/vlc.c(340): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+libavcodec/vlc.c(484): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+CC	libavcodec/vorbis_data.o
+vorbis_data.c
+CC	libavcodec/vorbis_parser.o
+vorbis_parser.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/vorbisdsp.o
+vorbisdsp.c
+CC	libavcodec/vorbisdec.o
+vorbisdec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/vp8data.o
+vp8data.c
+CC	libavcodec/vp8.o
+vp8.c
+CC	libavcodec/vp8dsp.o
+vp8dsp.c
+CC	libavcodec/vp9_superframe_bsf.o
+vp9_superframe_bsf.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/vpx_rac.o
+vpx_rac.c
+CC	libavcodec/wavpack.o
+CC	libavcodec/wavpackdata.o
+wavpack.c
+wavpackdata.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/wma.o
+wma.c
+CC	libavcodec/wma_common.o
+wma_common.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/wma_freqs.o
+wma_freqs.c
+CC	libavcodec/wmadec.o
+CC	libavcodec/wmalosslessdec.o
+wmadec.c
+wmalosslessdec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/wmaprodec.o
+wmaprodec.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+X86ASM	libavcodec/x86/aacencdsp.o
+STRIP	libavcodec/x86/aacencdsp.o
+skipping strip -x libavcodec/x86/aacencdsp.o
+CC	libavcodec/wmavoice.o
+wmavoice.c
+X86ASM	libavcodec/x86/aacpsdsp.o
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/x86/aacencdsp_init.o
+aacencdsp_init.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+STRIP	libavcodec/x86/aacpsdsp.o
+skipping strip -x libavcodec/x86/aacpsdsp.o
+X86ASM	libavcodec/x86/ac3dsp.o
+X86ASM	libavcodec/x86/ac3dsp_downmix.o
+CC	libavcodec/x86/aacpsdsp_init.o
+aacpsdsp_init.c
+STRIP	libavcodec/x86/ac3dsp.o
+skipping strip -x libavcodec/x86/ac3dsp.o
+X86ASM	libavcodec/x86/alacdsp.o
+CC	libavcodec/x86/ac3dsp_init.o
+ac3dsp_init.c
+STRIP	libavcodec/x86/alacdsp.o
+skipping strip -x libavcodec/x86/alacdsp.o
+X86ASM	libavcodec/x86/blockdsp.o
+CC	libavcodec/x86/alacdsp_init.o
+alacdsp_init.c
+STRIP	libavcodec/x86/ac3dsp_downmix.o
+skipping strip -x libavcodec/x86/ac3dsp_downmix.o
+X86ASM	libavcodec/x86/bswapdsp.o
+STRIP	libavcodec/x86/blockdsp.o
+skipping strip -x libavcodec/x86/blockdsp.o
+CC	libavcodec/x86/blockdsp_init.o
+blockdsp_init.c
+CC	libavcodec/x86/bswapdsp_init.o
+bswapdsp_init.c
+CC	libavcodec/x86/constants.o
+X86ASM	libavcodec/x86/dct32.o
+STRIP	libavcodec/x86/bswapdsp.o
+skipping strip -x libavcodec/x86/bswapdsp.o
+constants.c
+CC	libavcodec/x86/fdct.o
+fdct.c
+CC	libavcodec/x86/fdctdsp_init.o
+X86ASM	libavcodec/x86/flacdsp.o
+fdctdsp_init.c
+STRIP	libavcodec/x86/dct32.o
+skipping strip -x libavcodec/x86/dct32.o
+X86ASM	libavcodec/x86/fmtconvert.o
+CC	libavcodec/x86/flacdsp_init.o
+flacdsp_init.c
+STRIP	libavcodec/x86/fmtconvert.o
+skipping strip -x libavcodec/x86/fmtconvert.o
+X86ASM	libavcodec/x86/fpel.o
+STRIP	libavcodec/x86/flacdsp.o
+skipping strip -x libavcodec/x86/flacdsp.o
+CC	libavcodec/x86/fmtconvert_init.o
+fmtconvert_init.c
+X86ASM	libavcodec/x86/h263_loopfilter.o
+STRIP	libavcodec/x86/fpel.o
+skipping strip -x libavcodec/x86/fpel.o
+X86ASM	libavcodec/x86/h264_chromamc.o
+CC	libavcodec/x86/h263dsp_init.o
+h263dsp_init.c
+STRIP	libavcodec/x86/h263_loopfilter.o
+skipping strip -x libavcodec/x86/h263_loopfilter.o
+X86ASM	libavcodec/x86/h264_chromamc_10bit.o
+X86ASM	libavcodec/x86/h264_deblock.o
+STRIP	libavcodec/x86/h264_chromamc_10bit.o
+skipping strip -x libavcodec/x86/h264_chromamc_10bit.o
+STRIP	libavcodec/x86/h264_chromamc.o
+skipping strip -x libavcodec/x86/h264_chromamc.o
+X86ASM	libavcodec/x86/h264_deblock_10bit.o
+X86ASM	libavcodec/x86/h264_idct.o
+X86ASM	libavcodec/x86/h264_idct_10bit.o
+libavcodec/x86/h264_idct.asm:770: warning: redefining multi-line macro `STORE_DIFFx2' [-w+pp-macro-redef-multi]
+STRIP	libavcodec/x86/h264_idct.o
+skipping strip -x libavcodec/x86/h264_idct.o
+X86ASM	libavcodec/x86/h264_intrapred.o
+STRIP	libavcodec/x86/h264_deblock_10bit.o
+skipping strip -x libavcodec/x86/h264_deblock_10bit.o
+X86ASM	libavcodec/x86/h264_intrapred_10bit.o
+STRIP	libavcodec/x86/h264_deblock.o
+skipping strip -x libavcodec/x86/h264_deblock.o
+CC	libavcodec/x86/h264_intrapred_init.o
+h264_intrapred_init.c
+CC	libavcodec/x86/h264_qpel.o
+h264_qpel.c
+X86ASM	libavcodec/x86/h264_qpel_10bit.o
+STRIP	libavcodec/x86/h264_idct_10bit.o
+skipping strip -x libavcodec/x86/h264_idct_10bit.o
+X86ASM	libavcodec/x86/h264_qpel_8bit.o
+STRIP	libavcodec/x86/h264_intrapred_10bit.o
+skipping strip -x libavcodec/x86/h264_intrapred_10bit.o
+X86ASM	libavcodec/x86/h264_weight.o
+STRIP	libavcodec/x86/h264_weight.o
+skipping strip -x libavcodec/x86/h264_weight.o
+X86ASM	libavcodec/x86/h264_weight_10bit.o
+STRIP	libavcodec/x86/h264_intrapred.o
+skipping strip -x libavcodec/x86/h264_intrapred.o
+CC	libavcodec/x86/h264chroma_init.o
+h264chroma_init.c
+STRIP	libavcodec/x86/h264_weight_10bit.o
+skipping strip -x libavcodec/x86/h264_weight_10bit.o
+X86ASM	libavcodec/x86/hevc_add_res.o
+CC	libavcodec/x86/h264dsp_init.o
+h264dsp_init.c
+X86ASM	libavcodec/x86/hevc_deblock.o
+STRIP	libavcodec/x86/hevc_add_res.o
+skipping strip -x libavcodec/x86/hevc_add_res.o
+STRIP	libavcodec/x86/h264_qpel_10bit.o
+skipping strip -x libavcodec/x86/h264_qpel_10bit.o
+X86ASM	libavcodec/x86/hevc_idct.o
+X86ASM	libavcodec/x86/hevc_mc.o
+STRIP	libavcodec/x86/h264_qpel_8bit.o
+skipping strip -x libavcodec/x86/h264_qpel_8bit.o
+X86ASM	libavcodec/x86/hevc_sao.o
+STRIP	libavcodec/x86/hevc_sao.o
+skipping strip -x libavcodec/x86/hevc_sao.o
+X86ASM	libavcodec/x86/hevc_sao_10bit.o
+STRIP	libavcodec/x86/hevc_idct.o
+skipping strip -x libavcodec/x86/hevc_idct.o
+CC	libavcodec/x86/hevcdsp_init.o
+hevcdsp_init.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+STRIP	libavcodec/x86/hevc_deblock.o
+skipping strip -x libavcodec/x86/hevc_deblock.o
+X86ASM	libavcodec/x86/hpeldsp.o
+STRIP	libavcodec/x86/hevc_sao_10bit.o
+skipping strip -x libavcodec/x86/hevc_sao_10bit.o
+X86ASM	libavcodec/x86/idctdsp.o
+CC	libavcodec/x86/hpeldsp_init.o
+hpeldsp_init.c
+STRIP	libavcodec/x86/hpeldsp.o
+skipping strip -x libavcodec/x86/hpeldsp.o
+STRIP	libavcodec/x86/idctdsp.o
+skipping strip -x libavcodec/x86/idctdsp.o
+X86ASM	libavcodec/x86/imdct36.o
+X86ASM	libavcodec/x86/lossless_audiodsp.o
+CC	libavcodec/x86/idctdsp_init.o
+idctdsp_init.c
+libavcodec/x86/idctdsp_init.c(81): warning C4113: 'void (__cdecl *)(const int16_t *,uint8_t *,ptrdiff_t)' differs in parameter lists from 'void (__cdecl *)(const int16_t *,uint8_t *restrict ,ptrdiff_t)'
+libavcodec/x86/idctdsp_init.c(82): warning C4113: 'void (__cdecl *)(const int16_t *,uint8_t *,ptrdiff_t)' differs in parameter lists from 'void (__cdecl *)(const int16_t *,uint8_t *restrict ,ptrdiff_t)'
+libavcodec/x86/idctdsp_init.c(83): warning C4113: 'void (__cdecl *)(const int16_t *,uint8_t *,ptrdiff_t)' differs in parameter lists from 'void (__cdecl *)(const int16_t *,uint8_t *restrict ,ptrdiff_t)'
+STRIP	libavcodec/x86/lossless_audiodsp.o
+skipping strip -x libavcodec/x86/lossless_audiodsp.o
+X86ASM	libavcodec/x86/lpc.o
+CC	libavcodec/x86/lossless_audiodsp_init.o
+lossless_audiodsp_init.c
+CC	libavcodec/x86/lpc_init.o
+lpc_init.c
+STRIP	libavcodec/x86/lpc.o
+skipping strip -x libavcodec/x86/lpc.o
+X86ASM	libavcodec/x86/me_cmp.o
+STRIP	libavcodec/x86/imdct36.o
+skipping strip -x libavcodec/x86/imdct36.o
+CC	libavcodec/x86/mpeg4videodsp.o
+CC	libavcodec/x86/me_cmp_init.o
+mpeg4videodsp.c
+me_cmp_init.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+CC	libavcodec/x86/mpegaudiodsp.o
+mpegaudiodsp.c
+X86ASM	libavcodec/x86/opusdsp.o
+STRIP	libavcodec/x86/me_cmp.o
+skipping strip -x libavcodec/x86/me_cmp.o
+CC	libavcodec/x86/mpegvideo.o
+mpegvideo.c
+STRIP	libavcodec/x86/opusdsp.o
+skipping strip -x libavcodec/x86/opusdsp.o
+X86ASM	libavcodec/x86/qpel.o
+CC	libavcodec/x86/opusdsp_init.o
+opusdsp_init.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec\get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+X86ASM	libavcodec/x86/qpeldsp.o
+STRIP	libavcodec/x86/qpel.o
+skipping strip -x libavcodec/x86/qpel.o
+X86ASM	libavcodec/x86/sbrdsp.o
+CC	libavcodec/x86/qpeldsp_init.o
+qpeldsp_init.c
+CC	libavcodec/x86/sbrdsp_init.o
+sbrdsp_init.c
+X86ASM	libavcodec/x86/simple_idct10.o
+STRIP	libavcodec/x86/sbrdsp.o
+skipping strip -x libavcodec/x86/sbrdsp.o
+X86ASM	libavcodec/x86/videodsp.o
+STRIP	libavcodec/x86/qpeldsp.o
+skipping strip -x libavcodec/x86/qpeldsp.o
+STRIP	libavcodec/x86/videodsp.o
+skipping strip -x libavcodec/x86/videodsp.o
+CC	libavcodec/x86/videodsp_init.o
+videodsp_init.c
+X86ASM	libavcodec/x86/vorbisdsp.o
+STRIP	libavcodec/x86/vorbisdsp.o
+skipping strip -x libavcodec/x86/vorbisdsp.o
+X86ASM	libavcodec/x86/vp8dsp.o
+CC	libavcodec/x86/vorbisdsp_init.o
+vorbisdsp_init.c
+CC	libavcodec/x86/vp8dsp_init.o
+vp8dsp_init.c
+X86ASM	libavcodec/x86/vp8dsp_loopfilter.o
+STRIP	libavcodec/x86/vp8dsp.o
+skipping strip -x libavcodec/x86/vp8dsp.o
+X86ASM	libavcodec/x86/xvididct.o
+STRIP	libavcodec/x86/simple_idct10.o
+skipping strip -x libavcodec/x86/simple_idct10.o
+CC	libavcodec/x86/xvididct_init.o
+xvididct_init.c
+STRIP	libavcodec/x86/xvididct.o
+skipping strip -x libavcodec/x86/xvididct.o
+CC	libavcodec/xiph.o
+xiph.c
+CC	libavcodec/xvididct.o
+xvididct.c
+GEN	libavcodec/libavcodec.pc
+CC	libswresample/audioconvert.o
+audioconvert.c
+CC	libswresample/dither.o
+dither.c
+libswresample/dither.c(119): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+CC	libswresample/options.o
+options.c
+STRIP	libavcodec/x86/vp8dsp_loopfilter.o
+skipping strip -x libavcodec/x86/vp8dsp_loopfilter.o
+CC	libswresample/rematrix.o
+rematrix.c
+CC	libswresample/resample.o
+CC	libswresample/resample_dsp.o
+resample.c
+resample_dsp.c
+CC	libswresample/swresample_frame.o
+CC	libswresample/swresample.o
+swresample_frame.c
+swresample.c
+CC	libswresample/version.o
+version.c
+libswresample/swresample.c(850): warning C4101: 'max_output': unreferenced local variable
+STRIP	libavcodec/x86/hevc_mc.o
+skipping strip -x libavcodec/x86/hevc_mc.o
+X86ASM	libswresample/x86/audio_convert.o
+X86ASM	libswresample/x86/rematrix.o
+CC	libswresample/x86/audio_convert_init.o
+audio_convert_init.c
+CC	libswresample/x86/rematrix_init.o
+rematrix_init.c
+X86ASM	libswresample/x86/resample.o
+STRIP	libswresample/x86/rematrix.o
+skipping strip -x libswresample/x86/rematrix.o
+GEN	libswresample/libswresample.pc
+CC	libswresample/x86/resample_init.o
+resample_init.c
+CC	libswscale/alphablend.o
+alphablend.c
+CC	libswscale/gamma.o
+STRIP	libswresample/x86/resample.o
+skipping strip -x libswresample/x86/resample.o
+gamma.c
+CC	libswscale/half2float.o
+half2float.c
+CC	libswscale/hscale.o
+hscale.c
+CC	libswscale/hscale_fast_bilinear.o
+CC	libswscale/input.o
+hscale_fast_bilinear.c
+input.c
+libswscale/input.c(393): warning C4003: not enough arguments for function-like macro invocation 'IS_BE'
+libswscale/input.c(394): warning C4003: not enough arguments for function-like macro invocation 'IS_BE'
+libswscale/input.c(395): warning C4003: not enough arguments for function-like macro invocation 'IS_BE'
+libswscale/input.c(396): warning C4003: not enough arguments for function-like macro invocation 'IS_BE'
+STRIP	libswresample/x86/audio_convert.o
+skipping strip -x libswresample/x86/audio_convert.o
+CC	libswscale/options.o
+options.c
+CC	libswscale/output.o
+output.c
+CC	libswscale/rgb2rgb.o
+rgb2rgb.c
+CC	libswscale/slice.o
+slice.c
+libswscale/options.c(62): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+libswscale/options.c(63): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+CC	libswscale/swscale.o
+swscale.c
+libswscale/swscale.c(948): warning C4090: 'function': different 'const' qualifiers
+CC	libswscale/utils.o
+utils.c
+CC	libswscale/swscale_unscaled.o
+swscale_unscaled.c
+CC	libswscale/version.o
+version.c
+CC	libswscale/vscale.o
+vscale.c
+X86ASM	libswscale/x86/input.o
+CC	libswscale/x86/hscale_fast_bilinear_simd.o
+hscale_fast_bilinear_simd.c
+X86ASM	libswscale/x86/output.o
+CC	libswscale/x86/rgb2rgb.o
+rgb2rgb.c
+X86ASM	libswscale/x86/rgb_2_rgb.o
+X86ASM	libswscale/x86/scale.o
+STRIP	libswscale/x86/rgb_2_rgb.o
+skipping strip -x libswscale/x86/rgb_2_rgb.o
+X86ASM	libswscale/x86/scale_avx2.o
+STRIP	libswscale/x86/scale_avx2.o
+skipping strip -x libswscale/x86/scale_avx2.o
+CC	libswscale/x86/swscale.o
+swscale.c
+CC	libswscale/x86/yuv2rgb.o
+yuv2rgb.c
+STRIP	libswscale/x86/scale.o
+skipping strip -x libswscale/x86/scale.o
+X86ASM	libswscale/x86/yuv2yuvX.o
+STRIP	libswscale/x86/input.o
+skipping strip -x libswscale/x86/input.o
+X86ASM	libswscale/x86/yuv_2_rgb.o
+libswscale/x86/yuv2yuvX.asm:128: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:57: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1282: ... from macro `psrlq' defined here
+libavutil/x86/x86inc.asm:1257: ... from macro `RUN_AVX_INSTR' defined here
+libswscale/x86/yuv2yuvX.asm:128: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:58: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1282: ... from macro `psllq' defined here
+libavutil/x86/x86inc.asm:1257: ... from macro `RUN_AVX_INSTR' defined here
+libswscale/x86/yuv2yuvX.asm:128: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:97: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1137: ... from macro `add' defined here
+libswscale/x86/yuv2yuvX.asm:128: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:97: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1140: ... from macro `add' defined here
+libswscale/x86/yuv2yuvX.asm:130: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:57: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1282: ... from macro `psrlq' defined here
+libavutil/x86/x86inc.asm:1257: ... from macro `RUN_AVX_INSTR' defined here
+libswscale/x86/yuv2yuvX.asm:130: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:58: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1282: ... from macro `psllq' defined here
+libavutil/x86/x86inc.asm:1257: ... from macro `RUN_AVX_INSTR' defined here
+libswscale/x86/yuv2yuvX.asm:130: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:97: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1137: ... from macro `add' defined here
+libswscale/x86/yuv2yuvX.asm:130: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:97: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1140: ... from macro `add' defined here
+libswscale/x86/yuv2yuvX.asm:133: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:57: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1282: ... from macro `psrlq' defined here
+libavutil/x86/x86inc.asm:1262: ... from macro `RUN_AVX_INSTR' defined here
+libswscale/x86/yuv2yuvX.asm:133: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:58: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1282: ... from macro `psllq' defined here
+libavutil/x86/x86inc.asm:1262: ... from macro `RUN_AVX_INSTR' defined here
+libswscale/x86/yuv2yuvX.asm:133: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:97: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1137: ... from macro `add' defined here
+libswscale/x86/yuv2yuvX.asm:133: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+libswscale/x86/yuv2yuvX.asm:97: ... from macro `YUV2YUVX_FUNC' defined here
+libavutil/x86/x86inc.asm:1140: ... from macro `add' defined here
+STRIP	libswscale/x86/yuv2yuvX.o
+skipping strip -x libswscale/x86/yuv2yuvX.o
+GEN	libswscale/libswscale.pc
+CC	libswscale/yuv2rgb.o
+yuv2rgb.c
+libswscale/yuv2rgb.c(436): warning C4101: 'V': unreferenced local variable
+libswscale/yuv2rgb.c(436): warning C4101: 'U': unreferenced local variable
+libswscale/yuv2rgb.c(436): warning C4101: 'Y': unreferenced local variable
+libswscale/yuv2rgb.c(466): warning C4101: 'V': unreferenced local variable
+libswscale/yuv2rgb.c(466): warning C4101: 'U': unreferenced local variable
+libswscale/yuv2rgb.c(466): warning C4101: 'Y': unreferenced local variable
+libswscale/yuv2rgb.c(497): warning C4101: 'V': unreferenced local variable
+libswscale/yuv2rgb.c(497): warning C4101: 'U': unreferenced local variable
+libswscale/yuv2rgb.c(497): warning C4101: 'Y': unreferenced local variable
+libswscale/yuv2rgb.c(651): warning C4101: 'b': unreferenced local variable
+libswscale/yuv2rgb.c(651): warning C4101: 'r': unreferenced local variable
+libswscale/yuv2rgb.c(651): warning C4101: 'V': unreferenced local variable
+libswscale/yuv2rgb.c(651): warning C4101: 'U': unreferenced local variable
+libswscale/yuv2rgb.c(676): warning C4101: 'V': unreferenced local variable
+libswscale/yuv2rgb.c(676): warning C4101: 'U': unreferenced local variable
+libswscale/yuv2rgb.c(676): warning C4101: 'Y': unreferenced local variable
+STRIP	libswscale/x86/yuv_2_rgb.o
+skipping strip -x libswscale/x86/yuv_2_rgb.o
+CC	libavutil/adler32.o
+adler32.c
+CC	libavutil/aes.o
+aes.c
+CC	libavutil/aes_ctr.o
+aes_ctr.c
+CC	libavutil/ambient_viewing_environment.o
+ambient_viewing_environment.c
+CC	libavutil/audio_fifo.o
+audio_fifo.c
+CC	libavutil/avsscanf.o
+avsscanf.c
+CC	libavutil/avstring.o
+avstring.c
+CC	libavutil/base64.o
+libavutil/avstring.c(240): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavutil/avstring.c(242): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavutil/avstring.c(353): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+base64.c
+CC	libavutil/bprint.o
+bprint.c
+CC	libavutil/blowfish.o
+libavutil/bprint.c(194): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavutil/bprint.c(220): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+blowfish.c
+CC	libavutil/buffer.o
+buffer.c
+CC	libavutil/camellia.o
+camellia.c
+CC	libavutil/cast5.o
+cast5.c
+CC	libavutil/channel_layout.o
+channel_layout.c
+libavutil/channel_layout.c(108): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavutil/channel_layout.c(137): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavutil/channel_layout.c(795): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+CC	libavutil/cpu.o
+cpu.c
+CC	libavutil/crc.o
+crc.c
+CC	libavutil/csp.o
+csp.c
+CC	libavutil/des.o
+des.c
+CC	libavutil/detection_bbox.o
+CC	libavutil/dict.o
+detection_bbox.c
+dict.c
+CC	libavutil/display.o
+display.c
+CC	libavutil/dovi_meta.o
+dovi_meta.c
+CC	libavutil/downmix_info.o
+downmix_info.c
+CC	libavutil/encryption_info.o
+encryption_info.c
+CC	libavutil/error.o
+error.c
+STRIP	libswscale/x86/output.o
+skipping strip -x libswscale/x86/output.o
+CC	libavutil/eval.o
+eval.c
+CC	libavutil/fifo.o
+fifo.c
+CC	libavutil/executor.o
+executor.c
+CC	libavutil/file.o
+file.c
+CC	libavutil/file_open.o
+file_open.c
+CC	libavutil/film_grain_params.o
+CC	libavutil/fixed_dsp.o
+film_grain_params.c
+CC	libavutil/float_dsp.o
+fixed_dsp.c
+float_dsp.c
+CC	libavutil/frame.o
+CC	libavutil/hash.o
+frame.c
+hash.c
+CC	libavutil/hdr_dynamic_metadata.o
+CC	libavutil/hdr_dynamic_vivid_metadata.o
+hdr_dynamic_metadata.c
+hdr_dynamic_vivid_metadata.c
+libavutil/frame.c(152): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/frame.c(1018): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/frame.c(1019): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/frame.c(1030): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavutil/frame.c(1034): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavutil/frame.c(1052): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/frame.c(1053): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\libavcodec/get_bits.h(383): warning C4101: 're_cache': unreferenced local variable
+libavutil/hdr_dynamic_metadata.c(78): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavutil/hdr_dynamic_metadata.c(315): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+CC	libavutil/hmac.o
+hmac.c
+CC	libavutil/hwcontext.o
+hwcontext.c
+CC	libavutil/hwcontext_cuda.o
+hwcontext_cuda.c
+CC	libavutil/hwcontext_stub.o
+hwcontext_stub.c
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+CC	libavutil/hwcontext_d3d11va.o
+hwcontext_d3d11va.c
+CC	libavutil/hwcontext_dxva2.o
+hwcontext_dxva2.c
+CC	libavutil/imgutils.o
+imgutils.c
+libavutil/imgutils.c(165): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/imgutils.c(496): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/imgutils.c(574): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+libavutil/imgutils.c(574): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\runneradmin\TBuild\Libraries\win64\ffmpeg\compat/w32dlfcn.h(77): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+CC	libavutil/integer.o
+integer.c
+CC	libavutil/lfg.o
+CC	libavutil/intmath.o
+lfg.c
+intmath.c
+CC	libavutil/lls.o
+lls.c
+CC	libavutil/log2_tab.o
+CC	libavutil/log.o
+log2_tab.c
+log.c
+CC	libavutil/lzo.o
+lzo.c
+CC	libavutil/mastering_display_metadata.o
+mastering_display_metadata.c
+libavutil/log.c(196): warning C4333: '>>': right shift by too large amount, data loss
+libavutil/log.c(202): warning C4333: '>>': right shift by too large amount, data loss
+libavutil/log.c(203): warning C4333: '>>': right shift by too large amount, data loss
+CC	libavutil/mathematics.o
+mathematics.c
+CC	libavutil/md5.o
+md5.c
+CC	libavutil/murmur3.o
+murmur3.c
+CC	libavutil/mem.o
+libavutil/md5.c(162): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+mem.c
+libavutil/murmur3.c(130): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+CC	libavutil/opt.o
+opt.c
+libavutil/mem.c(520): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavutil/mem.c(551): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+libavutil/opt.c(198): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/opt.c(450): warning C4133: 'function': incompatible types - from 'AVPixelFormat (__cdecl *)(const char *)' to 'int (__cdecl *)(const char *)'
+libavutil/opt.c(456): warning C4133: 'function': incompatible types - from 'AVSampleFormat (__cdecl *)(const char *)' to 'int (__cdecl *)(const char *)'
+libavutil/opt.c(923): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/opt.c(1075): warning C4133: 'function': incompatible types - from 'AVPixelFormat *' to 'int *'
+libavutil/opt.c(1080): warning C4133: 'function': incompatible types - from 'AVSampleFormat *' to 'int *'
+CC	libavutil/parseutils.o
+parseutils.c
+libavutil/parseutils.c(369): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/parseutils.c(374): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+libavutil/parseutils.c(481): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+CC	libavutil/pixelutils.o
+pixelutils.c
+CC	libavutil/pixdesc.o
+pixdesc.c
+libavutil/pixdesc.c(3028): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+CC	libavutil/rational.o
+rational.c
+CC	libavutil/random_seed.o
+random_seed.c
+CC	libavutil/rc4.o
+CC	libavutil/reverse.o
+rc4.c
+reverse.c
+libavutil/random_seed.c(139): warning C4267: 'function': conversion from 'size_t' to 'ULONG', possible loss of data
+CC	libavutil/samplefmt.o
+CC	libavutil/ripemd.o
+samplefmt.c
+ripemd.c
+CC	libavutil/sha.o
+libavutil/ripemd.c(139): warning C4101: 't': unreferenced local variable
+libavutil/ripemd.c(196): warning C4101: 't': unreferenced local variable
+libavutil/ripemd.c(321): warning C4101: 't': unreferenced local variable
+sha.c
+libavutil/ripemd.c(393): warning C4101: 't': unreferenced local variable
+CC	libavutil/sha512.o
+sha512.c
+CC	libavutil/slicethread.o
+slicethread.c
+CC	libavutil/spherical.o
+spherical.c
+CC	libavutil/stereo3d.o
+stereo3d.c
+CC	libavutil/tea.o
+tea.c
+CC	libavutil/threadmessage.o
+CC	libavutil/time.o
+threadmessage.c
+time.c
+libavutil/threadmessage.c(115): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+CC	libavutil/tree.o
+CC	libavutil/timecode.o
+tree.c
+timecode.c
+CC	libavutil/twofish.o
+twofish.c
+CC	libavutil/tx.o
+tx.c
+CC	libavutil/tx_double.o
+tx_double.c
+CC	libavutil/tx_float.o
+tx_float.c
+CC	libavutil/tx_int32.o
+tx_int32.c
+CC	libavutil/uuid.o
+uuid.c
+CC	libavutil/utils.o
+utils.c
+CC	libavutil/version.o
+version.c
+CC	libavutil/video_enc_params.o
+video_enc_params.c
+CC	libavutil/video_hint.o
+video_hint.c
+X86ASM	libavutil/x86/cpuid.o
+X86ASM	libavutil/x86/emms.o
+X86ASM	libavutil/x86/fixed_dsp.o
+CC	libavutil/x86/cpu.o
+cpu.c
+STRIP	libavutil/x86/cpuid.o
+skipping strip -x libavutil/x86/cpuid.o
+STRIP	libavutil/x86/emms.o
+skipping strip -x libavutil/x86/emms.o
+X86ASM	libavutil/x86/float_dsp.o
+STRIP	libavutil/x86/fixed_dsp.o
+skipping strip -x libavutil/x86/fixed_dsp.o
+X86ASM	libavutil/x86/imgutils.o
+CC	libavutil/x86/fixed_dsp_init.o
+CC	libavutil/x86/float_dsp_init.o
+fixed_dsp_init.c
+float_dsp_init.c
+X86ASM	libavutil/x86/lls.o
+STRIP	libavutil/x86/imgutils.o
+skipping strip -x libavutil/x86/imgutils.o
+CC	libavutil/x86/imgutils_init.o
+imgutils_init.c
+CC	libavutil/x86/lls_init.o
+lls_init.c
+X86ASM	libavutil/x86/tx_float.o
+STRIP	libavutil/x86/float_dsp.o
+skipping strip -x libavutil/x86/float_dsp.o
+STRIP	libavutil/x86/lls.o
+skipping strip -x libavutil/x86/lls.o
+CC	libavutil/xga_font_data.o
+xga_font_data.c
+CC	libavutil/x86/tx_float_init.o
+CC	libavutil/xtea.o
+tx_float_init.c
+GEN	libavutil/libavutil.pc
+xtea.c
+AR	libavdevice/libavdevice.a
+AR	libavfilter/libavfilter.a
+AR	libavformat/libavformat.a
+AR	libavcodec/libavcodec.a
+AR	libswresample/libswresample.a
+AR	libswscale/libswscale.a
+STRIP	libavutil/x86/tx_float.o
+skipping strip -x libavutil/x86/tx_float.o
+AR	libavutil/libavutil.a
+INSTALL	doc/examples/avio_http_serve_files.c
+INSTALL	doc/examples/avio_list_dir.c
+INSTALL	doc/examples/avio_read_callback.c
+INSTALL	doc/examples/decode_audio.c
+INSTALL	doc/examples/decode_filter_audio.c
+INSTALL	doc/examples/decode_filter_video.c
+INSTALL	doc/examples/decode_video.c
+INSTALL	doc/examples/demux_decode.c
+INSTALL	doc/examples/encode_audio.c
+INSTALL	doc/examples/encode_video.c
+INSTALL	doc/examples/extract_mvs.c
+INSTALL	doc/examples/filter_audio.c
+INSTALL	doc/examples/hw_decode.c
+INSTALL	doc/examples/mux.c
+INSTALL	doc/examples/qsv_decode.c
+INSTALL	doc/examples/qsv_transcode.c
+INSTALL	doc/examples/remux.c
+INSTALL	doc/examples/resample_audio.c
+INSTALL	doc/examples/scale_video.c
+INSTALL	doc/examples/show_metadata.c
+INSTALL	doc/examples/transcode.c
+INSTALL	doc/examples/transcode_aac.c
+INSTALL	doc/examples/vaapi_encode.c
+INSTALL	doc/examples/vaapi_transcode.c
+INSTALL	doc/examples/README
+INSTALL	doc/examples/Makefile
+INSTALL	libavfilter/libavfilter.a
+INSTALL	libavdevice/libavdevice.a
+INSTALL	doc/examples/avio_http_serve_files.c
+INSTALL	doc/examples/avio_list_dir.c
+INSTALL	doc/examples/avio_read_callback.c
+INSTALL	doc/examples/decode_audio.c
+INSTALL	doc/examples/decode_filter_audio.c
+INSTALL	doc/examples/decode_filter_video.c
+INSTALL	doc/examples/decode_video.c
+INSTALL	doc/examples/demux_decode.c
+INSTALL	doc/examples/encode_audio.c
+INSTALL	doc/examples/encode_video.c
+INSTALL	doc/examples/extract_mvs.c
+INSTALL	doc/examples/filter_audio.c
+INSTALL	doc/examples/hw_decode.c
+INSTALL	doc/examples/mux.c
+INSTALL	doc/examples/qsv_decode.c
+INSTALL	doc/examples/qsv_transcode.c
+INSTALL	doc/examples/remux.c
+INSTALL	doc/examples/resample_audio.c
+INSTALL	doc/examples/scale_video.c
+INSTALL	doc/examples/show_metadata.c
+INSTALL	doc/examples/transcode.c
+INSTALL	doc/examples/transcode_aac.c
+INSTALL	doc/examples/vaapi_encode.c
+INSTALL	doc/examples/vaapi_transcode.c
+INSTALL	doc/examples/README
+INSTALL	doc/examples/Makefile
+INSTALL	libavformat/libavformat.a
+INSTALL	libavcodec/libavcodec.a
+INSTALL	libswresample/libswresample.a
+INSTALL	libswscale/libswscale.a
+INSTALL	libavutil/libavutil.a
+INSTALL	libavdevice/avdevice.h
+INSTALL	libavdevice/version.h
+INSTALL	libavdevice/version_major.h
+INSTALL	libavdevice/libavdevice.pc
+INSTALL	libavfilter/avfilter.h
+INSTALL	libavfilter/buffersink.h
+INSTALL	libavfilter/buffersrc.h
+INSTALL	libavfilter/version.h
+INSTALL	libavfilter/version_major.h
+INSTALL	libavfilter/libavfilter.pc
+INSTALL	libavformat/avformat.h
+INSTALL	libavformat/avio.h
+INSTALL	libavformat/version.h
+INSTALL	libavformat/version_major.h
+INSTALL	libavformat/libavformat.pc
+INSTALL	libavcodec/ac3_parser.h
+INSTALL	libavcodec/adts_parser.h
+INSTALL	libavcodec/avcodec.h
+INSTALL	libavcodec/avdct.h
+INSTALL	libavcodec/avfft.h
+INSTALL	libavcodec/bsf.h
+INSTALL	libavcodec/codec.h
+INSTALL	libavcodec/codec_desc.h
+INSTALL	libavcodec/codec_id.h
+INSTALL	libavcodec/codec_par.h
+INSTALL	libavcodec/d3d11va.h
+INSTALL	libavcodec/defs.h
+INSTALL	libavcodec/dirac.h
+INSTALL	libavcodec/dv_profile.h
+INSTALL	libavcodec/dxva2.h
+INSTALL	libavcodec/jni.h
+INSTALL	libavcodec/mediacodec.h
+INSTALL	libavcodec/packet.h
+INSTALL	libavcodec/qsv.h
+INSTALL	libavcodec/vdpau.h
+INSTALL	libavcodec/version.h
+INSTALL	libavcodec/version_major.h
+INSTALL	libavcodec/videotoolbox.h
+INSTALL	libavcodec/vorbis_parser.h
+INSTALL	libavcodec/xvmc.h
+INSTALL	libavcodec/libavcodec.pc
+INSTALL	libswresample/swresample.h
+INSTALL	libswresample/version.h
+INSTALL	libswresample/version_major.h
+INSTALL	libswscale/swscale.h
+INSTALL	libswscale/version.h
+INSTALL	libswscale/version_major.h
+INSTALL	libswresample/libswresample.pc
+INSTALL	libswscale/libswscale.pc
+INSTALL	libavutil/adler32.h
+INSTALL	libavutil/aes.h
+INSTALL	libavutil/aes_ctr.h
+INSTALL	libavutil/ambient_viewing_environment.h
+INSTALL	libavutil/attributes.h
+INSTALL	libavutil/audio_fifo.h
+INSTALL	libavutil/avassert.h
+INSTALL	libavutil/avstring.h
+INSTALL	libavutil/avutil.h
+INSTALL	libavutil/base64.h
+INSTALL	libavutil/blowfish.h
+INSTALL	libavutil/bprint.h
+INSTALL	libavutil/bswap.h
+INSTALL	libavutil/buffer.h
+INSTALL	libavutil/cast5.h
+INSTALL	libavutil/camellia.h
+INSTALL	libavutil/channel_layout.h
+INSTALL	libavutil/common.h
+INSTALL	libavutil/cpu.h
+INSTALL	libavutil/crc.h
+INSTALL	libavutil/csp.h
+INSTALL	libavutil/des.h
+INSTALL	libavutil/detection_bbox.h
+INSTALL	libavutil/dict.h
+INSTALL	libavutil/display.h
+INSTALL	libavutil/dovi_meta.h
+INSTALL	libavutil/downmix_info.h
+INSTALL	libavutil/encryption_info.h
+INSTALL	libavutil/error.h
+INSTALL	libavutil/eval.h
+INSTALL	libavutil/executor.h
+INSTALL	libavutil/fifo.h
+INSTALL	libavutil/file.h
+INSTALL	libavutil/frame.h
+INSTALL	libavutil/hash.h
+INSTALL	libavutil/hdr_dynamic_metadata.h
+INSTALL	libavutil/hdr_dynamic_vivid_metadata.h
+INSTALL	libavutil/hmac.h
+INSTALL	libavutil/hwcontext.h
+INSTALL	libavutil/hwcontext_cuda.h
+INSTALL	libavutil/hwcontext_d3d11va.h
+INSTALL	libavutil/hwcontext_drm.h
+INSTALL	libavutil/hwcontext_dxva2.h
+INSTALL	libavutil/hwcontext_qsv.h
+INSTALL	libavutil/hwcontext_mediacodec.h
+INSTALL	libavutil/hwcontext_opencl.h
+INSTALL	libavutil/hwcontext_vaapi.h
+INSTALL	libavutil/hwcontext_videotoolbox.h
+INSTALL	libavutil/hwcontext_vdpau.h
+INSTALL	libavutil/hwcontext_vulkan.h
+INSTALL	libavutil/imgutils.h
+INSTALL	libavutil/intfloat.h
+INSTALL	libavutil/intreadwrite.h
+INSTALL	libavutil/lfg.h
+INSTALL	libavutil/log.h
+INSTALL	libavutil/lzo.h
+INSTALL	libavutil/macros.h
+INSTALL	libavutil/mathematics.h
+INSTALL	libavutil/mastering_display_metadata.h
+INSTALL	libavutil/md5.h
+INSTALL	libavutil/mem.h
+INSTALL	libavutil/motion_vector.h
+INSTALL	libavutil/murmur3.h
+INSTALL	libavutil/opt.h
+INSTALL	libavutil/parseutils.h
+INSTALL	libavutil/pixdesc.h
+INSTALL	libavutil/pixelutils.h
+INSTALL	libavutil/pixfmt.h
+INSTALL	libavutil/random_seed.h
+INSTALL	libavutil/rc4.h
+INSTALL	libavutil/rational.h
+INSTALL	libavutil/replaygain.h
+INSTALL	libavutil/ripemd.h
+INSTALL	libavutil/samplefmt.h
+INSTALL	libavutil/sha.h
+INSTALL	libavutil/sha512.h
+INSTALL	libavutil/spherical.h
+INSTALL	libavutil/stereo3d.h
+INSTALL	libavutil/threadmessage.h
+INSTALL	libavutil/time.h
+INSTALL	libavutil/timecode.h
+INSTALL	libavutil/timestamp.h
+INSTALL	libavutil/tree.h
+INSTALL	libavutil/twofish.h
+INSTALL	libavutil/uuid.h
+INSTALL	libavutil/version.h
+INSTALL	libavutil/video_enc_params.h
+INSTALL	libavutil/xtea.h
+INSTALL	libavutil/tea.h
+INSTALL	libavutil/tx.h
+INSTALL	libavutil/film_grain_params.h
+INSTALL	libavutil/video_hint.h
+INSTALL	libavutil/avconfig.h
+INSTALL	libavutil/ffversion.h
+INSTALL	libavutil/libavutil.pc
+NOT FOUND, BUILDING:
+---------------------------------COMMANDS-LIST----------------------------------
+if exist ffmpeg rmdir /Q /S ffmpeg
+if exist ffmpeg exit /b 1
+git clone -b n6.1.6 https://github.com/FFmpeg/FFmpeg.git ffmpeg
+cd ffmpeg
+git apply ../patches/ffmpeg.patch
+SET PATH=%THIRDPARTY_DIR%\msys64\usr\bin;%PATH%
+SET CHERE_INVOKING=enabled_from_arguments
+SET MSYS2_PATH_TYPE=inherit
+SET "ARCH_PARAM="
+bash --login ../patches/build_ffmpeg_win.sh
+--------------------------------------------------------------------------------
+[27/33](Libraries/openal-soft): Cloning into 'openal-soft'...
+Note: switching to '291c0fdbbd'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 291c0fdb [wasapi] Fix exact playback time / capture latency.
+-- Building for: Ninja Multi-Config
+-- The C compiler identification is MSVC 19.44.35229.0
+-- The CXX compiler identification is MSVC 19.44.35229.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/18/Enterprise/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/18/Enterprise/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: C:/Users/runneradmin/TBuild/ThirdParty/msys64/ucrt64/bin/pkg-config.exe (found version "3.0.10")
+-- {fmt} version: 11.0.2
+-- Build type: RelWithDebInfo
+-- Performing Test HAVE_STDC_FORMAT_MACROS
+-- Performing Test HAVE_STDC_FORMAT_MACROS - Success
+-- Performing Test HAVE_LIBATOMIC
+-- Performing Test HAVE_LIBATOMIC - Failed
+-- Performing Test HAVE_PERMISSIVE_SWITCH
+-- Performing Test HAVE_PERMISSIVE_SWITCH - Success
+-- Looking for xmmintrin.h
+-- Looking for xmmintrin.h - found
+-- Looking for emmintrin.h
+-- Looking for emmintrin.h - found
+-- Looking for pmmintrin.h
+-- Looking for pmmintrin.h - found
+-- Looking for smmintrin.h
+-- Looking for smmintrin.h - found
+-- Looking for arm_neon.h
+-- Looking for arm_neon.h - not found
+-- Performing Test HAVE_SSE_INTRINSICS
+-- Performing Test HAVE_SSE_INTRINSICS - Success
+-- Looking for cpuid.h
+-- Looking for cpuid.h - not found
+-- Looking for intrin.h
+-- Looking for intrin.h - found
+-- Looking for guiddef.h
+-- Looking for guiddef.h - found
+-- Looking for pow in m
+-- Looking for pow in m - not found
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - not found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - not found
+-- Looking for dlopen in dl
+-- Looking for dlopen in dl - not found
+-- Performing Test HAVE_CPUID_INTRINSIC
+-- Performing Test HAVE_CPUID_INTRINSIC - Success
+-- Looking for proc_pidpath
+-- Looking for proc_pidpath - not found
+-- Checking for module 'libpipewire-0.3>=0.3.23'
+--   Package 'libpipewire-0.3' not found
+-- Could NOT find PulseAudio (missing: PULSEAUDIO_LIBRARY PULSEAUDIO_INCLUDE_DIR) 
+-- Looking for dsound.h
+-- Looking for dsound.h - found
+-- Looking for mmdeviceapi.h
+-- Looking for mmdeviceapi.h - found
+-- Could NOT find JACK (missing: JACK_LIBRARY JACK_INCLUDE_DIR) 
+-- Could NOT find OpenSL (missing: OPENSL_LIBRARY OPENSL_INCLUDE_DIR OPENSL_ANDROID_INCLUDE_DIR) 
+-- Could NOT find PortAudio (missing: PORTAUDIO_LIBRARY PORTAUDIO_INCLUDE_DIR) 
+-- Found Git: C:/Program Files/Git/bin/git.exe (found version "2.56.0.windows.2")
+-- 
+-- Building OpenAL with support for the following backends:
+--     WinMM, DirectSound, WASAPI, WaveFile, Null
+-- 
+-- Building with support for CPU extensions:
+--     Default, SSE, SSE2, SSE3, SSE4.1
+-- 
+-- Building with legacy EAX extension support
+-- 
+-- Embedding HRTF datasets
+-- 
+-- Installing library and headers
+-- Installing sample configuration
+-- Installing HRTF data files
+-- Installing AmbDec presets
+-- 
+-- Configuring done (8.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/runneradmin/TBuild/Libraries/win64/openal-soft/build
+[1/106] Generating version_witness.txt
+[2/106] Generating default_hrtf.txt
+[3/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\althrd_setname.cpp.obj
+[4/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\alstring.cpp.obj
+[5/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\alsem.cpp.obj
+[6/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\alassert.cpp.obj
+[7/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\dynload.cpp.obj
+[8/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\ringbuffer.cpp.obj
+[9/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\polyphase_resampler.cpp.obj
+[10/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\pffft.cpp.obj
+[11/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\alcomplex.cpp.obj
+[12/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\common\strutils.cpp.obj
+[13/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\autowah.cpp.obj
+[14/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\chorus.cpp.obj
+[15/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\buffer.cpp.obj
+[16/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\debug.cpp.obj
+[17/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effect.cpp.obj
+[18/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\auxeffectslot.cpp.obj
+[19/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\convolution.cpp.obj
+[20/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\dedicated.cpp.obj
+[21/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\compressor.cpp.obj
+[22/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\effects.cpp.obj
+[23/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\echo.cpp.obj
+[24/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\distortion.cpp.obj
+[25/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\equalizer.cpp.obj
+[26/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\modulator.cpp.obj
+[27/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\null.cpp.obj
+[28/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\fshifter.cpp.obj
+[29/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\pshifter.cpp.obj
+[30/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\reverb.cpp.obj
+[31/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\effects\vmorpher.cpp.obj
+[32/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\extension.cpp.obj
+[33/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\event.cpp.obj
+[34/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\error.cpp.obj
+C:\Users\runneradmin\TBuild\Libraries\win64\openal-soft\al\error.cpp(128): warning C4018: '<=': signed/unsigned mismatch
+[35/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\eax\api.cpp.obj
+[36/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\listener.cpp.obj
+[37/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\filter.cpp.obj
+[38/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\eax\call.cpp.obj
+[39/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\eax\exception.cpp.obj
+[40/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\eax\fx_slot_index.cpp.obj
+[41/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\state.cpp.obj
+[42/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\eax\utils.cpp.obj
+[43/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\source.cpp.obj
+[44/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\al\eax\fx_slots.cpp.obj
+[45/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\alu.cpp.obj
+[46/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\autowah.cpp.obj
+[47/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\device.cpp.obj
+[48/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\alconfig.cpp.obj
+[49/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\alc.cpp.obj
+[50/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\context.cpp.obj
+[51/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\chorus.cpp.obj
+[52/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\compressor.cpp.obj
+[53/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\dedicated.cpp.obj
+[54/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\echo.cpp.obj
+[55/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\convolution.cpp.obj
+[56/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\distortion.cpp.obj
+[57/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\equalizer.cpp.obj
+[58/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\fshifter.cpp.obj
+[59/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\null.cpp.obj
+[60/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\modulator.cpp.obj
+[61/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\pshifter.cpp.obj
+[62/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\vmorpher.cpp.obj
+[63/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\effects\reverb.cpp.obj
+[64/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\events.cpp.obj
+[65/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\backends\loopback.cpp.obj
+[66/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\backends\base.cpp.obj
+[67/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\backends\null.cpp.obj
+[68/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\backends\winmm.cpp.obj
+[69/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\panning.cpp.obj
+[70/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\backends\dsound.cpp.obj
+[71/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\backends\wave.cpp.obj
+[72/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\ambidefs.cpp.obj
+[73/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\ambdec.cpp.obj
+C:\Users\runneradmin\TBuild\Libraries\win64\openal-soft\core\ambdec.cpp(311) : warning C4702: unreachable code
+[74/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\bformatdec.cpp.obj
+[75/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\bs2b.cpp.obj
+[76/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\buffer_storage.cpp.obj
+[77/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\bsinc_tables.cpp.obj
+[78/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\alc\backends\wasapi.cpp.obj
+C:\Users\runneradmin\TBuild\Libraries\win64\openal-soft\alc\backends\wasapi.cpp(2210): warning C4100: 'audio': unreferenced parameter
+[79/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\devformat.cpp.obj
+[80/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\cpu_caps.cpp.obj
+[81/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\cubic_tables.cpp.obj
+[82/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\converter.cpp.obj
+[83/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\context.cpp.obj
+[84/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\except.cpp.obj
+[85/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\filters\biquad.cpp.obj
+[86/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\device.cpp.obj
+[87/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\fmt_traits.cpp.obj
+[88/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\effectslot.cpp.obj
+[89/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\fpu_ctrl.cpp.obj
+[90/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\filters\nfc.cpp.obj
+[91/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\filters\splitter.cpp.obj
+[92/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\storage_formats.cpp.obj
+[93/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\mastering.cpp.obj
+[94/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\logging.cpp.obj
+[95/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\mixer.cpp.obj
+[96/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\uiddefs.cpp.obj
+[97/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\helpers.cpp.obj
+[98/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\uhjfilter.cpp.obj
+[99/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\mixer\mixer_sse.cpp.obj
+[100/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\mixer\mixer_c.cpp.obj
+[101/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\mixer\mixer_sse3.cpp.obj
+[102/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\mixer\mixer_sse2.cpp.obj
+[103/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\voice.cpp.obj
+[104/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\hrtf.cpp.obj
+[105/106] Building CXX object CMakeFiles\OpenAL.dir\Debug\core\mixer\mixer_sse41.cpp.obj
+[106/106] Linking CXX static library Debug\OpenAL32.lib
+[1/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\althrd_setname.cpp.obj
+[2/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\alassert.cpp.obj
+[3/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\alsem.cpp.obj
+[4/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\dynload.cpp.obj
+[5/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\alstring.cpp.obj
+[6/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\ringbuffer.cpp.obj
+[7/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\alcomplex.cpp.obj
+[8/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\strutils.cpp.obj
+[9/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\polyphase_resampler.cpp.obj
+[10/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\common\pffft.cpp.obj
+[11/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\autowah.cpp.obj
+[12/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\chorus.cpp.obj
+[13/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\auxeffectslot.cpp.obj
+[14/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\buffer.cpp.obj
+[15/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\debug.cpp.obj
+[16/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\dedicated.cpp.obj
+[17/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\convolution.cpp.obj
+[18/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effect.cpp.obj
+[19/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\compressor.cpp.obj
+[20/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\effects.cpp.obj
+[21/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\distortion.cpp.obj
+[22/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\echo.cpp.obj
+[23/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\fshifter.cpp.obj
+[24/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\equalizer.cpp.obj
+[25/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\modulator.cpp.obj
+[26/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\null.cpp.obj
+[27/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\pshifter.cpp.obj
+[28/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\reverb.cpp.obj
+[29/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\effects\vmorpher.cpp.obj
+[30/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\error.cpp.obj
+C:\Users\runneradmin\TBuild\Libraries\win64\openal-soft\al\error.cpp(128): warning C4018: '<=': signed/unsigned mismatch
+[31/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\event.cpp.obj
+[32/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\extension.cpp.obj
+[33/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\eax\api.cpp.obj
+[34/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\listener.cpp.obj
+[35/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\filter.cpp.obj
+[36/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\eax\exception.cpp.obj
+[37/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\eax\call.cpp.obj
+[38/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\state.cpp.obj
+[39/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\eax\utils.cpp.obj
+[40/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\eax\fx_slot_index.cpp.obj
+[41/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\eax\fx_slots.cpp.obj
+[42/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\al\source.cpp.obj
+[43/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\alu.cpp.obj
+[44/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\alconfig.cpp.obj
+[45/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\autowah.cpp.obj
+[46/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\device.cpp.obj
+[47/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\context.cpp.obj
+[48/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\compressor.cpp.obj
+[49/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\chorus.cpp.obj
+[50/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\alc.cpp.obj
+[51/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\dedicated.cpp.obj
+[52/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\distortion.cpp.obj
+[53/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\echo.cpp.obj
+[54/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\convolution.cpp.obj
+[55/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\equalizer.cpp.obj
+[56/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\null.cpp.obj
+[57/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\modulator.cpp.obj
+[58/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\fshifter.cpp.obj
+[59/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\pshifter.cpp.obj
+[60/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\reverb.cpp.obj
+[61/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\effects\vmorpher.cpp.obj
+[62/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\events.cpp.obj
+[63/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\backends\base.cpp.obj
+[64/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\backends\loopback.cpp.obj
+[65/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\backends\null.cpp.obj
+[66/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\backends\dsound.cpp.obj
+[67/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\backends\winmm.cpp.obj
+[68/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\backends\wave.cpp.obj
+[69/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\panning.cpp.obj
+[70/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\ambidefs.cpp.obj
+[71/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\bs2b.cpp.obj
+[72/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\bformatdec.cpp.obj
+[73/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\ambdec.cpp.obj
+[74/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\buffer_storage.cpp.obj
+[75/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\bsinc_tables.cpp.obj
+[76/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\alc\backends\wasapi.cpp.obj
+C:\Users\runneradmin\TBuild\Libraries\win64\openal-soft\alc\backends\wasapi.cpp(2210): warning C4100: 'audio': unreferenced parameter
+[77/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\cpu_caps.cpp.obj
+[78/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\devformat.cpp.obj
+[79/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\cubic_tables.cpp.obj
+[80/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\converter.cpp.obj
+[81/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\context.cpp.obj
+[82/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\filters\biquad.cpp.obj
+[83/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\except.cpp.obj
+[84/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\filters\nfc.cpp.obj
+[85/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\device.cpp.obj
+[86/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\effectslot.cpp.obj
+[87/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\fpu_ctrl.cpp.obj
+[88/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\fmt_traits.cpp.obj
+[89/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\filters\splitter.cpp.obj
+[90/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\storage_formats.cpp.obj
+[91/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\logging.cpp.obj
+[92/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\mastering.cpp.obj
+[93/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\mixer.cpp.obj
+[94/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\uiddefs.cpp.obj
+[95/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\mixer\mixer_c.cpp.obj
+[96/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\helpers.cpp.obj
+[97/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\mixer\mixer_sse.cpp.obj
+[98/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\mixer\mixer_sse3.cpp.obj
+[99/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\uhjfilter.cpp.obj
+[100/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\mixer\mixer_sse2.cpp.obj
+[101/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\voice.cpp.obj
+[102/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\mixer\mixer_sse41.cpp.obj
+[103/104] Building CXX object CMakeFiles\OpenAL.dir\RelWithDebInfo\core\hrtf.cpp.obj
+[104/104] Linking CXX static library RelWithDebInfo\OpenAL32.lib
+NOT FOUND, BUILDING:
+---------------------------------COMMANDS-LIST----------------------------------
+if exist openal-soft rmdir /Q /S openal-soft
+if exist openal-soft exit /b 1
+git clone https://github.com/telegramdesktop/openal-soft.git
+cd openal-soft
+git checkout 291c0fdbbd
+cmake -B build . ^
+-D LIBTYPE:STRING=STATIC ^
+-D FORCE_STATIC_VCRT=ON ^
+-D ALSOFT_UTILS=OFF ^
+-D ALSOFT_EXAMPLES=OFF ^
+-D ALSOFT_TESTS=OFF
+cmake --build build --config Debug
+cmake --build build --config RelWithDebInfo
+--------------------------------------------------------------------------------
+[28/33](Libraries/breakpad): Cloning into 'breakpad'...
+Note: switching to 'dfcb7b6799'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at dfcb7b67 Revert "Fix incorrect source file name for inlined frames"
+Cloning into 'src/testing'...
+Note: switching to 'e2239ee6043f73722e7aa812a459f54a28552929'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+C:\Users\runneradmin\TBuild\ThirdParty\gyp\pylib\gyp\input.py:1186: SyntaxWarning: "is" with 'str' literal. Did you mean "=="?
+  if the_dict_key is 'variables' and variable_name in the_dict:
+ninja: Entering directory `out/Debug_x64'
+[1/8] CXX obj\common\windows\common.guid_string.obj
+[2/8] CXX obj\common\windows\common.string_utils.obj
+[3/8] CXX obj\client\windows\crash_generation\crash_generation_client.crash_generation_client.obj
+[4/8] LIB obj\client\windows\crash_generation\crash_generation_client.lib
+[5/8] CXX obj\client\windows\handler\exception_handler.exception_handler.obj
+[6/8] CXX obj\common\windows\common.http_upload.obj
+[7/8] LIB obj\client\windows\handler\exception_handler.lib
+[8/8] LIB obj\client\windows\common.lib
+ninja: Entering directory `out/Release_x64'
+[1/8] CXX obj\common\windows\common.guid_string.obj
+[2/8] CXX obj\common\windows\common.string_utils.obj
+[3/8] CXX obj\client\windows\crash_generation\crash_generation_client.crash_generation_client.obj
+[4/8] LIB obj\client\windows\crash_generation\crash_generation_client.lib
+[5/8] CXX obj\client\windows\handler\exception_handler.exception_handler.obj
+[6/8] LIB obj\client\windows\handler\exception_handler.lib
+[7/8] CXX obj\common\windows\common.http_upload.obj
+[8/8] LIB obj\client\windows\common.lib
+MSBuild version 18.11.1-1.26513.3+940033be3 for .NET Framework
+Build started 10/28/2026 5:09:18 PM.
+
+     1>Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" on node 1 (default targets).
+     1>Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (1) is building "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_sdk.vcxproj" (3) on node 2 (default targets).
+     3>PrepareForBuild:
+         Creating directory "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\".
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+         Creating directory "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\".
+       InitializeBuildStatus:
+         Creating "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\unsuccessfulbuild".
+       FinalizeBuildStatus:
+         Deleting file "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\unsuccessfulbuild".
+         Touching "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\dia_sdk.lastbuildstate".
+     3>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_sdk.vcxproj" (default targets).
+     1>Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (1) is building "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj" (2) on node 1 (default targets).
+     2>PrepareForBuild:
+         Creating directory "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\".
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+         Creating directory "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\common_w.1538A61E.tlog\".
+       InitializeBuildStatus:
+         Creating "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\common_w.1538A61E.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\common_w.1538A61E.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /I..\.. /I"C:\Program Files\Microsoft Visual Studio\18\Enterprise\\DIA SDK\include" /I..\..\third_party\platformsdk_win7\files\Include /I"C:\Program Files\Microsoft Visual Studio\18\Enterprise\\VC\atlmfc\include" /Zi /nologo /W4 /WX /diagnostics:column /O2 /D _WIN32_WINNT=0x0600 /D WINVER=0x0600 /D WIN32 /D _WINDOWS /D _HAS_EXCEPTIONS=0 /D NOMINMAX /D _CRT_RAND_S /D CERT_CHAIN_PARA_HAS_EXTRA_FIELDS /D WIN32_LEAN_AND_MEAN /D _SECURE_ATL /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D _USING_V110_SDK71_ /D NO_TCMALLOC /D NDEBUG /D NVALGRIND /D _UNICODE /D UNICODE /Gm- /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Fo"C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\\" /Fd"C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\common_windows_lib.pdb" /external:W4 /Gd /TP /wd4091 /wd4100 /wd4127 /wd4366 /wd4396 /wd4503 /wd4512 /wd4819 /wd4995 /wd4702 /wd4800 /FC /errorReport:queue /MP dia_util.cc guid_string.cc http_upload.cc omap.cc pdb_source_line_writer.cc pe_source_line_writer.cc pe_util.cc string_utils.cc symbol_collector_client.cc
+         dia_util.cc
+         guid_string.cc
+         http_upload.cc
+         omap.cc
+         pdb_source_line_writer.cc
+         pe_source_line_writer.cc
+     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pdb_source_line_writer.h(36,10): error C1083: Cannot open include file: 'atlcomcli.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         (compiling source file 'pdb_source_line_writer.cc')
+         
+     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_util.cc(31,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         pe_util.cc
+     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\omap.cc(105,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         string_utils.cc
+         symbol_collector_client.cc
+     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pe_util.cc(34,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+     2>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj" (default targets) -- FAILED.
+     1>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (default target) (1) ->
+       "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj" (default target) (2) ->
+       (ClCompile target) -> 
+         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pdb_source_line_writer.h(36,10): error C1083: Cannot open include file: 'atlcomcli.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_util.cc(31,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\omap.cc(105,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pe_util.cc(34,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+
+    0 Warning(s)
+    4 Error(s)
+
+Time Elapsed 00:00:02.40
+NOT FOUND, BUILDING:
+---------------------------------COMMANDS-LIST----------------------------------
+if exist breakpad rmdir /Q /S breakpad
+if exist breakpad exit /b 1
+git clone https://chromium.googlesource.com/breakpad/breakpad
+cd breakpad
+git checkout dfcb7b6799
+git apply ../patches/breakpad.diff
+git clone -b release-1.11.0 https://github.com/google/googletest src/testing
+SET "PYTHONUTF8=1"
+SET "FolderPostfix="
+SET "ToolsetProp="
+SET "FolderPostfix=_x64"
+%THIRDPARTY_DIR%\python\Scripts\activate.bat
+cd src\client\windows
+gyp --no-circular-check breakpad_client.gyp --format=ninja
+cd ..\..
+ninja -C out/Debug%FolderPostfix% common crash_generation_client exception_handler
+ninja -C out/Release%FolderPostfix% common crash_generation_client exception_handler
+cd tools\windows\dump_syms
+gyp dump_syms.gyp --format=msvs
+msbuild -m dump_syms.vcxproj /property:Configuration=Release /property:Platform="x64" %ToolsetProp%
+deactivate
+--------------------------------------------------------------------------------
+[28/33](Libraries/breakpad): FAILED
+FAILED
