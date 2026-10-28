@@ -3,10 +3,9 @@ name: Windows build
 # Собирает ZKgram.exe (Windows x64, Qt 6, Release).
 #
 # Первая сборка долгая: сначала собираются все библиотеки (Qt, FFmpeg, WebRTC
-# и т.д.). Готовые библиотеки сохраняются в кэш GitHub сразу после шага
-# "Libraries", даже если шаг упал по таймауту. Если первый запуск не уложился
-# в лимит времени, просто запусти workflow ещё раз (Actions -> Windows build ->
-# Run workflow): сборка продолжится с того места, где остановилась.
+# и т.д.). Готовые библиотеки сохраняются в кэш GitHub после шага "Libraries".
+# Если времени одного запуска (6 часов) не хватает, workflow сам запускает
+# продолжение (до 6 раз подряд), и сборка идёт дальше с того же места.
 #
 # Логи каждого запуска (хвосты и строки с ошибками) публикуются в ветку
 # ci-logs-<run_id>-<attempt>, чтобы их можно было прочитать через git.
@@ -21,6 +20,11 @@ on:
       - 'LEGAL'
       - 'changelog.txt'
   workflow_dispatch:
+    inputs:
+      chain:
+        description: 'Номер продолжения (служебное поле)'
+        required: false
+        default: '0'
 
 concurrency:
   group: windows-${{ github.ref }}
@@ -28,6 +32,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   windows:
@@ -38,12 +43,20 @@ jobs:
     env:
       PREPARE_PATH: "Telegram/build/prepare/prepare.py"
       QT_OPTION: "qt6"
+      CHAIN: ${{ github.event.inputs.chain || '0' }}
+      MAX_CHAIN: "6"
+      LIBS_MINUTES: "270"
+      BUILD_NEEDS_MINUTES: "200"
 
     defaults:
       run:
         shell: cmd
 
     steps:
+      - name: Remember start time.
+        shell: bash
+        run: echo "JOB_START=$(date +%s)" >> $GITHUB_ENV
+
       - name: Prepare directories.
         run: |
           mkdir %userprofile%\TBuild\Libraries
@@ -123,13 +136,31 @@ jobs:
 
       - name: Libraries.
         id: libraries
-        timeout-minutes: 290
+        timeout-minutes: 300
         shell: pwsh
         run: |
           $log = Join-Path $env:TBUILD "logs\libraries.log"
+          $marker = Join-Path $env:TBUILD "logs\libraries_timeout.txt"
           $script = Join-Path $env:TBUILD "$env:REPO_NAME\Telegram\build\prepare\win.bat"
-          cmd /c "`"$script`" silent $env:QT_OPTION 2>&1" | Tee-Object -FilePath $log
-          exit $LASTEXITCODE
+          $deadline = (Get-Date).AddMinutes([int]$env:LIBS_MINUTES)
+          $p = Start-Process -FilePath "cmd.exe" -ArgumentList "/c $script silent $env:QT_OPTION > $log 2>&1" -NoNewWindow -PassThru
+          $lastReport = Get-Date
+          while (-not $p.HasExited) {
+            Start-Sleep -Seconds 20
+            if ((Get-Date) -gt $deadline) {
+              Write-Host "Time limit for libraries reached, stopping to save progress."
+              & taskkill /T /F /PID $p.Id | Out-Null
+              Set-Content -Path $marker -Value "timeout"
+              exit 0
+            }
+            if (((Get-Date) - $lastReport).TotalMinutes -ge 5) {
+              $lastReport = Get-Date
+              Get-Content $log -Tail 3 -ErrorAction SilentlyContinue
+            }
+          }
+          $p.WaitForExit()
+          Get-Content $log -Tail 60 -ErrorAction SilentlyContinue
+          exit $p.ExitCode
 
       - name: Free up some disk space.
         if: always()
@@ -173,7 +204,36 @@ jobs:
             ${{ env.LibrariesPath }}\cache_keys\[qQ]t[_-]*
           key: zk-win-qt-${{ env.CACHE_KEY }}-${{ env.QT_STATE }}
 
+      - name: Decide whether to build now.
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NOW=$(date +%s)
+          ELAPSED=$(( (NOW - JOB_START) / 60 ))
+          LEFT=$(( 350 - ELAPSED ))
+          echo "Elapsed: ${ELAPSED} min, left: ${LEFT} min"
+          CONTINUE=0
+          if [ -f "$TBUILD/logs/libraries_timeout.txt" ]; then
+            echo "Libraries are not finished yet."
+            CONTINUE=1
+          elif [ "$LEFT" -lt "$BUILD_NEEDS_MINUTES" ]; then
+            echo "Libraries are ready, but there is not enough time left to build the app."
+            CONTINUE=1
+          fi
+          if [ "$CONTINUE" = "1" ]; then
+            echo "SKIP_BUILD=1" >> $GITHUB_ENV
+            if [ "$CHAIN" -lt "$MAX_CHAIN" ]; then
+              NEXT=$(( CHAIN + 1 ))
+              echo "Starting continuation #$NEXT"
+              gh workflow run win.yml --repo "$GITHUB_REPOSITORY" --ref "$GITHUB_REF_NAME" -f chain=$NEXT || echo "::warning::Could not start continuation, run the workflow manually."
+            else
+              echo "::warning::Continuation limit reached, run the workflow manually."
+            fi
+          fi
+
       - name: Configure.
+        if: env.SKIP_BUILD != '1'
         env:
           TG_API_ID: ${{ secrets.TG_API_ID }}
           TG_API_HASH: ${{ secrets.TG_API_HASH }}
@@ -199,6 +259,7 @@ jobs:
           exit /b %CONFIGURE_EXIT%
 
       - name: Quick check of changed files.
+        if: env.SKIP_BUILD != '1'
         shell: bash
         run: |
           cd "$TBUILD/$REPO_NAME"
@@ -223,6 +284,7 @@ jobs:
           ninja -C out -f build-Release.ninja -k 0 $TARGETS 2>&1 | tee "$TBUILD/logs/quick_check.log"
 
       - name: ZKgram build.
+        if: env.SKIP_BUILD != '1'
         shell: bash
         run: |
           cd "$TBUILD/$REPO_NAME"
@@ -230,6 +292,7 @@ jobs:
           cmake --build out --config Release --parallel -- -k 0 2>&1 | tee "$TBUILD/logs/build.log"
 
       - name: Pack artifact.
+        if: env.SKIP_BUILD != '1'
         shell: bash
         run: |
           OUT="$TBUILD/$REPO_NAME/out/Release"
@@ -242,10 +305,27 @@ jobs:
 
       - uses: actions/upload-artifact@v7
         name: Upload artifact.
+        if: env.SKIP_BUILD != '1'
         with:
           name: ZKgram-win64
           path: artifact\
           retention-days: 30
+
+      - name: Publish release.
+        if: env.SKIP_BUILD != '1'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          rm -f ZKgram-win64.zip
+          (cd artifact && 7z a -tzip ../ZKgram-win64.zip .)
+          TAG="build-${{ github.run_number }}"
+          gh release create "$TAG" ZKgram-win64.zip \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "${{ github.sha }}" \
+            --title "ZKgram build ${{ github.run_number }}" \
+            --notes "Commit ${{ github.sha }}. Скачай ZKgram-win64.zip, распакуй в любую папку и запусти ZKgram.exe." \
+            --latest
 
       - name: Publish logs.
         if: always()
