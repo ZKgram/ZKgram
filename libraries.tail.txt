@@ -1,0 +1,176 @@
+Choosing Qt 6.
+[1/33](Libraries/patches): SKIPPING
+[2/33](ThirdParty/msys64): SKIPPING
+[3/33](ThirdParty/python#0.3.12.10): SKIPPING
+[4/33](ThirdParty/NuGet): SKIPPING
+[5/33](ThirdParty/jom): SKIPPING
+[6/33](ThirdParty/gyp): SKIPPING
+[7/33](ThirdParty/rust): SKIPPING
+[8/33](Libraries/lzma): SKIPPING
+[9/33](Libraries/zlib): SKIPPING
+[10/33](Libraries/mozjpeg): SKIPPING
+[11/33](Libraries/openssl3): SKIPPING
+[12/33](Libraries/opus): SKIPPING
+[13/33](Libraries/rnnoise): SKIPPING
+[14/33](Libraries/gas-preprocessor): Cloning into 'gas-preprocessor'...
+NOT FOUND, BUILDING:
+---------------------------------COMMANDS-LIST----------------------------------
+if exist gas-preprocessor rmdir /Q /S gas-preprocessor
+if exist gas-preprocessor exit /b 1
+git clone https://github.com/FFmpeg/gas-preprocessor
+cd gas-preprocessor
+echo @echo off > cpp.bat
+echo cl %%%%%%** >> cpp.bat
+--------------------------------------------------------------------------------
+[15/33](Libraries/dav1d): SKIPPING
+[16/33](Libraries/openh264): SKIPPING
+[17/33](Libraries/libavif): SKIPPING
+[18/33](Libraries/libde265): SKIPPING
+[19/33](Libraries/libwebp): SKIPPING
+[20/33](Libraries/libheif): SKIPPING
+[21/33](Libraries/libjxl): SKIPPING
+[22/33](Libraries/libvpx): SKIPPING
+[23/33](Libraries/liblcms2): SKIPPING
+[24/33](Libraries/nv-codec-headers): SKIPPING
+[25/33](Libraries/regex): SKIPPING
+[26/33](Libraries/ffmpeg): SKIPPING
+[27/33](Libraries/openal-soft): SKIPPING
+[28/33](Libraries/breakpad): Cloning into 'breakpad'...
+Note: switching to 'dfcb7b6799'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at dfcb7b67 Revert "Fix incorrect source file name for inlined frames"
+Cloning into 'src/testing'...
+Note: switching to 'e2239ee6043f73722e7aa812a459f54a28552929'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+ninja: Entering directory `out/Debug_x64'
+[1/8] CXX obj\client\windows\crash_generation\crash_generation_client.crash_generation_client.obj
+[2/8] CXX obj\common\windows\common.guid_string.obj
+[3/8] CXX obj\common\windows\common.http_upload.obj
+[4/8] CXX obj\common\windows\common.string_utils.obj
+[5/8] CXX obj\client\windows\handler\exception_handler.exception_handler.obj
+[6/8] LIB obj\client\windows\common.lib
+[7/8] LIB obj\client\windows\crash_generation\crash_generation_client.lib
+[8/8] LIB obj\client\windows\handler\exception_handler.lib
+ninja: Entering directory `out/Release_x64'
+[1/8] CXX obj\common\windows\common.guid_string.obj
+[2/8] CXX obj\common\windows\common.string_utils.obj
+[3/8] CXX obj\client\windows\crash_generation\crash_generation_client.crash_generation_client.obj
+[4/8] LIB obj\client\windows\crash_generation\crash_generation_client.lib
+[5/8] CXX obj\client\windows\handler\exception_handler.exception_handler.obj
+[6/8] LIB obj\client\windows\handler\exception_handler.lib
+[7/8] CXX obj\common\windows\common.http_upload.obj
+[8/8] LIB obj\client\windows\common.lib
+MSBuild version 18.11.1-1.26513.3+940033be3 for .NET Framework
+Build started 10/28/2026 5:15:37 PM.
+
+     1>Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" on node 1 (default targets).
+     1>Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (1) is building "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_sdk.vcxproj" (3) on node 2 (default targets).
+     3>PrepareForBuild:
+         Creating directory "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\".
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+         Creating directory "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\".
+       InitializeBuildStatus:
+         Creating "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\unsuccessfulbuild".
+       FinalizeBuildStatus:
+         Deleting file "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\unsuccessfulbuild".
+         Touching "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\dia_sdk\dia_sdk.tlog\dia_sdk.lastbuildstate".
+     3>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_sdk.vcxproj" (default targets).
+     1>Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (1) is building "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj" (2) on node 1 (default targets).
+     2>PrepareForBuild:
+         Creating directory "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\".
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+         Creating directory "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\common_w.1538A61E.tlog\".
+       InitializeBuildStatus:
+         Creating "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\common_w.1538A61E.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\common_w.1538A61E.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /I..\.. /I"C:\Program Files\Microsoft Visual Studio\18\Enterprise\\DIA SDK\include" /I..\..\third_party\platformsdk_win7\files\Include /I"C:\Program Files\Microsoft Visual Studio\18\Enterprise\\VC\atlmfc\include" /Zi /nologo /W4 /WX /diagnostics:column /O2 /D _WIN32_WINNT=0x0600 /D WINVER=0x0600 /D WIN32 /D _WINDOWS /D _HAS_EXCEPTIONS=0 /D NOMINMAX /D _CRT_RAND_S /D CERT_CHAIN_PARA_HAS_EXTRA_FIELDS /D WIN32_LEAN_AND_MEAN /D _SECURE_ATL /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D _USING_V110_SDK71_ /D NO_TCMALLOC /D NDEBUG /D NVALGRIND /D _UNICODE /D UNICODE /Gm- /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Fo"C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\obj\common_windows_lib\\" /Fd"C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\Release\common_windows_lib.pdb" /external:W4 /Gd /TP /wd4091 /wd4100 /wd4127 /wd4366 /wd4396 /wd4503 /wd4512 /wd4819 /wd4995 /wd4702 /wd4800 /FC /errorReport:queue /MP dia_util.cc guid_string.cc http_upload.cc omap.cc pdb_source_line_writer.cc pe_source_line_writer.cc pe_util.cc string_utils.cc symbol_collector_client.cc
+         dia_util.cc
+         guid_string.cc
+         http_upload.cc
+         omap.cc
+         pdb_source_line_writer.cc
+         pe_source_line_writer.cc
+         pe_util.cc
+         string_utils.cc
+     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pdb_source_line_writer.h(36,10): error C1083: Cannot open include file: 'atlcomcli.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         (compiling source file 'pdb_source_line_writer.cc')
+         
+     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_util.cc(31,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\omap.cc(105,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         symbol_collector_client.cc
+     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pe_util.cc(34,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+     2>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj" (default targets) -- FAILED.
+     1>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (default target) (1) ->
+       "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj" (default target) (2) ->
+       (ClCompile target) -> 
+         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pdb_source_line_writer.h(36,10): error C1083: Cannot open include file: 'atlcomcli.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_util.cc(31,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\omap.cc(105,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pe_util.cc(34,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+
+    0 Warning(s)
+    4 Error(s)
+
+Time Elapsed 00:00:07.08
+CHANGED, BUILDING:
+---------------------------------COMMANDS-LIST----------------------------------
+if exist breakpad rmdir /Q /S breakpad
+if exist breakpad exit /b 1
+git clone https://chromium.googlesource.com/breakpad/breakpad
+cd breakpad
+git checkout dfcb7b6799
+git apply ../patches/breakpad.diff
+git clone -b release-1.11.0 https://github.com/google/googletest src/testing
+SET "PYTHONUTF8=1"
+SET "FolderPostfix="
+SET "ToolsetProp="
+SET "FolderPostfix=_x64"
+%THIRDPARTY_DIR%\python\Scripts\activate.bat
+cd src\client\windows
+gyp --no-circular-check breakpad_client.gyp --format=ninja
+cd ..\..
+ninja -C out/Debug%FolderPostfix% common crash_generation_client exception_handler
+ninja -C out/Release%FolderPostfix% common crash_generation_client exception_handler
+cd tools\windows\dump_syms
+gyp dump_syms.gyp --format=msvs
+msbuild -m dump_syms.vcxproj /property:Configuration=Release /property:Platform="x64" %ToolsetProp%
+deactivate
+--------------------------------------------------------------------------------
+[28/33](Libraries/breakpad): FAILED
+FAILED

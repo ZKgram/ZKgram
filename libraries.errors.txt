@@ -1,0 +1,16 @@
+100:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+112:         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+127:     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pdb_source_line_writer.h(36,10): error C1083: Cannot open include file: 'atlcomcli.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+130:     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_util.cc(31,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+131:     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\omap.cc(105,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+133:     2>C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pe_util.cc(34,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+134:     2>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj" (default targets) -- FAILED.
+135:     1>Done Building Project "C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\tools\windows\dump_syms\dump_syms.vcxproj" (default targets) -- FAILED.
+137:Build FAILED.
+142:         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pdb_source_line_writer.h(36,10): error C1083: Cannot open include file: 'atlcomcli.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+143:         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\dia_util.cc(31,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+144:         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\omap.cc(105,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+145:         C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\pe_util.cc(34,10): error C1083: Cannot open include file: 'atlbase.h': No such file or directory [C:\Users\runneradmin\TBuild\Libraries\win64\breakpad\src\common\windows\common_windows_lib.vcxproj]
+148:    4 Error(s)
+175:[28/33](Libraries/breakpad): FAILED
+176:FAILED
