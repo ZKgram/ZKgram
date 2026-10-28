@@ -36,8 +36,9 @@ ZKgram не связан с Telegram, Radolyn Labs (AyuGram) или автора
 * `TG_API_ID`
 * `TG_API_HASH`
 
-Без них собирается версия с тестовыми ключами, через которую нормально войти
-в аккаунт не получится.
+Если секретов нет, используются публичные ключи официального Telegram Desktop
+(как в AyuGram, см. `docs/api_credentials.md`). Это нарушает правила Telegram
+API, поэтому по возможности заведи свои ключи.
 
 Подробнее: [docs/zkgram.md](docs/zkgram.md).
 

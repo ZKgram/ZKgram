@@ -241,8 +241,8 @@ jobs:
           cd %TBUILD%\%REPO_NAME%\Telegram
 
           if "%TG_API_ID%"=="" (
-            echo ::warning::TG_API_ID / TG_API_HASH secrets are not set. Building with TEST api credentials, login will be limited.
-            set "ZK_API=-D TDESKTOP_API_TEST=ON"
+            echo ::warning::TG_API_ID / TG_API_HASH secrets are not set. Using the public Telegram Desktop credentials from docs/api_credentials.md, the same as AyuGram does.
+            set "ZK_API=-D TDESKTOP_API_ID=2040 -D TDESKTOP_API_HASH=b18441a1ff607e10a989891a5462e627"
           ) else (
             set "ZK_API=-D TDESKTOP_API_ID=%TG_API_ID% -D TDESKTOP_API_HASH=%TG_API_HASH%"
           )

@@ -88,9 +88,12 @@ Desktop) с функциями, перенесёнными из [Nagram X](https
 
 Сборка идёт в GitHub Actions: `.github/workflows/win.yml`.
 
-1. В репозитории: **Settings → Secrets and variables → Actions** добавь
-   секреты `TG_API_ID` и `TG_API_HASH` (получить на https://my.telegram.org →
-   API development tools).
+1. Ключи Telegram API. Если в репозитории (**Settings → Secrets and
+   variables → Actions**) заданы секреты `TG_API_ID` и `TG_API_HASH`
+   (получить на https://my.telegram.org → API development tools), сборка
+   использует их. Если их нет, используются публичные ключи официального
+   Telegram Desktop из `docs/api_credentials.md`, так же как в AyuGram. Это
+   нарушает правила Telegram API, риск ограничения аккаунта на тебе.
 2. Любой пуш в ветку `main` или кнопка **Actions → Windows build → Run
    workflow** запускает сборку.
 3. Первая сборка библиотек занимает несколько часов. Если запуск упал по
