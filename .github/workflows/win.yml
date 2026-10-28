@@ -85,7 +85,6 @@ jobs:
 
           sed -i '/CMAKE_${lang}_FLAGS_DEBUG_INIT/s/${_Zi}//' "$PROGRAMFILES"/CMake/share/cmake*/Modules/Platform/Windows-MSVC.cmake
 
-          echo "$(sha256sum $TBUILD/$REPO_NAME/$PREPARE_PATH | awk '{ print $1 }')" >> CACHE_KEY.txt
           echo "$SDK" >> CACHE_KEY.txt
           echo "$QT_OPTION" >> CACHE_KEY.txt
           echo "CACHE_KEY=$(sha256sum CACHE_KEY.txt | awk '{ print $1 }' | cut -c1-16)" >> $GITHUB_ENV
@@ -111,7 +110,9 @@ jobs:
         with:
           path: ${{ env.TBUILD }}\ThirdParty
           key: zk-win-thirdparty-${{ env.CACHE_KEY }}-none
-          restore-keys: zk-win-thirdparty-${{ env.CACHE_KEY }}-
+          restore-keys: |
+            zk-win-thirdparty-${{ env.CACHE_KEY }}-
+            zk-win-thirdparty-
 
       - name: Restore Libraries cache.
         uses: actions/cache/restore@v6
@@ -123,7 +124,9 @@ jobs:
             ${{ env.LibrariesPath }}\cache_keys\*
             !${{ env.LibrariesPath }}\cache_keys\[qQ]t[_-]*
           key: zk-win-libs-${{ env.CACHE_KEY }}-none
-          restore-keys: zk-win-libs-${{ env.CACHE_KEY }}-
+          restore-keys: |
+            zk-win-libs-${{ env.CACHE_KEY }}-
+            zk-win-libs-
 
       - name: Restore Qt cache.
         uses: actions/cache/restore@v6
@@ -132,7 +135,9 @@ jobs:
             ${{ env.LibrariesPath }}\[qQ]t[_-]*
             ${{ env.LibrariesPath }}\cache_keys\[qQ]t[_-]*
           key: zk-win-qt-${{ env.CACHE_KEY }}-none
-          restore-keys: zk-win-qt-${{ env.CACHE_KEY }}-
+          restore-keys: |
+            zk-win-qt-${{ env.CACHE_KEY }}-
+            zk-win-qt-
 
       - name: Libraries.
         id: libraries
