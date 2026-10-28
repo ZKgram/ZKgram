@@ -42,6 +42,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 #include "base/unixtime.h"
 #include "mtproto/mtproto_config.h"
 #include "boxes/abstract_box.h" // Ui::show().
+#include "zkgram/zk_features.h"
 
 #include <tgcalls/VideoCaptureInterface.h>
 #include <tgcalls/StaticThreads.h>
@@ -205,6 +206,14 @@ void Instance::startOutgoingCall(
 		StartOutgoingCallArgs args) {
 	if (activateCurrentCall()
 		|| (!args.isConfirmed && activateUnconfirmedCall(user))) {
+		return;
+	}
+	if (!args.zkConfirmed
+		&& ZKgram::InterceptOutgoingCall(user, crl::guard(this, [=, this] {
+			auto copy = args;
+			copy.zkConfirmed = true;
+			startOutgoingCall(user, copy);
+		}))) {
 		return;
 	}
 	if (user->callsStatus() == UserData::CallsStatus::Private) {

@@ -16,6 +16,9 @@
 #include "lang/lang_instance.h"
 #include "ui/chat/chat_style_radius.h"
 #include "utils/rc_manager.h"
+#include "zkgram/zk_features.h"
+#include "zkgram/zk_lang.h"
+#include "zkgram/zk_settings.h"
 
 #ifdef Q_OS_WIN
 #include "ayu/utils/windows_utils.h"
@@ -28,6 +31,7 @@ void initLang() {
 	QString baseId = Lang::GetInstance().baseId();
 	if (id.isEmpty()) {
 		LOG(("Language is not loaded"));
+		ZKgram::ApplyTranslations();
 		return;
 	}
 	AyuLanguage::init();
@@ -68,6 +72,8 @@ void initIcon() {
 }
 
 void init() {
+	ZKgram::Settings::Load();
+	ZKgram::InitFeatures();
 	initLang();
 	initDatabase();
 	initUiSettings();

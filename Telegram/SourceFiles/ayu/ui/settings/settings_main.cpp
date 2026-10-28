@@ -16,6 +16,7 @@
 #include "ayu/ui/settings/settings_filters.h"
 #include "ayu/ui/settings/settings_general.h"
 #include "ayu/ui/settings/settings_other.h"
+#include "zkgram/zk_settings_section.h"
 #include "core/version.h"
 #include "settings/settings_builder.h"
 #include "settings/settings_common.h"
@@ -70,7 +71,7 @@ void BuildVersionInfo(SectionBuilder &builder) {
 			.widget = object_ptr<Ui::FlatLabel>(
 				ctx.container,
 				rpl::single(
-					QString("AyuGram Desktop v")
+					QString("ZKgram Desktop v")
 					+ QString::fromLatin1(AppVersionStr)),
 				st::boxTitle),
 			.align = style::al_top,
@@ -130,6 +131,11 @@ void BuildCategories(SectionBuilder &builder) {
 		.targetSection = AyuOther::Id(),
 		.icon = { &st::menuIconFave },
 	});
+	builder.addSectionButton({
+		.title = tr::zk_CategoryNagram(),
+		.targetSection = ZkNagram::Id(),
+		.icon = { &st::menuIconCustomize },
+	});
 }
 
 void BuildLinks(SectionBuilder &builder) {
@@ -142,35 +148,33 @@ void BuildLinks(SectionBuilder &builder) {
 	const auto controller = builder.controller();
 
 	builder.addButton({
-		.id = u"ayu/channel"_q,
-		.title = tr::ayu_LinksChannel(),
-		.icon = { &st::menuIconChannel },
-		.label = rpl::single(QString("@ayugram")),
-		.onClick = [=] {
-			controller->showPeerByLink(Window::PeerByLinkInfo{
-				.usernameOrId = QString("ayugram"),
-			});
-		},
-	});
-	builder.addButton({
-		.id = u"ayu/chat"_q,
-		.title = tr::ayu_LinksChats(),
-		.icon = { &st::menuIconChats },
-		.label = rpl::single(QString("@ayugramchat")),
-		.onClick = [=] {
-			controller->showPeerByLink(Window::PeerByLinkInfo{
-				.usernameOrId = QString("ayugramchat"),
-			});
-		},
-	});
-	builder.addButton({
-		.id = u"ayu/crowdin"_q,
-		.title = tr::ayu_LinksTranslate(),
-		.icon = { &st::menuIconTranslate },
-		.label = rpl::single(QString("Crowdin")),
+		.id = u"zk/github"_q,
+		.title = tr::zk_SourceCode(),
+		.icon = { &st::menuIconLinks },
+		.label = rpl::single(QString("GitHub")),
 		.onClick = [=] {
 			QDesktopServices::openUrl(
-				QString("https://translate.ayugram.one"));
+				QString("https://github.com/ZKgram/ZKgram"));
+		},
+	});
+	builder.addButton({
+		.id = u"zk/ayugram"_q,
+		.title = tr::zk_BasedOnAyuGram(),
+		.icon = { &st::menuIconGroupReactions },
+		.label = rpl::single(QString("GitHub")),
+		.onClick = [=] {
+			QDesktopServices::openUrl(
+				QString("https://github.com/AyuGram/AyuGramDesktop"));
+		},
+	});
+	builder.addButton({
+		.id = u"zk/nagramx"_q,
+		.title = tr::zk_BasedOnNagram(),
+		.icon = { &st::menuIconCustomize },
+		.label = rpl::single(QString("GitHub")),
+		.onClick = [=] {
+			QDesktopServices::openUrl(
+				QString("https://github.com/risin42/NagramX"));
 		},
 	});
 	builder.addButton({

@@ -11,6 +11,7 @@
 #include "core/core_settings.h"
 #include "lang/lang_instance.h"
 #include "storage/localstorage.h"
+#include "zkgram/zk_lang.h"
 
 #include <QDir>
 #include <QFile>
@@ -40,6 +41,7 @@ AyuLanguage::AyuLanguage() = default;
 void AyuLanguage::init() {
 	if (!instance) instance = new AyuLanguage;
 	instance->loadCachedLanguage();
+	ZKgram::ApplyTranslations();
 }
 
 AyuLanguage *AyuLanguage::currentInstance() {
@@ -210,4 +212,5 @@ void AyuLanguage::applyLanguageJson(QJsonDocument doc) {
 		Lang::GetInstance().applyValue(key.toUtf8(), val.toUtf8());
 	}
 	Lang::GetInstance().updatePluralRules();
+	ZKgram::ApplyTranslations();
 }

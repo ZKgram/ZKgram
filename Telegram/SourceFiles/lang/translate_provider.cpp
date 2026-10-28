@@ -56,6 +56,9 @@ std::unique_ptr<TranslateProvider> CreateTranslateProvider(
 	switch (provider) {
 	case TranslationProvider::Google:
 	case TranslationProvider::Yandex:
+	case TranslationProvider::DeepL:
+	case TranslationProvider::Microsoft:
+	case TranslationProvider::Llm:
 		return CreateAyuTranslateProvider(session, provider);
 	case TranslationProvider::Native:
 		if (auto native = Platform::CreateTranslateProvider()) {

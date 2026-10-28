@@ -917,8 +917,26 @@ int NonZeroPartToInt(QString value) {
 		: (value.isEmpty() ? 0 : value.toInt());
 }
 
+namespace {
+
+bool CountShorteningDisabledValue = false;
+
+} // namespace
+
+void SetCountShorteningDisabled(bool disabled) {
+	CountShorteningDisabledValue = disabled;
+}
+
+bool CountShorteningDisabled() {
+	return CountShorteningDisabledValue;
+}
+
 ShortenedCount FormatCountToShort(int64 number, bool onlyK) {
 	auto result = ShortenedCount{ number };
+	if (CountShorteningDisabledValue) {
+		result.string = FormatCountDecimal(number);
+		return result;
+	}
 	const auto abs = std::abs(number);
 	const auto shorten = [&](int64 divider, char multiplier) {
 		const auto sign = (number > 0) ? 1 : -1;

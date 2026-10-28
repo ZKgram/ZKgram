@@ -6,6 +6,7 @@ For license and copyright information please follow this link:
 https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 */
 #include "history/view/history_view_context_menu.h"
+#include "zkgram/zk_features.h"
 
 #include "api/api_attached_stickers.h"
 #include "api/api_editing.h"
@@ -1415,6 +1416,7 @@ void AddMessageActions(
 		AyuUi::AddUserMessagesAction(menu, request.item);
 		AyuUi::AddRepeatMessageAction(menu, request.item, context);
 		AyuUi::AddMessageDetailsAction(menu, request.item);
+		ZKgram::AddMessageActions(menu, request.item);
 	}
 
 	AddPostLinkAction(menu, request);

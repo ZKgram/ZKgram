@@ -11,6 +11,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 #include "api/api_text_entities.h"
 #include "data/data_channel.h"
 #include "data/data_document.h"
+#include "data/data_media_types.h"
 #include "data/data_peer.h"
 #include "data/data_session.h"
 #include "history/history.h"
@@ -21,6 +22,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 #include "main/main_session.h"
 #include "main/main_session_settings.h"
 #include "spellcheck/spellcheck_types.h"
+#include "window/window_session_controller.h"
+#include "zkgram/zk_transcribe.h"
 
 namespace Api {
 
@@ -56,6 +59,9 @@ void Transcribes::rate(not_null<HistoryItem*> item, bool isGood) {
 }
 
 bool Transcribes::freeFor(not_null<HistoryItem*> item) const {
+	if (ZKgram::TranscribeEnabled()) {
+		return true;
+	}
 	if (const auto channel = item->history()->peer->asMegagroup()) {
 		const auto owner = &channel->owner();
 		return channel->levelHint() >= owner->groupFreeTranscribeLevel();
@@ -64,6 +70,9 @@ bool Transcribes::freeFor(not_null<HistoryItem*> item) const {
 }
 
 bool Transcribes::trialsSupport() {
+	if (ZKgram::TranscribeEnabled()) {
+		return true;
+	}
 	if (!_trialsSupport) {
 		const auto count = _session->appConfig().get<int>(
 			u"transcribe_audio_trial_weekly_number"_q,
@@ -96,6 +105,9 @@ int Transcribes::trialsCount() {
 }
 
 crl::time Transcribes::trialsMaxLengthMs() const {
+	if (ZKgram::TranscribeEnabled()) {
+		return crl::time(24) * 60 * 60 * 1000;
+	}
 	return 1000 * _session->appConfig().get<int>(
 		u"transcribe_audio_trial_duration_max"_q,
 		300);
@@ -104,7 +116,10 @@ crl::time Transcribes::trialsMaxLengthMs() const {
 void Transcribes::toggle(not_null<HistoryItem*> item) {
 	const auto id = item->fullId();
 	auto i = _map.find(id);
-	if (i == _map.end()) {
+	if (i == _map.end()
+		|| (i->second.failed
+			&& !i->second.requestId
+			&& ZKgram::TranscribeEnabled())) {
 		load(item);
 		_session->data().requestItemResize(item);
 	} else if (!i->second.requestId) {
@@ -170,8 +185,59 @@ void Transcribes::apply(const MTPDupdateTranscribedAudio &update) {
 	}
 }
 
+void Transcribes::loadExternal(not_null<HistoryItem*> item) {
+	constexpr auto kExternalRequestId = std::numeric_limits<mtpRequestId>::max();
+
+	const auto id = item->fullId();
+	auto &entry = _map.emplace(id).first->second;
+	entry.requestId = kExternalRequestId;
+	entry.shown = true;
+	entry.failed = false;
+	entry.toolong = false;
+	entry.pending = false;
+	entry.result = QString();
+
+	const auto session = _session;
+	const auto finish = [=, this](QString text, bool failed) {
+		auto &entry = _map[id];
+		entry.requestId = 0;
+		entry.pending = false;
+		entry.failed = failed;
+		entry.result = text;
+		if (const auto item = session->data().message(id)) {
+			if (const auto media = item->media()) {
+				if (const auto document = media->document()) {
+					if (document->isVideoMessage()) {
+						entry.roundview = true;
+						session->data().requestItemViewRefresh(item);
+					}
+				}
+			}
+			session->data().requestItemResize(item);
+		}
+	};
+	ZKgram::Transcribe(
+		item,
+		crl::guard(session.get(), [=](QString text) {
+			finish(text, text.isEmpty());
+		}),
+		crl::guard(session.get(), [=](QString error) {
+			if (const auto window = session->tryResolveWindow()) {
+				window->showToast(tr::zk_TranscribeFailed(
+					tr::now,
+					lt_item,
+					error));
+			}
+			finish(QString(), true);
+		}));
+}
+
 void Transcribes::load(not_null<HistoryItem*> item) {
 	if (!item->isHistoryEntry() || item->isLocal()) {
+		return;
+	}
+	if (ZKgram::TranscribeEnabled()) {
+		loadExternal(item);
 		return;
 	}
 	const auto toggleRound = [](not_null<HistoryItem*> item, Entry &entry) {

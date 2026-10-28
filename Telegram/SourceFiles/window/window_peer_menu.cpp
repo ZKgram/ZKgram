@@ -6,6 +6,7 @@ For license and copyright information please follow this link:
 https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 */
 #include "window/window_peer_menu.h"
+#include "zkgram/zk_features.h"
 
 #include "base/call_delayed.h"
 #include "menu/menu_check_item.h"
@@ -1930,6 +1931,7 @@ void Filler::fillContextMenuActions() {
 void Filler::fillHistoryActions() {
 	addToggleMuteSubmenu(true);
 	AyuUi::AddAyuGramActions(_peer, _thread, _controller, _addAction);
+	ZKgram::AddPeerActions(_peer, _thread, _controller, _addAction);
 	addCreateTopic();
 	addInfo();
 	AyuUi::AddJumpToBeginningAction(_peer, _thread, _controller, _addAction);
@@ -1972,6 +1974,7 @@ void Filler::fillProfileActions() {
 	addToggleTopicClosed();
 	AyuUi::AddOpenChannelAction(_peer, _controller, _addAction);
 	AyuUi::AddShadowBanAction(_peer, _addAction);
+	ZKgram::AddPeerActions(_peer, _thread, _controller, _addAction);
 	addViewDiscussion();
 	addDirectMessages();
 	addExportChat();
@@ -1987,6 +1990,7 @@ void Filler::fillProfileActions() {
 
 void Filler::fillRepliesActions() {
 	AyuUi::AddAyuGramActions(_peer, _thread, _controller, _addAction);
+	ZKgram::AddPeerActions(_peer, _thread, _controller, _addAction);
 	if (_topic) {
 		addInfo();
 		AyuUi::AddJumpToBeginningAction(_peer, _thread, _controller, _addAction);

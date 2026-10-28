@@ -42,6 +42,9 @@ void BuildTranslator(SectionBuilder &builder, AyuSectionBuilder &ayu) {
 		std::pair(TranslationProvider::Telegram, QString("Telegram")),
 		std::pair(TranslationProvider::Google, QString("Google")),
 		std::pair(TranslationProvider::Yandex, QString("Yandex")),
+		std::pair(TranslationProvider::DeepL, QString("DeepL")),
+		std::pair(TranslationProvider::Microsoft, QString("Microsoft")),
+		std::pair(TranslationProvider::Llm, QString("AI")),
 	};
 	const auto nativeAvailable = Platform::IsTranslateProviderAvailable();
 	auto availableOptions = options;

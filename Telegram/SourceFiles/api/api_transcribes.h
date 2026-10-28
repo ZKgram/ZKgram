@@ -62,6 +62,7 @@ public:
 
 private:
 	void load(not_null<HistoryItem*> item);
+	void loadExternal(not_null<HistoryItem*> item); // ZKgram: AI transcribe.
 	void summarize(not_null<HistoryItem*> item);
 
 	const not_null<Main::Session*> _session;

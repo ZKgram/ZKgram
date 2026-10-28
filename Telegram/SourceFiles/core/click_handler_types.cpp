@@ -48,6 +48,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 // AyuGram includes
 #include "ayu/ayu_settings.h"
 #include "ayu/ayu_url_handlers.h"
+#include "zkgram/zk_features.h"
 
 
 namespace {
@@ -338,7 +339,11 @@ void HiddenUrlClickHandler::Open(QString url, QVariant context) {
 			auto box = Box([=](not_null<Ui::GenericBox*> box) {
 				Ui::ConfirmBox(box, {
 					.text = (tr::lng_open_this_link(tr::now)),
-					.confirmed = [=](Fn<void()> hide) { hide(); open(); },
+					.confirmed = [=](Fn<void()> hide) {
+						hide();
+						const auto bypass = ZKgram::UrlConfirmationBypass();
+						open();
+					},
 					.confirmText = tr::lng_open_link(),
 					.labelStyle = my.dark ? &st::groupCallBoxLabel : nullptr,
 				});
@@ -556,29 +561,43 @@ void BotCommandClickHandler::onClick(ClickContext context) const {
 		return;
 	}
 	const auto my = context.other.value<ClickHandlerContext>();
-	if (const auto delegate = my.elementDelegate
-		? my.elementDelegate()
-		: nullptr) {
-		delegate->elementSendBotCommand(_cmd, my.itemId);
-	} else if (const auto controller = my.sessionWindow.get()) {
-		auto &data = controller->session().data();
-		const auto peer = my.peer
-			? my.peer
-			: my.itemId
-			? data.message(my.itemId)->history()->peer.get()
-			: nullptr;
-		// Can't find context.
-		if (!peer) {
-			return;
+	const auto cmd = _cmd;
+	const auto perform = [=] {
+		if (const auto delegate = my.elementDelegate
+			? my.elementDelegate()
+			: nullptr) {
+			delegate->elementSendBotCommand(cmd, my.itemId);
+		} else if (const auto controller = my.sessionWindow.get()) {
+			auto &data = controller->session().data();
+			const auto item = my.itemId
+				? data.message(my.itemId)
+				: nullptr;
+			const auto peer = my.peer
+				? my.peer
+				: item
+				? item->history()->peer.get()
+				: nullptr;
+			// Can't find context.
+			if (!peer) {
+				return;
+			}
+			controller->widget()->ui_hideSettingsAndLayer(
+				anim::type::normal);
+			Core::App().hideMediaView();
+			controller->content()->sendBotCommand({
+				.peer = peer,
+				.command = cmd,
+				.context = my.itemId,
+			});
 		}
-		controller->widget()->ui_hideSettingsAndLayer(anim::type::normal);
-		Core::App().hideMediaView();
-		controller->content()->sendBotCommand({
-			.peer = peer,
-			.command = _cmd,
-			.context = my.itemId,
-		});
+	};
+	if (ZKgram::InterceptBotCommand(
+			cmd,
+			my.sessionWindow.get(),
+			perform)) {
+		return;
 	}
+	perform();
 }
 
 auto BotCommandClickHandler::getTextEntity() const -> TextEntity {

@@ -107,6 +107,23 @@ PRIVATE
     ayugram::lib_icu
 )
 
+set(zkgram_files
+        zkgram/zk_bookmarks.cpp
+        zkgram/zk_bookmarks.h
+        zkgram/zk_features.cpp
+        zkgram/zk_features.h
+        zkgram/zk_lang.cpp
+        zkgram/zk_lang.h
+        zkgram/zk_settings.cpp
+        zkgram/zk_settings.h
+        zkgram/zk_settings_section.cpp
+        zkgram/zk_settings_section.h
+        zkgram/zk_transcribe.cpp
+        zkgram/zk_transcribe.h
+        zkgram/zk_translators.cpp
+        zkgram/zk_translators.h
+)
+
 set(ayugram_files
         ayu/ayu_worker.cpp
         ayu/ayu_worker.h
@@ -266,6 +283,7 @@ nice_target_sources(Telegram ${src_loc}
 PRIVATE
     ${style_files}
     ${ayugram_files}
+    ${zkgram_files}
 
     api/api_attached_stickers.cpp
     api/api_attached_stickers.h
@@ -2571,7 +2589,7 @@ else()
         set(bundle_identifier "one.ayugram.AyuGramDesktop")
     endif()
     set(bundle_entitlements "Telegram.entitlements")
-    set(output_name "AyuGram")
+    set(output_name "ZKgram")
 endif()
 
 if (CMAKE_GENERATOR STREQUAL Xcode)
@@ -2620,7 +2638,7 @@ get_property(is_multi_config GLOBAL PROPERTY GENERATOR_IS_MULTI_CONFIG)
 if (APPLE
     OR is_multi_config
     OR NOT CMAKE_EXECUTABLE_SUFFIX STREQUAL ""
-    OR NOT "${output_name}" STREQUAL "AyuGram")
+    OR NOT "${output_name}" STREQUAL "ZKgram")
     set(output_folder ${CMAKE_BINARY_DIR})
 else()
     set(output_folder ${CMAKE_BINARY_DIR}/bin)

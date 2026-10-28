@@ -43,6 +43,10 @@ enum class TranslationProvider {
 	Google = 1,
 	Yandex = 2,
 	Native = 3,
+	// ZKgram: providers ported from Nagram X.
+	DeepL = 4,
+	Microsoft = 5,
+	Llm = 6,
 };
 
 enum class SendWithoutSoundOption {
@@ -74,6 +78,9 @@ NLOHMANN_JSON_SERIALIZE_ENUM(TranslationProvider, {
 	{TranslationProvider::Google, "google"},
 	{TranslationProvider::Yandex, "yandex"},
 	{TranslationProvider::Native, "native"},
+	{TranslationProvider::DeepL, "deepl"},
+	{TranslationProvider::Microsoft, "microsoft"},
+	{TranslationProvider::Llm, "llm"},
 })
 
 NLOHMANN_JSON_SERIALIZE_ENUM(SendWithoutSoundOption, {

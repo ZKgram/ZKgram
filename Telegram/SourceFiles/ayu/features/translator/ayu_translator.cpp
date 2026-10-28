@@ -9,6 +9,7 @@
 #include "api/api_text_entities.h"
 #include "ayu/features/translator/implementations/google.h"
 #include "ayu/features/translator/implementations/yandex.h"
+#include "zkgram/zk_translators.h"
 #include "data/data_peer.h"
 #include "data/data_session.h"
 #include "history/history_item.h"
@@ -29,6 +30,12 @@ BaseTranslator *translatorForProvider(TranslationProvider provider) {
 		return &YandexTranslator::instance();
 	case TranslationProvider::Google:
 		return &GoogleTranslator::instance();
+	case TranslationProvider::DeepL:
+		return &ZKgram::DeeplTranslator::instance();
+	case TranslationProvider::Microsoft:
+		return &ZKgram::MicrosoftTranslator::instance();
+	case TranslationProvider::Llm:
+		return &ZKgram::LlmTranslator::instance();
 	case TranslationProvider::Telegram:
 	case TranslationProvider::Native:
 		return nullptr;

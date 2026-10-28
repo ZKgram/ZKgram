@@ -43,6 +43,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 #include "ayu/ayu_settings.h"
 #include "ayu/ayu_url_handlers.h"
 #include "ayu/features/streamer_mode/streamer_mode.h"
+#include "zkgram/zk_features.h"
 
 
 namespace Core {
@@ -419,6 +420,9 @@ std::shared_ptr<ClickHandler> UiIntegration::createLinkHandler(
 bool UiIntegration::handleUrlClick(
 		const QString &url,
 		const QVariant &context) {
+	if (ZKgram::InterceptUrlClick(url, context)) {
+		return true;
+	}
 	const auto local = Core::TryConvertUrlToLocal(url);
 	if (Core::InternalPassportOrOAuthLink(local)) {
 		return true;

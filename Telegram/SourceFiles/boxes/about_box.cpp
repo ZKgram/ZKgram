@@ -6,6 +6,7 @@ For license and copyright information please follow this link:
 https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 */
 #include "boxes/about_box.h"
+#include "zkgram/zk_settings.h"
 
 #include "base/platform/base_platform_info.h"
 #include "core/application.h"
@@ -45,18 +46,18 @@ rpl::producer<TextWithEntities> Text() {
 		lt_gpl_link,
 		rpl::single(Ui::Text::Link(
 			"GNU GPL",
-			"https://github.com/AyuGram/AyuGramDesktop/blob/dev/LICENSE")),
+			"https://github.com/ZKgram/ZKgram/blob/main/LICENSE")),
 		lt_github_link,
 		rpl::single(Ui::Text::Link(
 			"GitHub",
-			"https://github.com/AyuGram/AyuGramDesktop")),
+			"https://github.com/ZKgram/ZKgram")),
 		tr::marked);
 }
 
 } // namespace
 
 void AboutBox(not_null<Ui::GenericBox*> box, Window::SessionController* controller) {
-	box->setTitle(rpl::single(u"AyuGram Desktop"_q));
+	box->setTitle(rpl::single(u"ZKgram Desktop"_q));
 
 	auto layout = box->verticalLayout();
 
@@ -88,16 +89,15 @@ void AboutBox(not_null<Ui::GenericBox*> box, Window::SessionController* controll
 	};
 
 	addText(Text());
+	addText(tr::ayu_SettingsWatermark(tr::marked));
 
 	box->addButton(tr::lng_close(), [=] { box->closeBox(); });
 	box->addLeftButton(
-		rpl::single(QString("@AyuGramReleases")),
-		[box, controller]
+		rpl::single(QString("GitHub")),
+		[box]
 		{
 			box->closeBox();
-			controller->showPeerByLink(Window::PeerByLinkInfo{
-				.usernameOrId = QString("ayugramreleases"),
-			});
+			File::OpenUrl(ZKgram::RepositoryUrl());
 		});
 
 	box->setWidth(st::aboutWidth);

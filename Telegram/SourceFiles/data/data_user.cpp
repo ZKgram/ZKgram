@@ -6,6 +6,7 @@ For license and copyright information please follow this link:
 https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 */
 #include "data/data_user.h"
+#include "zkgram/zk_features.h"
 
 #include "api/api_credits.h"
 #include "api/api_global_privacy.h"
@@ -393,7 +394,11 @@ void UserData::setName(
 			lastName = filteredLastName;
 		}
 	}
-	const auto newFullName = langFullName(firstName, lastName);
+	const auto newFullName = ZKgram::AdjustUserName(
+		id,
+		firstName,
+		lastName,
+		langFullName(firstName, lastName));
 	updateNameDelayed(newFullName, newPhoneName, newUsername);
 }
 

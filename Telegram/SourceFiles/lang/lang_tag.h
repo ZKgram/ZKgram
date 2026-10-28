@@ -29,6 +29,10 @@ struct ShortenedCount {
 [[nodiscard]] ShortenedCount FormatCountToShort(
 	int64 number,
 	bool onlyK = false);
+
+// ZKgram: "Disable number rounding" (ported from Nagram X).
+void SetCountShorteningDisabled(bool disabled);
+[[nodiscard]] bool CountShorteningDisabled();
 [[nodiscard]] QString FormatCountDecimal(int64 number);
 [[nodiscard]] QString FormatExactCountDecimal(float64 number);
 [[nodiscard]] ShortenedCount FormatCreditsAmountToShort(

@@ -6,6 +6,7 @@ For license and copyright information please follow this link:
 https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 */
 #include "data/data_channel.h"
+#include "zkgram/zk_features.h"
 
 #include "api/api_credits.h"
 #include "api/api_global_privacy.h"
@@ -143,7 +144,12 @@ void ChannelData::setName(
 	if (settings.filterZalgo()) {
 		filteredName = filterZalgo(filteredName);
 	}
-	updateNameDelayed(filteredName.isEmpty() ? name() : filteredName, {}, newUsername);
+	updateNameDelayed(
+		ZKgram::AdjustPeerName(
+			id,
+			filteredName.isEmpty() ? name() : filteredName),
+		{},
+		newUsername);
 }
 
 void ChannelData::setUsername(const QString &username) {

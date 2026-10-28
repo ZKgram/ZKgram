@@ -6,6 +6,7 @@ For license and copyright information please follow this link:
 https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 */
 #include "data/data_chat.h"
+#include "zkgram/zk_features.h"
 
 #include "core/application.h"
 #include "data/data_user.h"
@@ -123,7 +124,12 @@ void ChatData::setName(const QString &newName) {
 	if (settings.filterZalgo()) {
 		filteredName = filterZalgo(filteredName);
 	}
-	updateNameDelayed(filteredName.isEmpty() ? name() : filteredName, {}, {});
+	updateNameDelayed(
+		ZKgram::AdjustPeerName(
+			id,
+			filteredName.isEmpty() ? name() : filteredName),
+		{},
+		{});
 }
 
 void ChatData::applyEditAdmin(not_null<UserData*> user, bool isAdmin) {

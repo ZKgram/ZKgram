@@ -6,6 +6,7 @@ For license and copyright information please follow this link:
 https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 */
 #include "window/main_window.h"
+#include "zkgram/zk_settings.h"
 
 #include "api/api_updates.h"
 #include "storage/localstorage.h"
@@ -921,7 +922,7 @@ void MainWindow::updateTitle() {
 		: Dialogs::Key();
 	const auto thread = key ? key.thread() : nullptr;
 	if (!thread) {
-		setTitle((user.isEmpty() ? u"AyuGram"_q : user) + added + suffix);
+		setTitle((user.isEmpty() ? ZKgram::AppTitle() : user) + added + suffix);
 		return;
 	}
 	const auto history = thread->owningHistory();

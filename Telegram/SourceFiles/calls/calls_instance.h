@@ -58,6 +58,7 @@ struct StartConferenceInfo;
 struct StartOutgoingCallArgs {
 	bool video = false;
 	bool isConfirmed = false;
+	bool zkConfirmed = false; // ZKgram: "Ask before calling" passed.
 };
 
 struct StartGroupCallArgs {
