@@ -7,6 +7,9 @@ name: Windows build
 # "Libraries", даже если шаг упал по таймауту. Если первый запуск не уложился
 # в лимит времени, просто запусти workflow ещё раз (Actions -> Windows build ->
 # Run workflow): сборка продолжится с того места, где остановилась.
+#
+# Логи каждого запуска (хвосты и строки с ошибками) публикуются в ветку
+# ci-logs-<run_id>-<attempt>, чтобы их можно было прочитать через git.
 
 on:
   push:
@@ -22,6 +25,9 @@ on:
 concurrency:
   group: windows-${{ github.ref }}
   cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   windows:
@@ -41,6 +47,7 @@ jobs:
       - name: Prepare directories.
         run: |
           mkdir %userprofile%\TBuild\Libraries
+          mkdir %userprofile%\TBuild\logs
           mklink /d %GITHUB_WORKSPACE%\TBuild %userprofile%\TBuild
           echo TBUILD=%GITHUB_WORKSPACE%\TBuild>>%GITHUB_ENV%
           echo LibrariesPath=%GITHUB_WORKSPACE%\TBuild\Libraries\win64>>%GITHUB_ENV%
@@ -53,6 +60,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           submodules: recursive
+          fetch-depth: 0
           path: ${{ env.TBUILD }}\${{ env.REPO_NAME }}
 
       - name: First set up.
@@ -116,8 +124,12 @@ jobs:
       - name: Libraries.
         id: libraries
         timeout-minutes: 290
+        shell: pwsh
         run: |
-          %TBUILD%\%REPO_NAME%\Telegram\build\prepare\win.bat silent %QT_OPTION%
+          $log = Join-Path $env:TBUILD "logs\libraries.log"
+          $script = Join-Path $env:TBUILD "$env:REPO_NAME\Telegram\build\prepare\win.bat"
+          cmd /c "`"$script`" silent $env:QT_OPTION 2>&1" | Tee-Object -FilePath $log
+          exit $LASTEXITCODE
 
       - name: Free up some disk space.
         if: always()
@@ -127,6 +139,8 @@ jobs:
           echo "THIRDPARTY_STATE=$(find $TBUILD/ThirdParty/cache_keys -type f 2>/dev/null | sort | xargs -r cat | sha256sum | cut -c1-16)" >> $GITHUB_ENV
           echo "QT_STATE=$(find $LibrariesPath/cache_keys -type f -iname 'qt*' 2>/dev/null | sort | xargs -r cat | sha256sum | cut -c1-16)" >> $GITHUB_ENV
           echo "LIBS_ONLY_STATE=$(find $LibrariesPath/cache_keys -type f ! -iname 'qt*' 2>/dev/null | sort | xargs -r cat | sha256sum | cut -c1-16)" >> $GITHUB_ENV
+          ls $LibrariesPath/cache_keys 2>/dev/null > "$TBUILD/logs/cache_keys.txt" || true
+          ls $TBUILD/ThirdParty/cache_keys 2>/dev/null >> "$TBUILD/logs/cache_keys.txt" || true
 
       - name: Save ThirdParty cache.
         if: always()
@@ -159,7 +173,7 @@ jobs:
             ${{ env.LibrariesPath }}\cache_keys\[qQ]t[_-]*
           key: zk-win-qt-${{ env.CACHE_KEY }}-${{ env.QT_STATE }}
 
-      - name: ZKgram build.
+      - name: Configure.
         env:
           TG_API_ID: ${{ secrets.TG_API_ID }}
           TG_API_HASH: ${{ secrets.TG_API_HASH }}
@@ -174,16 +188,46 @@ jobs:
           )
 
           call configure.bat ^
-          x64 ^
+          -G "Ninja Multi-Config" ^
           %QT_OPTION% ^
           %ZK_API% ^
           -D CMAKE_CONFIGURATION_TYPES=Release ^
           -D DESKTOP_APP_DISABLE_AUTOUPDATE=ON ^
-          -D DESKTOP_APP_DISABLE_CRASH_REPORTS=ON
-          if errorlevel 1 exit /b 1
+          -D DESKTOP_APP_DISABLE_CRASH_REPORTS=ON > %TBUILD%\logs\configure.log 2>&1
+          set CONFIGURE_EXIT=%errorlevel%
+          type %TBUILD%\logs\configure.log
+          exit /b %CONFIGURE_EXIT%
 
-          cmake --build ..\out --config Release --parallel
-          if errorlevel 1 exit /b 1
+      - name: Quick check of changed files.
+        shell: bash
+        run: |
+          cd "$TBUILD/$REPO_NAME"
+          BASE=$(git log --format=%H --grep='Import AyuGram Desktop source code' -n 1)
+          echo "Base commit: $BASE"
+          CHANGED=$(git diff --name-only "$BASE" HEAD -- 'Telegram/SourceFiles' | grep -E '\.cpp$' || true)
+          echo "$CHANGED"
+          if ! command -v ninja >/dev/null 2>&1; then
+            echo "ninja is not in PATH, skipping quick check"
+            exit 0
+          fi
+          ALL=$(ninja -C out -f build-Release.ninja -t targets all | cut -d: -f1)
+          TARGETS=""
+          for f in $CHANGED; do
+            rel="${f#Telegram/}"
+            t=$(echo "$ALL" | grep -F "/Release/${rel}.obj" | head -n 1)
+            if [ -n "$t" ]; then TARGETS="$TARGETS $t"; fi
+          done
+          echo "Targets: $TARGETS"
+          if [ -z "$TARGETS" ]; then exit 0; fi
+          set -o pipefail
+          ninja -C out -f build-Release.ninja -k 0 $TARGETS 2>&1 | tee "$TBUILD/logs/quick_check.log"
+
+      - name: ZKgram build.
+        shell: bash
+        run: |
+          cd "$TBUILD/$REPO_NAME"
+          set -o pipefail
+          cmake --build out --config Release --parallel -- -k 0 2>&1 | tee "$TBUILD/logs/build.log"
 
       - name: Pack artifact.
         shell: bash
@@ -202,3 +246,27 @@ jobs:
           name: ZKgram-win64
           path: artifact\
           retention-days: 30
+
+      - name: Publish logs.
+        if: always()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          LOGS="$TBUILD/logs"
+          OUT="$RUNNER_TEMP/zk-logs"
+          rm -rf "$OUT"; mkdir -p "$OUT"
+          for f in "$LOGS"/*.log; do
+            [ -f "$f" ] || continue
+            name=$(basename "$f" .log)
+            tail -n 3000 "$f" > "$OUT/$name.tail.txt"
+            grep -n -i -E "error|failed|fatal|cannot|unresolved" "$f" | grep -v -i "warning" | tail -n 1500 > "$OUT/$name.errors.txt" || true
+          done
+          cp "$LOGS"/*.txt "$OUT/" 2>/dev/null || true
+          echo "run: ${{ github.run_id }} attempt: ${{ github.run_attempt }} sha: ${{ github.sha }} status: ${{ job.status }}" > "$OUT/README.txt"
+          cd "$OUT"
+          git init -q
+          git checkout -q -b logs
+          git add -A
+          git -c user.name="zkgram-ci" -c user.email="ci@users.noreply.github.com" commit -q -m "CI logs for run ${{ github.run_id }}"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/ci-logs-${{ github.run_id }}-${{ github.run_attempt }}" || echo "Could not push logs"
